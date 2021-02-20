@@ -4,7 +4,7 @@ on:
   push:
     branches:
       - master
-      - 'v0.97'
+      - "v0.97"
   pull_request: ~
 
 jobs:
@@ -28,12 +28,12 @@ jobs:
 
       - run: |
           python3 --version
-          python3 tools/sqf_validator.py
+          python3 toolchain/sqf_validator.py
         name: Validate with ACE SQF Validator
 
       - run: |
           python3 --version
-          python3 tools/config_style_checker.py
+          python3 toolchain/config_style_checker.py
         name: Validate with ACE Config Style Checker
 
   artifacts:
@@ -45,15 +45,12 @@ jobs:
         name: Setup Node
 
       - name: Install dependencies
-        working-directory: tools/buildtool
-        run: npm install --loglevel=error
+        run: yarn
 
       - name: Assemble and pack
-        working-directory: tools/buildtool
-        run: npx gulp
+        run: yarn build
 
       - uses: actions/upload-artifact@master
         with:
           name: PBO-Files
           path: _build/pbo
-

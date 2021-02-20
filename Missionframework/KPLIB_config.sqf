@@ -22,7 +22,6 @@
 ------------------------------------------------------------*/
 
 
-
 /*------------------------------------------------------------
     --- SECONDARY MISSION SETTINGS ---
     Settings which are connected to the available secondary missions which can be started by players via the secondary mission dialog.
