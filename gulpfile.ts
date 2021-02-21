@@ -6,12 +6,17 @@ import * as vinylPaths from "vinyl-paths";
 import * as del from "del";
 
 import { resolve } from "path";
-import { existsSync } from "fs";
+import { readFileSync } from "fs";
 
 import { MissionPaths } from "./toolchain";
 import { Preset, FolderStructureInfo } from "./toolchain";
+const jsonc = require("jsonc").safe;
 
-const presets: Preset[] = require("./_presets.json");
+const jsoncPresets: string = readFileSync("./_presets.json").toString();
+const [err, presets]: [any, Preset[]] = jsonc.parse(jsoncPresets);
+if (err) {
+    throw new Error(`Failed to parse JSON: ${err.message}`);
+}
 
 /**
  * Mission folders configuration
