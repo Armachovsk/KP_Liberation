@@ -31,6 +31,7 @@ switch (KPLIB_param_presetF) do {
     case 1: {[true] call compile preprocessFileLineNumbers "presets\armies\csat.sqf";};
     case 2: {[true] call compile preprocessFileLineNumbers "presets\armies\customWest.sqf";};
     case 3: {[true] call compile preprocessFileLineNumbers "presets\armies\nato.sqf";};
+    case 4: {[true] call compile preprocessFileLineNumbers "presets\armies\takiFriends.sqf";};
     default {[true] call compile preprocessFileLineNumbers "presets\armies\customWest.sqf";};
 };
 
@@ -40,6 +41,7 @@ switch (KPLIB_param_presetE) do {
     case 1: {[] call compile preprocessFileLineNumbers "presets\armies\csat.sqf";};
     case 2: {[] call compile preprocessFileLineNumbers "presets\armies\customWest.sqf";};
     case 3: {[] call compile preprocessFileLineNumbers "presets\armies\nato.sqf";};
+    case 4: {[] call compile preprocessFileLineNumbers "presets\armies\takistan.sqf";};
     default {[] call compile preprocessFileLineNumbers "presets\armies\customEast.sqf";};
 };
 
@@ -47,6 +49,7 @@ switch (KPLIB_param_presetE) do {
 switch (KPLIB_param_presetR) do {
     case 0: {[] call compile preprocessFileLineNumbers "presets\resistance\custom.sqf";};
     case 1: {[] call compile preprocessFileLineNumbers "presets\resistance\fia.sqf";};
+    case 2: {[] call compile preprocessFileLineNumbers "presets\resistance\takistan.sqf";};
     default {[] call compile preprocessFileLineNumbers "presets\resistance\custom.sqf";};
 };
 
@@ -54,6 +57,7 @@ switch (KPLIB_param_presetR) do {
 switch (KPLIB_param_presetC) do {
     case 0: {[] call compile preprocessFileLineNumbers "presets\civilians\custom.sqf";};
     case 1: {[] call compile preprocessFileLineNumbers "presets\civilians\vanilla.sqf";};
+    case 2: {[] call compile preprocessFileLineNumbers "presets\civilians\takistan.sqf";};
     default {[] call compile preprocessFileLineNumbers "presets\civilians\custom.sqf";};
 };
 

@@ -1,15 +1,18 @@
 # KP Liberation Module Description
 
 ## Permission Module
+
 The permission module provides a dynamic permission framework with a permission overview dialog.
 It contains functions to check player permissions and add new permissions to the framework.
 Additionally it contains some pre defined permissions.
 
 ### Dependencies
-* Init
-* Common
+
+-   Init
+-   Common
 
 ### Consumed events
+
 **KPLIB_doLoad** (server side)
 Calls KPLIB_fnc_permission_loadData to process saved module data
 
@@ -26,99 +29,103 @@ Calls KPLIB_fnc_permission_checkVehiclePermission and checks the player permissi
 Calls KPLIB_fnc_permission_checkVehiclePermission and checks the player permission for the entered vehicle
 
 ### Emitted events
+
 **KPLIB_permission_newPH** (server side)
 Emitted when a new permission handler is registered
 
 ### Functions
-* KPLIB_fnc_permission_addPermissionHandler
 
-  *Adds a new permission to the permission system.*
+-   KPLIB_fnc_permission_addPermissionHandler
 
-* KPLIB_fnc_permission_changePermission
+    _Adds a new permission to the permission system._
 
-  *Changes the selected permission of the given player.*
+-   KPLIB_fnc_permission_changePermission
 
-* KPLIB_fnc_permission_checkPermission
+    _Changes the selected permission of the given player._
 
-  *Checks the given permission and executes the registered code.*
+-   KPLIB_fnc_permission_checkPermission
 
-* KPLIB_fnc_permission_checkVehiclePermission
+    _Checks the given permission and executes the registered code._
 
-  *Checks the given vehicle permission and executes the registered code.*
+-   KPLIB_fnc_permission_checkVehiclePermission
 
-* KPLIB_fnc_permission_ejectPlayer
+    _Checks the given vehicle permission and executes the registered code._
 
-  *Ejects the player and creates a hint.*
+-   KPLIB_fnc_permission_ejectPlayer
 
-* KPLIB_fnc_permission_export
+    _Ejects the player and creates a hint._
 
-  *Export the permission list to profileNamespace.*
+-   KPLIB_fnc_permission_export
 
-* KPLIB_fnc_permission_getPermission
+    _Export the permission list to profileNamespace._
 
-  *Checks the given permission and returns the result.*
+-   KPLIB_fnc_permission_getPermission
 
-* KPLIB_fnc_permission_import
+    _Checks the given permission and returns the result._
 
-  *Import the permission list from profileNamespace.*
+-   KPLIB_fnc_permission_import
 
-* KPLIB_fnc_permission_initDefault
+    _Import the permission list from profileNamespace._
 
-  *Initializes the default permissions.*
+-   KPLIB_fnc_permission_initDefault
 
-* KPLIB_fnc_permission_loadData
+    _Initializes the default permissions._
 
-  *Loads data which is bound to the this module from the given save data or initializes needed data for a new campaign.*
+-   KPLIB_fnc_permission_loadData
 
-* KPLIB_fnc_permission_openDialog
+    _Loads data which is bound to the this module from the given save data or initializes needed data for a new campaign._
 
-  *Opens the permission dialog.*
+-   KPLIB_fnc_permission_openDialog
 
-* KPLIB_fnc_arsenal_postInit
+    _Opens the permission dialog._
 
-  *Module post initialization.*
+-   SPEC_fnc_arsenal_postInit
 
-* KPLIB_fnc_arsenal_preInit
+    _Module post initialization._
 
-  *Module pre initialization.*
+-   SPEC_fnc_arsenal_preInit
 
-* KPLIB_fnc_permission_registerPlayer
+    _Module pre initialization._
 
-  *Checks if the player is already registered to the permission system.*
+-   KPLIB_fnc_permission_registerPlayer
 
-* KPLIB_fnc_permission_resetToDefault
+    _Checks if the player is already registered to the permission system._
 
-  *Resets all permissions to default.*
+-   KPLIB_fnc_permission_resetToDefault
 
-* KPLIB_fnc_permission_saveData
+    _Resets all permissions to default._
 
-  *Fetches data which is bound to this module and send it to the global save data array.*
+-   KPLIB_fnc_permission_saveData
 
-* KPLIB_fnc_permission_settings
+    _Fetches data which is bound to this module and send it to the global save data array._
 
-  *CBA Settings initialization for this module.*
+-   KPLIB_fnc_permission_settings
 
-* KPLIB_fnc_permission_setupPermissionControls
+    _CBA Settings initialization for this module._
 
-  *Reads the player permissions and applies them to the dialog controls.*
+-   KPLIB_fnc_permission_setupPermissionControls
 
-* KPLIB_fnc_permission_setupPlayerActions
+    _Reads the player permissions and applies them to the dialog controls._
 
-  *Initialization of actions availible to players.*
+-   KPLIB_fnc_permission_setupPlayerActions
+
+    _Initialization of actions availible to players._
 
 ### Scripts
+
 No scripts will be started by this module
 
 ### Implemented permissions
-* Commander slot
-* Sub-Commander slot
-* Light vehicles
-* Transport vehicles
-* Heavy vehicles
-* Anti-Air vehicles
-* Artillery vehicles
-* Transport helicopter
-* Attack helicopter
-* Transport plane
-* Attack jets
-* Logistic vehicles
+
+-   Commander slot
+-   Sub-Commander slot
+-   Light vehicles
+-   Transport vehicles
+-   Heavy vehicles
+-   Anti-Air vehicles
+-   Artillery vehicles
+-   Transport helicopter
+-   Attack helicopter
+-   Transport plane
+-   Attack jets
+-   Logistic vehicles

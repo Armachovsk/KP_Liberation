@@ -1372,6 +1372,9 @@
             <Chinese>白名單</Chinese>
             <German>Whitelist Methode</German>
         </Key>
+        <Key ID="STR_SPEC_SETTINGS_ARSENAL_ARSENAL_3">
+            <English>SPEC Blacklist Method</English>
+        </Key>
         <Key ID="STR_KPLIB_SETTINGS_ARSENAL_COPYDISTANCE">
             <English>Loadout Copy Distance</English>
             <Chinese>可複製裝備的距離</Chinese>
@@ -1401,6 +1404,12 @@
             <English>ACE Arsenal</English>
             <Chinese>ACE 軍火庫</Chinese>
             <German>ACE Arsenal</German>
+        </Key>
+        <Key ID="STR_SPEC_SETTINGS_ARSENAL_PRESET_YML">
+            <English>Yaml Blacklist Preset</English>
+        </Key>
+        <Key ID="STR_KPLIB_SETTINGS_ARSENAL_TYPE_TT">
+            <English>Items from preset will be removed from arsenal.</English>
         </Key>
 
         <!-- ENEMY CATEGORY -->
@@ -1515,6 +1524,9 @@
             <English>NATO</English>
             <German>NATO</German>
         </Key>
+        <Key ID="STR_SPEC_SETTINGS_PRESET_ARMY_4">
+            <English>Takistan</English>
+        </Key>
         <Key ID="STR_KPLIB_SETTINGS_PRESET_PLAYER">
             <English>Player</English>
             <Chinese>玩家</Chinese>
@@ -1554,6 +1566,9 @@
             <English>FIA</English>
             <German>FIA</German>
         </Key>
+        <Key ID="STR_SPEC_SETTINGS_PRESET_RESIS_2">
+            <English>Takistan</English>
+        </Key>
         <Key ID="STR_KPLIB_SETTINGS_PRESET_CIV">
             <English>Civlians</English>
             <Chinese>平民</Chinese>
@@ -1572,6 +1587,9 @@
         <Key ID="STR_KPLIB_SETTINGS_PRESET_CIV_1">
             <English>Vanilla</English>
             <German>Vanilla</German>
+        </Key>
+        <Key ID="STR_SPEC_SETTINGS_PRESET_CIV_2">
+            <English>Takistan</English>
         </Key>
 
         <!-- RESPAWN CATEGORY -->

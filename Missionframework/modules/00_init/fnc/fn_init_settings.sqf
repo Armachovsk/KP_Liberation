@@ -131,13 +131,15 @@
             0,
             1,
             2,
-            3
+            3,
+            4
         ],
         [
             localize "STR_KPLIB_SETTINGS_PRESET_ARMY_0",
             localize "STR_KPLIB_SETTINGS_PRESET_ARMY_1",
             localize "STR_KPLIB_SETTINGS_PRESET_ARMY_2",
-            localize "STR_KPLIB_SETTINGS_PRESET_ARMY_3"
+            localize "STR_KPLIB_SETTINGS_PRESET_ARMY_3",
+            localize "STR_SPEC_SETTINGS_PRESET_ARMY_4"
         ],
         2
     ],
@@ -159,13 +161,15 @@
             0,
             1,
             2,
-            3
+            3,
+            4
         ],
         [
             localize "STR_KPLIB_SETTINGS_PRESET_ARMY_0",
             localize "STR_KPLIB_SETTINGS_PRESET_ARMY_1",
             localize "STR_KPLIB_SETTINGS_PRESET_ARMY_2",
-            localize "STR_KPLIB_SETTINGS_PRESET_ARMY_3"
+            localize "STR_KPLIB_SETTINGS_PRESET_ARMY_3",
+            localize "STR_SPEC_SETTINGS_PRESET_ARMY_4"
         ],
         0
     ],
@@ -185,11 +189,13 @@
     [
         [
             0,
-            1
+            1,
+            2
         ],
         [
             localize "STR_KPLIB_SETTINGS_PRESET_RESIS_0",
-            localize "STR_KPLIB_SETTINGS_PRESET_RESIS_1"
+            localize "STR_KPLIB_SETTINGS_PRESET_RESIS_1",
+            localize "STR_SPEC_SETTINGS_PRESET_RESIS_2"
         ],
         0
     ],
@@ -209,11 +215,13 @@
     [
         [
             0,
-            1
+            1,
+            2
         ],
         [
             localize "STR_KPLIB_SETTINGS_PRESET_CIV_0",
-            localize "STR_KPLIB_SETTINGS_PRESET_CIV_1"
+            localize "STR_KPLIB_SETTINGS_PRESET_CIV_1",
+            localize "STR_SPEC_SETTINGS_PRESET_CIV_2"
         ],
         0
     ],

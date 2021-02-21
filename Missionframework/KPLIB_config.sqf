@@ -164,7 +164,5 @@ KPLIB_resupply_refuelSource = [
     Single values, so they aren't grouped in a category.
 ------------------------------------------------------------*/
 
-
-
 // Config was properly parsed, if this is not set player will be informed about errors
 KPLIB_validationNamespace setVariable ["config", true];

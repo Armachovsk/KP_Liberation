@@ -21,7 +21,7 @@ class KPLIB {
     #include "modules\05_admin\functions.hpp"
     #include "modules\10_resources\functions.hpp"
     #include "modules\11_permission\functions.hpp"
-    #include "modules\12_arsenal\functions.hpp"
+    // #include "modules\12_arsenal\functions.hpp" - not used
     #include "modules\13_plm\functions.hpp"
     #include "modules\14_virtual\functions.hpp"
     #include "modules\15_build\functions.hpp"
@@ -33,3 +33,7 @@ class KPLIB {
     #include "modules\28_captive\functions.hpp"
     #include "modules\90_missions\functions.hpp"
 };
+
+class SPEC {
+    #include "modules\spec_arsenal\functions.hpp"
+}

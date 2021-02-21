@@ -21,6 +21,7 @@
     },
     "scripts": {
         "build": "gulp",
-        "dev": "gulp dev"
+        "dev": "gulp dev",
+        "clean": "gulp clean"
     }
 }
