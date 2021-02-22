@@ -58,4 +58,6 @@ class arsenal {
 
     class arsenal_compilePreset {};
 
+    class arsenal_playerAction {};
+
 };

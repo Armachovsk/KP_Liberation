@@ -24,9 +24,9 @@ createDialog "KPLIB_arsenal";
 disableSerialization;
 
 // Dialog controls
-private _dialog = findDisplay KPLIB_IDC_ARSENAL_DIALOG;
-private _ctrlLoadoutList = _dialog displayCtrl KPLIB_IDC_ARSENAL_LOADOUTLIST;
-private _ctrlNearPlayer = _dialog displayCtrl KPLIB_IDC_ARSENAL_COMBONEAR;
+private _dialog = findDisplay SPEC_IDC_ARSENAL_DIALOG;
+private _ctrlLoadoutList = _dialog displayCtrl SPEC_IDC_ARSENAL_LOADOUTLIST;
+private _ctrlNearPlayer = _dialog displayCtrl SPEC_IDC_ARSENAL_COMBONEAR;
 
 // Get the default loadout name from player profile
 private _loadout = profileNamespace getVariable ["KPLIB_defaultLoadout", ""];

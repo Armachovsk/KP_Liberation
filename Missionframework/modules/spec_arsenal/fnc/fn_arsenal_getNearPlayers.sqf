@@ -22,8 +22,8 @@
 disableSerialization;
 
 // Dialog controls
-private _dialog = findDisplay KPLIB_IDC_ARSENAL_DIALOG;
-private _ctrlNearPlayer = _dialog displayCtrl KPLIB_IDC_ARSENAL_COMBONEAR;
+private _dialog = findDisplay SPEC_IDC_ARSENAL_DIALOG;
+private _ctrlNearPlayer = _dialog displayCtrl SPEC_IDC_ARSENAL_COMBONEAR;
 
 // Clear controls
 lbClear _ctrlNearPlayer;

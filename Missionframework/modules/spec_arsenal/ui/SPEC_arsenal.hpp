@@ -69,13 +69,13 @@ class SPEC_arsenal {
             action = "[] call SPEC_fnc_arsenal_getNearPlayers";
         };
 
-        class SPEC_ButtonLoadNear: KPLIB_ButtonSetDefault {
+        class SPEC_ButtonLoadNear: SPEC_ButtonSetDefault {
             text = "$STR_KPLIB_DIALOG_ARSENAL_LOADNEAR";
             y = KP_GETCY(KP_Y_VAL_C,KP_HEIGHT_VAL_C,41,48);
             onButtonClick = "[] call SPEC_fnc_arsenal_copyLoadout";
         };
 
-        class SPEC_ButtonOpen: KPLIB_ButtonLoad {
+        class SPEC_ButtonOpen: SPEC_ButtonLoad {
             text = "$STR_KPLIB_DIALOG_ARSENAL_OPEN";
             y = KP_GETCY(KP_Y_VAL_C,KP_HEIGHT_VAL_C,45,48);
             onButtonClick = "[] call SPEC_fnc_arsenal_openArsenal";

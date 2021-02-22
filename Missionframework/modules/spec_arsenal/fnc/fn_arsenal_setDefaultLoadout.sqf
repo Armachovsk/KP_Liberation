@@ -20,8 +20,8 @@
 */
 
 // Dialog controls
-private _dialog = findDisplay KPLIB_IDC_ARSENAL_DIALOG;
-private _ctrlLoadoutList = _dialog displayCtrl KPLIB_IDC_ARSENAL_LOADOUTLIST;
+private _dialog = findDisplay SPEC_IDC_ARSENAL_DIALOG;
+private _ctrlLoadoutList = _dialog displayCtrl SPEC_IDC_ARSENAL_LOADOUTLIST;
 
 // Get the selected loadout name
 private _index = lbCurSel _ctrlLoadoutList;
