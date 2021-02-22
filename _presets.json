@@ -1,0 +1,16 @@
+[
+    // {
+    //     "sourceFolder": "kp_liberation.Altis",
+    //     "missionName": "kp_liberation",
+    //     "map": "Altis",
+    //     "configFile": "KPLIB_config.sqf",
+    //     "variables": {}
+    // },
+    {
+        "sourceFolder": "spec_liberation.takistan",
+        "missionName": "spec_liberation",
+        "map": "takistan",
+        "configFile": "KPLIB_config.sqf",
+        "variables": {}
+    }
+]
