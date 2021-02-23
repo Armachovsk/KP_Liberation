@@ -18,4 +18,6 @@ class core {
     class core_handleVehicleRespawn {};
 
     class core_settings {};
+
+    class core_debugLog {};
 };

@@ -27,7 +27,9 @@ private _respawnPos = [(_respawnItem select 1)] call KPLIB_fnc_common_getPos;
 
 private _respawnLoadout = (_display getVariable "KPLIB_selLoadout");
 
+private _buildingPos = [_respawnPos, 0, 30] call BIS_fnc_findSafePos;
+
 // Spawn the player at selected position
-[_respawnPos, _respawnLoadout] call KPLIB_fnc_respawn_spawnPlayer;
+[[(_buildingPos select 0), (_buildingPos select 1), 0], _respawnLoadout] call KPLIB_fnc_respawn_spawnPlayer;
 
 true
