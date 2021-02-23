@@ -30,6 +30,8 @@ if (isServer) then {
     };
 
     ["SPEC_core_vehicleRespawn", {[_this select 0] call SPEC_fnc_core_handleVehicleRespawn}] call CBA_fnc_addEventHandler;
+
+    ["SPEC_core_cbpsChanged", {[_this select 0, _this select 1] call SPEC_fnc_core_handleCBPSEvent}] call CBA_fnc_addEventHandler;
 };
 
 if (isServer) then {["Module initialized", "PRE] [CORE", true] call KPLIB_fnc_common_log;};

@@ -20,4 +20,8 @@ class core {
     class core_settings {};
 
     class core_debugLog {};
+
+    class core_isCBPS {};
+
+    class core_handleCBPSEvent {};
 };

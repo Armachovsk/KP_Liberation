@@ -58,4 +58,3 @@ private _initFunction = {
     {},     // End condition
     ["_players", "_tick", "_playersCount", "_fobs"]      // Privates to serialize between calls
 ] call CBA_fnc_createPerFrameHandlerObject;
-
