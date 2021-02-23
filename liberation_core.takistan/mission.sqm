@@ -8,7 +8,7 @@ class EditorData
 	toggles=521;
 	class ItemIDProvider
 	{
-		nextID=19824;
+		nextID=19825;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=2134;
+		nextID=2449;
 	};
 	class Camera
 	{
-		pos[]={3450.9639,439.43344,-105.90683};
-		dir[]={0.11306209,-0.93903798,0.32501155};
-		up[]={0.30851573,0.34391296,0.88686442};
-		aside[]={0.94456881,-1.8441642e-006,-0.32858652};
+		pos[]={3421.1033,367.58197,-126.6713};
+		dir[]={0.30331913,-0.44668105,0.84185284};
+		up[]={0.15145549,0.89462036,0.42035595};
+		aside[]={0.94090456,-6.1269384e-007,-0.33900222};
 	};
 };
 binarizationWanted=0;
@@ -827,7 +827,7 @@ class Mission
 			name="Map Markers";
 			class Entities
 			{
-				items=437;
+				items=438;
 				class Item0
 				{
 					dataType="Logic";
@@ -7677,8 +7677,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3440.0188,346.43588,-109.54984};
-						angles[]={6.2546401,3.1415927,6.2819405};
+						position[]={3397.5759,351.1174,-48.850574};
+						angles[]={6.1510549,3.1415927,6.2778034};
 					};
 					side="Empty";
 					flags=4;
@@ -7758,8 +7758,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3439.9561,346.18677,-119.76569};
-						angles[]={6.2647657,3.1415927,0};
+						position[]={3441.4949,346.30652,-114.42421};
+						angles[]={6.260695,3.1415927,6.2819405};
 					};
 					side="Empty";
 					flags=4;
@@ -9234,9 +9234,49 @@ class Mission
 					id=12587;
 					atlOffset=-131.68279;
 				};
+				class Item437
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3452.8369,346.02542,-115.669};
+						angles[]={6.2618747,3.1415927,6.26369};
+					};
+					side="Empty";
+					flags=4;
+					class Attributes
+					{
+						name="SPEC_eden_startVehicle_0";
+					};
+					id=19824;
+					type="Land_ClutterCutter_small_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="allowDamage";
+							expression="_this allowdamage _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
 			};
 			id=12588;
-			atlOffset=-60.327087;
+			atlOffset=-59.152344;
 		};
 		class Item11
 		{
@@ -32608,7 +32648,7 @@ class Mission
 										};
 									};
 									id=19151;
-									atlOffset=0.28167725;
+									atlOffset=0.28164673;
 								};
 								class Item24
 								{
