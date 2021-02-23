@@ -20,7 +20,7 @@
 */
 
 // Create dialog
-createDialog "KPLIB_arsenal";
+createDialog "SPEC_arsenal";
 disableSerialization;
 
 // Dialog controls
