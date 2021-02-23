@@ -25,7 +25,7 @@ private _smoke1 = "test_EmptyObjectForSmoke" createVehicle getPos _heli_down;
 _smoke1 setPos(getPos _heli_down);
 //bot
 private _find_pos_bot = _heli_down getPos [random 50, random 360];
-null=[_find_pos_bot,10,false,true,[50,100,150],2000] execVM "Other_mission\Shared\ZoneGref.sqf";
+[_find_pos_bot,10,false,true,[50,100,150],2000] call SPEC_fnc_other_missions_zoneGref;
 //wait tank desroyd
 waitUntil{
 	sleep 10;
@@ -53,12 +53,12 @@ _pilot2 = _group_pilot createUnit ["rhs_pilot_combat_heli", getPos _nearestRoad_
 [_pilot2, true] call ACE_captives_fnc_setHandcuffed;
 //bot
 private _find_pos_bot_1 = getPos _nearestRoad_1;
-null=[_find_pos_bot_1,20,false,true,[50,100,150],2000] execVM "Other_mission\Shared\ZoneGref.sqf";
+[_find_pos_bot_1,20,false,true,[50,100,150],2000] call SPEC_fnc_other_missions_zoneGref;
 //wait pilot delivery on base or hes die
 waitUntil{
 	sleep 10;
 	((getPos _pilot1) inArea [pos_base, 100, 100, 0, false] or !alive _pilot1) && ((getPos _pilot2) inArea [getMarkerpos "Base", 100, 100, 0, false] or !alive _pilot2)
- }; 
+ };
 //set task state
 if(alive _pilot1 and alive _pilot2)then{
 	["Task_03_1","SUCCEEDED"] call BIS_fnc_taskSetState;
@@ -71,4 +71,3 @@ deleteVehicle _pilot1;
 deleteVehicle _pilot2;
 ["Task_03"] call BIS_fnc_deleteTask;
 ["Task_03_1"] call BIS_fnc_deleteTask;
-	

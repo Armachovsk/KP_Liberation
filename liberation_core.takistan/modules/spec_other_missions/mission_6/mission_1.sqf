@@ -1,5 +1,5 @@
 _fnc_find_pos = {
-			  
+
 private _nearbyLocations = nearestLocations [[0,0,0], ["NameVillage", "Name", "NameCity", "NameCityCapital"], 10000];
 private _randomLoacation = getPos selectRandom _nearbyLocations;
 find_pos = [_randomLoacation, 700, 1500, 30, 0, 0.8, 0] call BIS_fnc_findSafePos;
@@ -32,7 +32,7 @@ _smoke6 setPos(getPos _Plane_1);
 
 //bot
 pos_for_bot = getPos Cargo_1;
-null=[pos_for_bot,20,false,true,[50,100,150],2000] execVM "Other_mission\Shared\ZoneGref.sqf";
+[pos_for_bot,20,false,true,[50,100,150],2000] call SPEC_fnc_other_missions_zoneGref;
 
 //wait continer on base
 waitUntil{

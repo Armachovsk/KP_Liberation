@@ -14,7 +14,7 @@ private _Marker10 = createMarker ["Marker10", _radar_1 getPos [random 500, rando
 ["Task_10", true, ["Уничтожить РЛС","Уничтожить РЛС","respawn_west"], getMarkerPos _Marker10, "CREATED", 5, true, true, "meet", true] call BIS_fnc_setTask;
 
 getPos_radar = _radar_1 getPos [10 + random 10, random 360];
-null=[getPos_radar,20,false,true,[50,100,150],2000] execVM "Other_mission\Shared\ZoneGref.sqf";
+[getPos_radar,20,false,true,[50,100,150],2000] call SPEC_fnc_other_missions_zoneGref;
 
 waitUntil{
 	sleep 10;

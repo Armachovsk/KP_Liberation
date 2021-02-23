@@ -14,7 +14,7 @@ private _Marker9 = createMarker ["Marker9", getPos _nearestRoad];
 
 //bot from defend gorod
 grup_defend_gorod = getPos _nearestRoad;
-null=[grup_defend_gorod,7,false,true,[20,40,50],2000] execVM "Other_mission\Shared\ZoneGref.sqf";
+[grup_defend_gorod,7,false,true,[20,40,50],2000] call SPEC_fnc_other_missions_zoneGref;
 
 //spawn heli
 private _heli_defend_gorod = [getPos _nearestRoad, 180, selectRandom["CPC_ME_O_KAM_uh1h_gunship", "CPC_ME_O_KAM_Mi24D_Early","CPC_ME_O_KAM_uh1hCPC_ME_O_KAM_uh1h_gunship"], EAST] call BIS_fnc_spawnVehicle;
@@ -34,9 +34,9 @@ zenitka_goroda_2 = [_find_pos_from_zenitki_2, 180, "CPC_ME_O_KAM_ZU23", EAST] ca
 
 //bot from defend zenitki
 
-null=[getPos (zenitka_goroda select 0),2,false,true,[20,40,50],2000] execVM "Other_mission\Shared\ZoneGref.sqf";
-null=[getPos (zenitka_goroda_1 select 0),2,false,true,[20,40,50],2000] execVM "Other_mission\Shared\ZoneGref.sqf";
-null=[getPos (zenitka_goroda_2 select 0),2,false,true,[20,40,50],2000] execVM "Other_mission\Shared\ZoneGref.sqf";
+[getPos (zenitka_goroda select 0),2,false,true,[20,40,50],2000] call SPEC_fnc_other_missions_zoneGref;
+[getPos (zenitka_goroda_1 select 0),2,false,true,[20,40,50],2000] call SPEC_fnc_other_missions_zoneGref;
+[getPos (zenitka_goroda_2 select 0),2,false,true,[20,40,50],2000] call SPEC_fnc_other_missions_zoneGref;
 
 //task destroin zenitki
 ["Task_09_1", true, ["Уничтожить зенитные установки","Уничтожить зенитные установки","respawn_west"], getMarkerPos _Marker9, "CREATED", 5, true, true, "destroy", true] call BIS_fnc_setTask;
@@ -45,7 +45,7 @@ null=[getPos (zenitka_goroda_2 select 0),2,false,true,[20,40,50],2000] execVM "O
 vuhka = "Land_Vysilac_FM" createVehicle _find_pos_from_vuhka;
 
 //bot from defend vuhka
-null=[vuhka getPos [20, 45],2,false,true,[20,40,50],2000] execVM "Other_mission\Shared\ZoneGref.sqf";
+[vuhka getPos [20, 45],2,false,true,[20,40,50],2000] call SPEC_fnc_other_missions_zoneGref;
 
 //task destroin vshka
 ["Task_09_2", true, ["Уничтожить вышку","Уничтожить вышку","respawn_west"], getMarkerPos _Marker9, "CREATED", 5, true, true, "destroy", true] call BIS_fnc_setTask;
@@ -62,7 +62,7 @@ private _sklad_boepripasow_2 = "Box_EAF_AmmoVeh_F" createVehicle getPos sklad_bo
 ["Task_09_3", true, ["Уничтожить склад боеприпасов","Уничтожить склад боеприпасов","respawn_west"], getMarkerPos _Marker9, "CREATED", 5, true, true, "destroy", true] call BIS_fnc_setTask;
 
 //bot from defend sklad boepripasow
-null=[sklad_boepripasow getPos [20, 45],4,false,true,[20,40,50],2000] execVM "Other_mission\Shared\ZoneGref.sqf";
+[sklad_boepripasow getPos [20, 45],4,false,true,[20,40,50],2000] call SPEC_fnc_other_missions_zoneGref;
 
 //wait complite zadaniya
 private _zadanie_zenitka_complite = false;
@@ -75,7 +75,7 @@ waitUntil{
 	if(!alive sklad_boepripasow && !alive _sklad_boepripasow_1 && !alive _sklad_boepripasow_2)then{_zadanie_vuhka_complite = true;["Task_09_3","SUCCEEDED"] call BIS_fnc_taskSetState;};
 	sleep 20;
 	_zadanie_zenitka_complite && _zadanie_vuhka_complite && _zadanie_vuhka_complite
-}; 
+};
 
 ["Task_09","SUCCEEDED"] call BIS_fnc_taskSetState;
 deleteMarker _Marker9;

@@ -38,7 +38,7 @@ private _Marker7 = createMarker ["Marker7", _artilery_1 getPos [random 300, rand
 
 
 //bot
-null=[_artilery_1,20,false,true,[50,100,150],2000] execVM "Other_mission\Shared\ZoneGref.sqf";
+[_artilery_1,20,false,true,[50,100,150],2000] call SPEC_fnc_other_missions_zoneGref;
 
 
 waitUntil{

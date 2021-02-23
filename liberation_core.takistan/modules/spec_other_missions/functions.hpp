@@ -19,4 +19,6 @@ class other_missions {
         postInit = 1;
     };
 
+    class other_missions_zoneGref {};
+
 };
