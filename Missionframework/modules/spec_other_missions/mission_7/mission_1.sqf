@@ -3,9 +3,9 @@ private _randomLoacation = getPos selectRandom _nearbyLocations;
 private _find_pos = [_randomLoacation, 500, 1000, 50, 0, 0.9, 0] call BIS_fnc_findSafePos;
 
 //artilery
-private _artilery_1 = "rhsgref_ins_g_d30" createVehicle _find_pos;
-private _artilery_2 = "rhsgref_ins_g_d30" createVehicle (_artilery_1 getPos[10 + random 10,random 360]);
-private _artilery_3 = "rhsgref_ins_g_d30" createVehicle (_artilery_1 getPos[30 + random 10,random 360]);
+private _artilery_1 = "CPC_ME_O_KAM_D30" createVehicle _find_pos;
+private _artilery_2 = "CPC_ME_O_KAM_D30" createVehicle (_artilery_1 getPos[10 + random 10,random 360]);
+private _artilery_3 = "CPC_ME_O_KAM_D30" createVehicle (_artilery_1 getPos[30 + random 10,random 360]);
 
 waitUntil {
 	sleep 5;

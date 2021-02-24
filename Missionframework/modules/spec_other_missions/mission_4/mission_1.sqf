@@ -55,9 +55,9 @@ private _find_pos_from_bot = [getPos dron_down, 150, 200, 5, 0, 0.9, 0] call BIS
 //find pos enemy heli
 private _find_pos_from_bot_air = [getPos dron_down, 1000, 1500, 20, 0, 0.7, 0] call BIS_fnc_findSafePos;
 //btr
-private _BTR_attac_drone = [_find_pos_from_bot, 180, "rhsgref_ins_g_btr60", EAST] call BIS_fnc_spawnVehicle;
+private _BTR_attac_drone = [_find_pos_from_bot, 180, "CPC_ME_O_KAM_BTR70", EAST] call BIS_fnc_spawnVehicle;
 //heli
-private _heli_attac_drone = [_find_pos_from_bot_air, 180, "rhsgref_cdf_Mi24D_early", EAST] call BIS_fnc_spawnVehicle;
+private _heli_attac_drone = [_find_pos_from_bot_air, 180, "CPC_ME_O_KAM_Mi24D_Early", EAST] call BIS_fnc_spawnVehicle;
 //waipoint for btr
 private _wp_for_bot_go_tu_drone_btr = _BTR_attac_drone select 2 addWaypoint [getPos dron_down, 0];
 _wp_for_bot_go_tu_drone_btr setWaypointType "SAD";
@@ -68,16 +68,24 @@ _wp_for_bot_go_tu_drone_heli setWaypointType "GUARD";
 _wp_for_bot_go_tu_drone_heli setWaypointSpeed "FULL";
 //arry bot
 _bot_arry = [
-"SpecLib_I_ChDKZ_Soldier_AT_F",
-"SpecLib_I_ChDKZ_Soldier_SL_F",
-"SpecLib_I_ChDKZ_Soldier_AA_F",
-"SpecLib_I_ChDKZ_Soldier_MG_F",
-"SpecLib_I_ChDKZ_Soldier_AR_F",
-"SpecLib_I_ChDKZ_medic_F",
-"SpecLib_I_ChDKZ_Soldier_M_F",
-"SpecLib_I_ChDKZ_Soldier_GL_F",
-"SpecLib_I_ChDKZ_Soldier_02_F",
-"SpecLib_I_ChDKZ_Soldier_LAT_F"
+"CPC_ME_O_KAM_soldier_AT",
+"CPC_ME_O_KAM_soldier_AT",
+"CPC_ME_O_KAM_soldier_AT",
+"CPC_ME_O_KAM_soldier_AT",
+"CPC_ME_O_KAM_soldier_AA",
+"CPC_ME_O_KAM_soldier_MG",
+"CPC_ME_O_KAM_soldier_AR",
+"CPC_ME_O_KAM_soldier_Medic",
+"CPC_ME_O_KAM_soldier_M",
+"CPC_ME_O_KAM_soldier_MNSPU",
+"CPC_ME_O_KAM_soldier_l1a1",
+"CPC_ME_O_KAM_soldier_GL",
+"CPC_ME_O_KAM_soldier_NSPU",
+"CPC_ME_O_KAM_soldier_LAT",
+"CPC_ME_O_KAM_soldier",
+"CPC_ME_O_KAM_soldier_AA",
+"CPC_ME_O_KAM_soldier_AA",
+"CPC_ME_O_KAM_soldier_AA"
 ];
 //cyrcl from create bot
 for "_i" from 0 to 10 do 

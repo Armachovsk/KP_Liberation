@@ -4,7 +4,7 @@ private _nearestRoad = [_randomLoacation, 500] call BIS_fnc_nearestRoad;
 private _find_pos = [_randomLoacation, 10, 500, 20, 0, 0.9, 0] call BIS_fnc_findSafePos;
 
 //BMP
-private _BMP_delivery_explousion = [_find_pos, 180, "rhsgref_cdf_bmp2d", EAST] call BIS_fnc_spawnVehicle;
+private _BMP_delivery_explousion = [_find_pos, 180, "CPC_ME_O_KAM_gaz66_r142", EAST] call BIS_fnc_spawnVehicle;
 
 //marker
 private _Marker8 = createMarker ["Marker8", _BMP_delivery_explousion select 0 getPos [100 + random 200, random 360]];
