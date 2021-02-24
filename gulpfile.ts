@@ -22,8 +22,8 @@ if (err) {
  * Mission folders configuration
  */
 const paths: FolderStructureInfo = {
-    frameworkFolder: "./base",
-    missionsFolder: "./src",
+    frameworkFolder: "./Missionbasefiles",
+    missionsFolder: "./Missionframework",
     workDir: "./_build",
 };
 
