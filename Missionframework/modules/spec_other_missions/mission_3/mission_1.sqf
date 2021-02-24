@@ -4,7 +4,7 @@ private _randomLoacation = getPos selectRandom _nearbyLocations;
 private _find_pos = [_randomLoacation, 500, 1000, 50, 0, 0.8, 0] call BIS_fnc_findSafePos;
 
 //heli
-private _heli_down = "rhs_mi28n_vvsc" createVehicle _find_pos;
+private _heli_down = "RHS_AH64D" createVehicle _find_pos;
 _heli_down setDamage 0.5;
 _heli_down setVehicleAmmo 0;
 _heli_down setFuel 0;
