@@ -212,11 +212,11 @@ taskManagement_drawDist = 5000;
 */
 
 class CfgDebriefing {
-    #include "Missionframework\KPLIB_debriefs.hpp"
+    #include "KPLIB_debriefs.hpp"
 };
 
 class CfgFunctions {
-    #include "Missionframework\KPLIB_functions.hpp"
+    #include "KPLIB_functions.hpp"
 };
 
 class CfgRespawnTemplates
@@ -229,4 +229,4 @@ class CfgRespawnTemplates
     };
 };
 
-#include "Missionframework\KPLIB_ui.hpp"
+#include "KPLIB_ui.hpp"
