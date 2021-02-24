@@ -7,7 +7,7 @@ private _radar_1 = "rhs_prv13" createVehicle _find_pos;
 //marker
 private _Marker10 = createMarker ["Marker10", _radar_1 getPos [random 500, random 360]];
 "Marker10" setMarkerShape "ELLIPSE";
-"Marker10" setMarkerSize [300, 300];
+"Marker10" setMarkerSize [500, 500];
 "Marker10" setMarkerColor "ColorBlack";
 "Marker10" setMarkerBrush "Cross";
 

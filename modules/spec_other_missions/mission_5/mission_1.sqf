@@ -4,10 +4,10 @@ private _arry_roads = _randomLoacation nearRoads 3000;
 private _select_random_road = selectRandom _arry_roads;
 
 //vehicle
-private _Vehicle_1 = "rhs_prp3_vv" createVehicle getPos _select_random_road;
-private _Vehicle_2 = "rhs_btr80_vv" createVehicle (_select_random_road getPos [80 + random 50,random 360]);
-private _Vehicle_3 = "rhs_tigr_m_3camo_vv" createVehicle (_select_random_road getPos [15 + random 50,random 360]);
-private _Vehicle_4 = "rhs_tigr_m_3camo_vv" createVehicle (_select_random_road getPos [20 + random 50,random 360]);
+private _Vehicle_1 = "rhsusf_m1152_sicps_usarmy_d" createVehicle getPos _select_random_road;
+private _Vehicle_2 = "rhsusf_m1025_d_m2" createVehicle (_select_random_road getPos [80 + random 50,random 360]);
+private _Vehicle_3 = "rhsusf_M1117_D" createVehicle (_select_random_road getPos [15 + random 50,random 360]);
+private _Vehicle_4 = "rhsusf_m113d_usarmy" createVehicle (_select_random_road getPos [20 + random 50,random 360]);
 
 _Vehicle_1 setDamage 0.5;
 _Vehicle_2 setDamage 0.9;
@@ -32,7 +32,7 @@ private _Marker5 = createMarker ["Marker5", _Vehicle_1 getPos [random 300, rando
 "Marker5" setMarkerBrush "Cross";
 
 //task
-["Task_05", true, ["Эвакуировать ПРП на базу","Эвакуировать ПРП базу","respawn_west"], getMarkerPos _Marker5, "CREATED", 5, true, true, "car", true] call BIS_fnc_setTask;
+["Task_05", true, ["Эвакуировать КШМ на базу","Эвакуировать КШМ на базу","respawn_west"], getMarkerPos _Marker5, "CREATED", 5, true, true, "car", true] call BIS_fnc_setTask;
 //bot
 pos_for_bot = getPos _Vehicle_1;
 [pos_for_bot,20,false,true,[50,100,150],2000] call SPEC_fnc_other_missions_zoneGref;

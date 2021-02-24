@@ -13,7 +13,11 @@ waitUntil{
 
 
 //vehicle
-private _Plane_1 = "Land_rhs_tu95_wreck" createVehicle find_pos;
+private _Plane_1 = "rhsusf_f22" createVehicle find_pos;
+_Plane_ setDamage 0.5;
+_Plane_ setFuel 0;
+_Plane_ setVehicleAmmo 0;
+_Plane_ lock 2;
 Cargo_1 = "CargoNet_01_box_F" createVehicle (_Plane_1 getPos [20 + random 40,random 360]);
 publicVariable "Cargo_1";
 
@@ -28,7 +32,7 @@ private _Marker6 = createMarker ["Marker6", _Plane_1 getPos [random 300, random 
 private _smoke6 = "test_EmptyObjectForSmoke" createVehicle getPos _Plane_1;
 _smoke6 setPos(getPos _Plane_1);
 //task
-["Task_06", true, ["Эвакуировать черный ящик из подбитого ТУ-95","Эвакуировать черный ящик из подбитого ТУ-95","respawn_west"], getMarkerPos _Marker6, "CREATED", 5, true, true, "takeoff", true] call BIS_fnc_setTask;
+["Task_06", true, ["Эвакуировать черный ящик из подбитого F-22","Эвакуировать черный ящик из подбитого F-22","respawn_west"], getMarkerPos _Marker6, "CREATED", 5, true, true, "takeoff", true] call BIS_fnc_setTask;
 
 //bot
 pos_for_bot = getPos Cargo_1;
