@@ -22,7 +22,7 @@
     "SPEC_param_resistance_tier2",
     "SLIDER",
     [localize "STR_SPEC_SETTINGS_RESISTANCE_TIER2", localize "STR_SPEC_SETTINGS_RESISTANCE_TIER2_TT"],
-    localize "STR_KPLIB_SETTINGS_RESISTANCE",
+    localize "STR_SPEC_SETTINGS_RESISTANCE",
     [0, 50, 30, 0],
     1,
     {}
@@ -32,7 +32,7 @@
     "SPEC_param_resistance_tier3",
     "SLIDER",
     [localize "STR_SPEC_SETTINGS_RESISTANCE_TIER3", localize "STR_SPEC_SETTINGS_RESISTANCE_TIER3_TT"],
-    localize "STR_KPLIB_SETTINGS_RESISTANCE",
+    localize "STR_SPEC_SETTINGS_RESISTANCE",
     [51, 100, 70, 0],
     1,
     {}
@@ -42,7 +42,7 @@
     "SPEC_param_civRepKillPenalty",
     "SLIDER",
     [localize "STR_SPEC_SETTINGS_RESISTANCE_CIVPENALTY", localize "STR_SPEC_SETTINGS_RESISTANCE_CIVPENALTY_TT"],
-    localize "STR_KPLIB_SETTINGS_RESISTANCE",
+    localize "STR_SPEC_SETTINGS_RESISTANCE",
     [0, 10, 3, 0],
     1,
     {}

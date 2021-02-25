@@ -26,6 +26,16 @@ private _moduleData = ["spec_resistance"] call KPLIB_fnc_init_getSaveData;
 if (_moduleData isEqualTo []) then {
     if (KPLIB_param_debug) then {["Example module data empty, creating new data...", "SAVE"] call KPLIB_fnc_common_log;};
     // Nothing to do here
+    SPEC_civRep = 0;
+    publicVariable "SPEC_civRep";
+
+    // Set correct resistance standing
+    [{!isNil "SPEC_civRep"}, {
+        [nil, false] call SPEC_fnc_resistance_changeCR;
+    }, []] call CBA_fnc_waitUntilAndExecute;
+
+    SPEC_guerillaStrength = 0;
+    publicVariable "SPEC_guerillaStrength";
 } else {
     // Otherwise start applying the saved data
     if (KPLIB_param_debug) then {["Example module data found, applying data...", "SAVE"] call KPLIB_fnc_common_log;};
@@ -34,7 +44,9 @@ if (_moduleData isEqualTo []) then {
     publicVariable "SPEC_civRep";
 
     // Set correct resistance standing
-    [nil, false] call SPEC_fnc_resistance_changeCR;
+    [{!isNil "SPEC_civRep"}, {
+        [nil, false] call SPEC_fnc_resistance_changeCR;
+    }, []] call CBA_fnc_waitUntilAndExecute;
 
     SPEC_guerillaStrength = _moduleData select 1;
     publicVariable "SPEC_guerillaStrength";

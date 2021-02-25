@@ -2059,6 +2059,18 @@
             <English>Randomization range for intel gain through interrogation. E.g. a value of 5 will grant you 5 - 15 intel for a base value of 10.</English>
             <German>Zufallsbereich für den Informationszuwachs bei einem Verhör. Mit einem Wert von 5 liegt der effektive Zuwachs, bei einem Ausgangswert von 10, zwischen 5 und 15.</German>
         </Key>
+        <Key ID="STR_SPEC_SETTINGS_RESISTANCE">
+            <English>SPEC - Resistance</English>
+        </Key>
+        <Key ID="STR_SPEC_SETTINGS_RESISTANCE_TIER2">
+            <English>Resistance Tier 2 cap</English>
+        </Key>
+        <Key ID="STR_SPEC_SETTINGS_RESISTANCE_TIER3">
+            <English>Resistance Tier 3 cap</English>
+        </Key>
+        <Key ID="STR_SPEC_SETTINGS_RESISTANCE_CIVPENALTY">
+            <English>Civillian kill penalty</English>
+        </Key>
     </Package>
 
 

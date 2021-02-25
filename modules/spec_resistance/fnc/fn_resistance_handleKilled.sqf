@@ -25,7 +25,7 @@ if (isServer) then {
                 _killer = SPEC_resistance_aceKiller;
                 SPEC_resistance_aceKiller = objNull;
                 publicVariable "SPEC_resistance_aceKiller";
-            }, [], 0.5] call CBA_fnc_waitUntilAndExecute;
+            }, []] call CBA_fnc_waitUntilAndExecute;
         };
     };
 

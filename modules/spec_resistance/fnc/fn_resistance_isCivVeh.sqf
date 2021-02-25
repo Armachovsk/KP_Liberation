@@ -4,4 +4,4 @@ params ["_unit"];
 (typeOf _unit in KPLIB_preset_vehTransPlC) ||
 (typeOf _unit in KPLIB_preset_logisticPlC) ||
 (typeOf _unit in KPLIB_preset_heliTransPlC) ||
-(typeOf _unit in planeTransPlC)
+(typeOf _unit in KPLIB_preset_planeTransPlC)
