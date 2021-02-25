@@ -1335,6 +1335,92 @@
             <English>Vehicle state changed, refresh your selection to try again.</English>
             <German>Fahrzeugzustand hat sich geändert. Aktualisiere deine Auswahl und versuche es erneut.</German>
         </Key>
+        <Key ID="STR_CR_RESISTANCE_KILLMSG">
+            <Original>An allied resistance fighter named %1 was killed!</Original>
+            <German>Ein verbündeter Widerstandskämpfer mit Namen %1 wurde getötet!</German>
+            <Spanish>Un aliado de la resistencia llamado %1 ha sido asesinado!</Spanish>
+            <Russian>Союзный боец сопротивления %1 был убит!</Russian>
+            <Italian>Un'alleato della resistenza di nome %1 è stato ucciso!</Italian>
+            <Chinesesimp>一位名叫%1的友军抵抗军战士阵亡了！</Chinesesimp>
+            <Chinese>一名叫做 %1 的友軍抵抗軍戰士陣亡了！</Chinese>
+            <Portuguese>Um aliado das forças de resistência de nome %1 foi morto!</Portuguese>
+            <Korean>% 라고 하는 아군에 협조한 민병대가 전사하였다.</Korean>
+            <Czech>Spojenecký bojovník domobrany %1 byl zabit!</Czech>
+        </Key>
+        <Key ID="STR_CR_ACE_ACTION">
+            <Original>Treat the civilian (field dressing)</Original>
+            <German>Zivilisten versorgen (einfache Bandage)</German>
+            <Spanish>Asistir al civil (curar)</Spanish>
+            <Russian>Перевязать гражданского (полевая перевязка)</Russian>
+            <Italian>Soccorso Civili</Italian>
+            <Chinesesimp>治疗平民（战地绷带）</Chinesesimp>
+            <Chinese>治療平民（基礎繃帶）</Chinese>
+            <Portuguese>Preste socorro ao civil (curativo)</Portuguese>
+            <Korean>민간인 치료</Korean>
+            <Czech>Ošetřit civilistu(pomocí bandáže)</Czech>
+        </Key>
+        <Key ID="STR_CR_ACE_ACTION_FAIL">
+            <Original>You need a field dressing.</Original>
+            <German>Du brauchst eine einfache Bandage.</German>
+            <Spanish>Necesitas vendas.</Spanish>
+            <Russian>Вам необходима полевая перевязка.</Russian>
+            <Italian>Hai bisogno di un bendaggio semplice.</Italian>
+            <Chinesesimp>你需要一个战地绷带。</Chinesesimp>
+            <Chinese>你需要一個基礎繃帶。</Chinese>
+            <Portuguese>Você precisa de curativo.</Portuguese>
+            <Korean>붕대가 필요하다.</Korean>
+            <Czech>Potřebuješ ošetřit.</Czech>
+        </Key>
+        <Key ID="STR_CR_KILLMSG">
+            <Original>A civilian named %1 was killed!</Original>
+            <German>Ein Zivilist mit Namen %1 wurde getötet!</German>
+            <Spanish>Un civil llamado %1 fue asesinado!</Spanish>
+            <Russian>Гражданский %1 был убит!</Russian>
+            <Italian>Un civile di nome %1 è stato ucciso!</Italian>
+            <Chinesesimp>一个名叫%1的平民被击杀了！</Chinesesimp>
+            <Chinese>一個名叫 %1 的平民被擊殺了！</Chinese>
+            <Turkish>%1 ismindeki sivil öldürüldü!</Turkish>
+            <Portuguese>Um civil de nome %1 foi morto!</Portuguese>
+            <Korean>민간인 %가 사망하였다!</Korean>
+            <Czech>Civilista jménem %1 byl zabit jednotkami BLUFOR!</Czech>
+        </Key>
+        <Key ID="STR_CR_VEHICLEMSG">
+            <Original>A civilian's vehicle was seized!</Original>
+            <German>Ein Zivilfahrzeug wurde beschlagnahmt!</German>
+            <Spanish>Un vehículo civil fue tomado!</Spanish>
+            <Russian>Транспорт гражданского был захвачен!</Russian>
+            <Italian>Un veicolo civile è stato confiscato!</Italian>
+            <Chinesesimp>一辆平民载具被强征了！</Chinesesimp>
+            <Chinese>一輛平民載具備強徵了！</Chinese>
+            <Turkish>Bir sivil aracı ele geçirildi!</Turkish>
+            <Portuguese>Um veículo de civil foi tomado!</Portuguese>
+            <Korean>민간인의 차량이 탈취되었다!</Korean>
+            <Czech>Civilní vozidlo bylo zajato jednotkami BLUFOR!</Czech>
+        </Key>
+        <Key ID="STR_CR_BUILDINGMSG">
+            <Original>Civilians are complaining about %1 lost buildings.</Original>
+            <German>Die Zivilisten beklagen sich über %1 verlorene Gebäude.</German>
+            <Spanish>Los civiles se quejan por %1 edificios destruidos.</Spanish>
+            <Russian>Гражданские жалуются из-за %1 разрушенных зданий.</Russian>
+            <Italian>Civili si lamentano della perdita di %1 edifici.</Italian>
+            <Chinesesimp>平民们对%1建筑的损坏有所怨言。</Chinesesimp>
+            <Chinese>平民們對 %1 的建築物戰損有所怨言。</Chinese>
+            <Turkish>Siviller %1 kadar yıkılan binaları hakkında konuşuyorlar.</Turkish>
+            <Portuguese>Civis estão reclamando sobre %1 construções destruídas</Portuguese>
+            <Korean>민간인들이 %1 건물이 파괴된 것에 대해 불평하고 있다. </Korean>
+            <Czech>Civilisté si stěžují na %1 zničené budovy.</Czech>
+        </Key>
+        <Key ID="STR_CR_HEALMSG">
+            <Original>Civilian named %1 is thankful for your help.</Original>
+            <German>Der Zivilist %1 ist dankbar für die Hilfe.</German>
+            <Spanish>El civil %1 se siente agradecido por tu ayuda.</Spanish>
+            <Russian>Гражданский %1 благодарен за вашу помощь.</Russian>
+            <Italian>Il civile di nome %1 ti ringrazia per l'aiuto.</Italian>
+            <Portuguese>Um civil chamado %1 agradeceu sua ajuda.</Portuguese>
+            <Chinese>平民 %1 感謝你的幫助。</Chinese>
+            <Korean>시민 %1 가 도와줘서 고맙다고 인사한다. </Korean>
+            <Czech>Civilista jménem %1 ti děkuje za pomoc.</Czech>
+        </Key>
     </Package>
 
 
