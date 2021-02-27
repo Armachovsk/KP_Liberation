@@ -42,10 +42,6 @@ if (isServer) then {
 
                 // Killed by BLUFOR
                 if (side _killer == KPLIB_preset_sideF) then {
-                    // if (KP_liberation_asymmetric_debug > 0) then {[format ["Guerilla unit killed by: %1", name _killer], "ASYMMETRIC"] call KPLIB_fnc_log;};
-                    // [3, [(name _unit)]] remoteExec ["KPLIB_fnc_crGlobalMsg"];
-                    // stats_resistance_teamkills = stats_resistance_teamkills + 1;
-                    // [KP_liberation_cr_resistance_penalty, true] spawn F_cr_changeCR;
                     ["SPEC_resistance_friendlyUnitKilled", [_unit, _killer]] call CBA_fnc_globalEvent;
                 };
             };
@@ -55,9 +51,6 @@ if (isServer) then {
         if (side (group _unit) == KPLIB_preset_sideC) then {
             // Killed by BLUFOR
             if (side _killer == KPLIB_preset_sideF) then {
-                // if (KP_liberation_civrep_debug > 0) then {[format ["Civilian killed by: %1", name _killer], "CIVREP"] call KPLIB_fnc_log;};
-                // [2, [(name _unit)]] remoteExec ["KPLIB_fnc_crGlobalMsg"];
-                // [KP_liberation_cr_kill_penalty, true] spawn F_cr_changeCR;
                 ["SPEC_resistance_civUnitKilled", [_unit, _killer]] call CBA_fnc_globalEvent;
             };
         };

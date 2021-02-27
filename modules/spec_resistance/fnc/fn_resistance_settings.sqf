@@ -48,4 +48,38 @@
     {}
 ] call CBA_Settings_fnc_init;
 
+[
+    "SPEC_param_resistanceSectorChance",
+    "SLIDER",
+    [localize "STR_SPEC_SETTINGS_RESISTANCE_RESISTSECCHANCE", localize "STR_SPEC_SETTINGS_RESISTANCE_RESISTSECCHANCE_TT"],
+    localize "STR_SPEC_SETTINGS_RESISTANCE",
+    [0, 100, 35, 0],
+    1,
+    {}
+] call CBA_Settings_fnc_init;
+
+[
+    "SPEC_param_civilianActivity",
+    "LIST",
+    [localize "STR_SPEC_PARAMS_CIVILIANS", localize "STR_SPEC_PARAMS_CIVILIANS_TT"],
+    localize "STR_SPEC_SETTINGS_RESISTANCE",
+    [
+        [
+            0,
+            0.5,
+            1,
+            2
+        ],
+        [
+            localize "STR_SPEC_PARAMS_CIVILIANS1",
+            localize "STR_SPEC_PARAMS_CIVILIANS2",
+            localize "STR_SPEC_PARAMS_CIVILIANS3",
+            localize "STR_SPEC_PARAMS_CIVILIANS4"
+        ],
+        2
+    ],
+    1,
+    {}
+] call CBA_Settings_fnc_init;
+
 true

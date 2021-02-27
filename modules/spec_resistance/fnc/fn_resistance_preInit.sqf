@@ -51,6 +51,12 @@ if (isServer) then {
     ["SPEC_resistance_civVehicleKilled", {[_this select 0] call SPEC_fnc_resistance_handleCivKill;}] call CBA_fnc_addEventHandler;
     ["SPEC_resistance_friendlyUnitKilled", {[_this select 0] call SPEC_fnc_resistance_handleCivKill;}] call CBA_fnc_addEventHandler;
     ["SPEC_resistance_unitKilled", {[_this select 0] call SPEC_fnc_resistance_handleResistanceKill;}] call CBA_fnc_addEventHandler;
+
+    ["KPLIB_sector_activated", {[_this select 0] call SPEC_fnc_resistance_handleSector;}] call CBA_fnc_addEventHandler;
+
+    ["SPEC_resistance_spawnGuerilla", {[_this select 0] call SPEC_fnc_resistance_handleGuerilla;}] call CBA_fnc_addEventHandler;
+    ["SPEC_resistance_spawnCiv", {[_this select 0] call SPEC_fnc_resistance_handleCiv;}] call CBA_fnc_addEventHandler;
+    ["SPEC_resistance_spawnIED", {[_this select 0] call SPEC_fnc_resistance_handleIED;}] call CBA_fnc_addEventHandler;
 };
 
 // HC section

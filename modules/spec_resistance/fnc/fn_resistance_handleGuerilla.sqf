@@ -1,0 +1,5 @@
+params [
+    ["_sector", "", [""]]
+];
+
+true

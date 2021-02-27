@@ -48,4 +48,18 @@ class resistance {
     class resistance_handleResistanceKill {};
 
     class resistance_civRepGlobalMsg {};
+
+    class resistance_handleSector {};
+
+    class resistance_handleGuerilla {};
+
+    class resistance_handleCiv {};
+
+    class resistance_handleIED {};
+
+    class resistance_spawnCiv {};
+
+    class resistance_addCivWaypoints {};
+
+    class resistance_spawnGuerillaGroup {};
 };

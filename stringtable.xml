@@ -2059,8 +2059,11 @@
             <English>Randomization range for intel gain through interrogation. E.g. a value of 5 will grant you 5 - 15 intel for a base value of 10.</English>
             <German>Zufallsbereich für den Informationszuwachs bei einem Verhör. Mit einem Wert von 5 liegt der effektive Zuwachs, bei einem Ausgangswert von 10, zwischen 5 und 15.</German>
         </Key>
+    </Package>
+
+    <Package name="Resistance">
         <Key ID="STR_SPEC_SETTINGS_RESISTANCE">
-            <English>SPEC - Resistance</English>
+            <English>KPLIB - Resistance</English>
         </Key>
         <Key ID="STR_SPEC_SETTINGS_RESISTANCE_TIER2">
             <English>Resistance Tier 2 cap</English>
@@ -2071,8 +2074,77 @@
         <Key ID="STR_SPEC_SETTINGS_RESISTANCE_CIVPENALTY">
             <English>Civillian kill penalty</English>
         </Key>
+        <Key ID="STR_SPEC_PARAMS_CIVILIANS">
+            <Original>Civilian activity</Original>
+            <French>Activité civile</French>
+            <German>Zivile Aktivität</German>
+            <Spanish>Actividad civil</Spanish>
+            <Russian>Гражданская активность</Russian>
+            <Italian>Attività dei civili</Italian>
+            <Chinesesimp>平民存在感</Chinesesimp>
+            <Chinese>平民活動程度</Chinese>
+            <Turkish>Sivil aktivitesi</Turkish>
+            <Portuguese>Atividade Civil</Portuguese>
+            <Korean>민간인 활동 정도</Korean>
+            <Czech>Aktivita civilistů</Czech>
+        </Key>
+        <Key ID="STR_SPEC_PARAMS_CIVILIANS1">
+            <Original>None</Original>
+            <French>Aucune</French>
+            <German>Keine</German>
+            <Spanish>Ninguna</Spanish>
+            <Russian>Нету</Russian>
+            <Italian>Nessuna</Italian>
+            <Chinesesimp>无</Chinesesimp>
+            <Chinese>無(關閉平民活動)</Chinese>
+            <Turkish>Hiç</Turkish>
+            <Portuguese>Nenhuma</Portuguese>
+            <Korean>없음</Korean>
+            <Czech>Žádná</Czech>
+        </Key>
+        <Key ID="STR_SPEC_PARAMS_CIVILIANS2">
+            <Original>Reduced</Original>
+            <French>Réduite</French>
+            <German>Reduziert</German>
+            <Spanish>Reducida</Spanish>
+            <Russian>Снижена</Russian>
+            <Italian>Ridotta</Italian>
+            <Chinesesimp>较少</Chinesesimp>
+            <Chinese>較少</Chinese>
+            <Turkish>Düşük</Turkish>
+            <Portuguese>Reduzida</Portuguese>
+            <Korean>작음</Korean>
+            <Czech>Snížená</Czech>
+        </Key>
+        <Key ID="STR_SPEC_PARAMS_CIVILIANS3">
+            <Original>Normal</Original>
+            <French>Normale</French>
+            <German>Normal</German>
+            <Spanish>Normal</Spanish>
+            <Russian>Нормальная</Russian>
+            <Italian>Normale</Italian>
+            <Chinesesimp>正常</Chinesesimp>
+            <Chinese>正常</Chinese>
+            <Turkish>Normal</Turkish>
+            <Portuguese>Normal</Portuguese>
+            <Korean>보통</Korean>
+            <Czech>Normální</Czech>
+        </Key>
+        <Key ID="STR_SPEC_PARAMS_CIVILIANS4">
+            <Original>Increased</Original>
+            <French>Augmentée</French>
+            <German>Erhöht</German>
+            <Spanish>Aumentada</Spanish>
+            <Russian>Увеличенная</Russian>
+            <Italian>Aumentata</Italian>
+            <Chinesesimp>较多</Chinesesimp>
+            <Chinese>較多</Chinese>
+            <Turkish>Arttırılmış</Turkish>
+            <Portuguese>Aumentada</Portuguese>
+            <Korean>많음</Korean>
+            <Czech>Zvýšená</Czech>
+        </Key>
     </Package>
-
 
     <!-- UNITS -->
 
