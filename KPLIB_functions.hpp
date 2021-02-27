@@ -37,6 +37,7 @@ class KPLIB {
 class SPEC {
     #include "modules\spec_core\functions.hpp"
     #include "modules\spec_resistance\functions.hpp"
+    #include "modules\spec_first_supply\functions.hpp"
     #include "modules\spec_arsenal\functions.hpp"
     #include "modules\spec_other_missions\functions.hpp"
 }
