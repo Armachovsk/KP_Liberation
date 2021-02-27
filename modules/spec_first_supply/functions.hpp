@@ -32,4 +32,6 @@ class first_supply {
 
     // CBA Settings for this module
     class first_supply_settings {};
+
+    class first_supply_handleSend {};
 };
