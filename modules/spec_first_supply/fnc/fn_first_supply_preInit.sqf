@@ -47,16 +47,17 @@ if (isServer) then {
         if (_pos isEqualTo KPLIB_zeroPos) then{
             _pos = getPos _object;
         };
-        if ((typeOf _object) isEqualTo KPLIB_preset_fobBoxF && KPLIB_sectors_fobs isEqualTo []) then {
-            [
-                "KPLIB_build_item_built",
-                {
-                    private _pos = _thisArgs select 0;
+        [
+            "KPLIB_build_item_built",
+            {
+                private _object = _thisArgs select 0;
+                private _pos = _thisArgs select 1;
+                if ((typeOf _object) isEqualTo KPLIB_preset_fobBoxF && KPLIB_sectors_fobs isEqualTo []) then {
                     ["SPEC_fob_build_sendSupplies", [_pos]] call CBA_fnc_globalEvent;
-                },
-                [_pos]
-            ] call CBA_fnc_addEventHandlerArgs;
-        };
+                };
+            },
+            [_object, _pos]
+        ] call CBA_fnc_addEventHandlerArgs;
     }] call CBA_fnc_addEventHandler;
 };
 
