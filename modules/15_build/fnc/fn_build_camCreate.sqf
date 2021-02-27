@@ -32,7 +32,7 @@ _camera camCommand "minPitch -89";
 // Same speed no matter the height
 _camera camCommand "surfaceSpeed off";
 // Do not track terrain
-_camera camCommand "atl off";
+_camera camCommand "atl on";
 
 _camera camCommand format ["speedDefault %1", 1];
 _camera camCommand format ["speedMax %1", 1.5];
