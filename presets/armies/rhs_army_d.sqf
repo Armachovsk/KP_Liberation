@@ -29,7 +29,7 @@ params [
 ------------------------------------------------------------*/
 
 // Name of the used/created army in this preset
-KPLIB_PRST_SETVAR("name", "NATO");
+KPLIB_PRST_SETVAR("name", "Army D");
 
 // Military alphabet
 KPLIB_PRST_CAT_BEGIN("alphabet");

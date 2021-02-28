@@ -19,7 +19,7 @@
 */
 
 // Name of this preset
-KPLIB_PRST_SETVAR("nameR", "FIA");
+KPLIB_PRST_SETVAR("nameR", "Takistan Militia");
 
 /*------------------------------------------------------------
     --- RESISTANCE UNIT AND VEHICLE CLASSNAMES ---
@@ -28,24 +28,36 @@ KPLIB_PRST_SETVAR("nameR", "FIA");
 
 // Infantry units (KPLIB_preset_unitsPlR)
 KPLIB_PRST_CAT_BEGIN("unitsPlR");
-KPLIB_PRST_CAT_ADD("unitsPlR", "I_G_Soldier_AR_F");
-KPLIB_PRST_CAT_ADD("unitsPlR", "I_G_engineer_F");
-KPLIB_PRST_CAT_ADD("unitsPlR", "I_G_officer_F");
-KPLIB_PRST_CAT_ADD("unitsPlR", "I_G_medic_F");
-KPLIB_PRST_CAT_ADD("unitsPlR", "I_G_Soldier_F");
-KPLIB_PRST_CAT_ADD("unitsPlR", "I_G_Soldier_LAT_F");
-KPLIB_PRST_CAT_ADD("unitsPlR", "I_G_Soldier_M_F");
-KPLIB_PRST_CAT_ADD("unitsPlR", "I_G_Soldier_SL_F");
+KPLIB_PRST_CAT_ADD("unitsPlR", "SpecLib_i_tk_gue_autorifleman");
+KPLIB_PRST_CAT_ADD("unitsPlR", "SpecLib_i_tk_gue_machinegunner");
+KPLIB_PRST_CAT_ADD("unitsPlR", "SpecLib_i_tk_gue_soldier_sniper");
+KPLIB_PRST_CAT_ADD("unitsPlR", "SpecLib_i_tk_gue_soldier_rpg7_ammo");
+KPLIB_PRST_CAT_ADD("unitsPlR", "SpecLib_i_tk_gue_commander");
+KPLIB_PRST_CAT_ADD("unitsPlR", "SpecLib_i_tk_gue_bomber");
+KPLIB_PRST_CAT_ADD("unitsPlR", "SpecLib_i_tk_gue_enfield");
+KPLIB_PRST_CAT_ADD("unitsPlR", "SpecLib_i_tk_gue_soldier_l1a1");
+KPLIB_PRST_CAT_ADD("unitsPlR", "SpecLib_i_tk_gue_soldier_lat");
+KPLIB_PRST_CAT_ADD("unitsPlR", "SpecLib_i_tk_gue_soldier_akms");
+KPLIB_PRST_CAT_ADD("unitsPlR", "SpecLib_i_tk_gue_soldier_akm");
+KPLIB_PRST_CAT_ADD("unitsPlR", "SpecLib_i_tk_gue_soldier_dragon");
+KPLIB_PRST_CAT_ADD("unitsPlR", "SpecLib_i_tk_gue_soldier_aa");
+KPLIB_PRST_CAT_ADD("unitsPlR", "SpecLib_i_tk_gue_mechanic");
+KPLIB_PRST_CAT_ADD("unitsPlR", "SpecLib_i_tk_gue_medic");
+KPLIB_PRST_CAT_ADD("unitsPlR", "SpecLib_i_tk_gue_soldier_tl");
+KPLIB_PRST_CAT_ADD("unitsPlR", "SpecLib_i_tk_gue_soldier_rpg7");
 
 // Armed vehicles (KPLIB_preset_vehLightArmedPlR)
 KPLIB_PRST_CAT_BEGIN("vehLightArmedPlR");
-KPLIB_PRST_CAT_ADD("vehLightArmedPlR", "I_G_Offroad_01_armed_F");
-KPLIB_PRST_CAT_ADD("vehLightArmedPlR", "I_G_Offroad_01_AT_F");
+KPLIB_PRST_CAT_ADD("vehLightArmedPlR", "SpecLib_I_TAKI_TOYOTA_LC_HZJ79_KPVT");
+KPLIB_PRST_CAT_ADD("vehLightArmedPlR", "SpecLib_Taki_Gue_uaz_dshkm");
 
 // Transport vehicles (KPLIB_preset_vehTransPlR)
 KPLIB_PRST_CAT_BEGIN("vehTransPlR");
-KPLIB_PRST_CAT_ADD("vehTransPlR", "I_G_Van_01_transport_F");
-KPLIB_PRST_CAT_ADD("vehTransPlR", "I_G_Van_02_transport_F");
+KPLIB_PRST_CAT_ADD("vehTransPlR", "SpecLib_I_TAKI_TOYOTA_LC_HZJ79");
+KPLIB_PRST_CAT_ADD("vehTransPlR", "SpecLib_Taki_Gue_uaz");
+KPLIB_PRST_CAT_ADD("vehTransPlR", "SpecLib_Taki_Gue_uaz_open");
+KPLIB_PRST_CAT_ADD("vehTransPlR", "SpecLib_Taki_Gue_ural");
+KPLIB_PRST_CAT_ADD("vehTransPlR", "SpecLib_Taki_Gue_ural_open");
 
 
 /*------------------------------------------------------------
