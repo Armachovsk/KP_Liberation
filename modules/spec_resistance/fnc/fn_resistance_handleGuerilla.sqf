@@ -46,7 +46,7 @@ if (_incDir < 23) then {
 private _spawnedGroups = [];
 private _grp = [_startpos] call SPEC_fnc_resistance_spawnGuerillaGroup;
 
-[{(count (waypoints (_this select 0))) != 0}, {deleteWaypoint ((waypoints (_this select 0)) select 0);}, [_grp]] call CBA_fnc_waitUntilAndExecute;
+while {(count (waypoints _grp)) != 0} do {deleteWaypoint ((waypoints _grp) select 0);};
 {_x doFollow (leader _grp)} forEach (units _grp);
 
 private _waypoint = _grp addWaypoint [markerpos _sector, 100];
@@ -70,7 +70,37 @@ _waypoint setWaypointType "CYCLE";
 
 _spawnedGroups pushBack _grp;
 
-// TODO: spawn vehicles
+if (((random 100) <= 25) && !(KPLIB_preset_vehLightArmedPlR isEqualTo [])) then {
+    private _vehicle = (selectRandom KPLIB_preset_vehLightArmedPlR) createVehicle _startpos;
+
+    // TODO: what purpose?
+    // [_vehicle] call KPLIB_fnc_allowCrewInImmobile;
+
+    private _grp = [_startpos, 2] call SPEC_fnc_resistance_spawnGuerillaGroup;
+    ((units _grp) select 0) moveInDriver _vehicle;
+    ((units _grp) select 1) moveInGunner _vehicle;
+
+    _waypoint = _grp addWaypoint [markerpos _sector, 100];
+    _waypoint setWaypointType "MOVE";
+    _waypoint setWaypointSpeed "LIMITED";
+    _waypoint setWaypointBehaviour "AWARE";
+    _waypoint setWaypointCombatMode "YELLOW";
+    _waypoint setWaypointCompletionRadius 30;
+    _waypoint = _grp addWaypoint [markerpos _sector, 300];
+    _waypoint setWaypointSpeed "LIMITED";
+    _waypoint setWaypointType "SAD";
+    _waypoint = _grp addWaypoint [markerpos _sector, 300];
+    _waypoint setWaypointSpeed "LIMITED";
+    _waypoint setWaypointType "SAD";
+    _waypoint = _grp addWaypoint [markerpos _sector, 300];
+    _waypoint setWaypointSpeed "LIMITED";
+    _waypoint setWaypointType "SAD";
+    _waypoint = _grp addWaypoint [markerpos _sector, 300];
+    _waypoint setWaypointSpeed "LIMITED";
+    _waypoint setWaypointType "CYCLE";
+
+    _spawnedGroups pushBack _grp;
+};
 
 ["KPLIB_sector_deactivated", {
     private _strengthChanged = false;

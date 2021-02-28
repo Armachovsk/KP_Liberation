@@ -22,12 +22,12 @@ params [
 ];
 
 switch (_msgType) do {
-    case 0: {systemChat localize "STR_CR_VEHICLEMSG";};
-    case 1: {systemChat (format [localize "STR_CR_BUILDINGMSG", (_data select 0)]);};
-    case 2: {systemChat (format [localize "STR_CR_KILLMSG", (_data select 0)]);};
-    case 3: {systemChat (format [localize "STR_CR_RESISTANCE_KILLMSG", (_data select 0)]);};
-    case 4: {systemChat (format [localize "STR_CR_HEALMSG", (_data select 0)]);};
-    case 5: {["lib_asymm_guerilla_incoming", _data] call BIS_fnc_showNotification;};
+    case 0: {localize "STR_CR_VEHICLEMSG" call CBA_fnc_notify;};
+    case 1: {(format [localize "STR_CR_BUILDINGMSG", (_data select 0)]) call CBA_fnc_notify;};
+    case 2: {(format [localize "STR_CR_KILLMSG", (_data select 0)]) call CBA_fnc_notify;};
+    case 3: {(format [localize "STR_CR_RESISTANCE_KILLMSG", (_data select 0)]) call CBA_fnc_notify;};
+    case 4: {(format [localize "STR_CR_HEALMSG", (_data select 0)]) call CBA_fnc_notify;};
+    case 5: {(format ["Sector: %1, Incoming from: %2", (_data select 0), (_data select 1)]) call CBA_fnc_notify;};
     default {[format ["globalMsg without valid msgType - %1", _msgType], "RESISTANCE"] remoteExecCall ["KPLIB_fnc_common_log", 2];};
 };
 
