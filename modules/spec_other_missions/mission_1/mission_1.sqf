@@ -32,4 +32,4 @@ waitUntil{
 ["Task_01","SUCCEEDED"] call BIS_fnc_taskSetState;
 deleteMarker _marker1;
 sleep 10;
-["Task_01"] call BIS_fnc_deleteTask;S
+["Task_01"] call BIS_fnc_deleteTask;
