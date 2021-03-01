@@ -49,7 +49,7 @@ switch (KPLIB_param_presetE) do {
 switch (KPLIB_param_presetR) do {
     case 0: {[] call compile preprocessFileLineNumbers "presets\resistance\custom.sqf";};
     case 1: {[] call compile preprocessFileLineNumbers "presets\resistance\fia.sqf";};
-    case 2: {[] call compile preprocessFileLineNumbers "presets\resistance\takistan_civilian.sqf";};
+    case 2: {[] call compile preprocessFileLineNumbers "presets\resistance\takistan_militia.sqf";};
     default {[] call compile preprocessFileLineNumbers "presets\resistance\custom.sqf";};
 };
 
@@ -57,7 +57,7 @@ switch (KPLIB_param_presetR) do {
 switch (KPLIB_param_presetC) do {
     case 0: {[] call compile preprocessFileLineNumbers "presets\civilians\custom.sqf";};
     case 1: {[] call compile preprocessFileLineNumbers "presets\civilians\vanilla.sqf";};
-    case 2: {[] call compile preprocessFileLineNumbers "presets\civilians\takistan_militia.sqf";};
+    case 2: {[] call compile preprocessFileLineNumbers "presets\civilians\takistan_civilian.sqf";};
     default {[] call compile preprocessFileLineNumbers "presets\civilians\custom.sqf";};
 };
 
