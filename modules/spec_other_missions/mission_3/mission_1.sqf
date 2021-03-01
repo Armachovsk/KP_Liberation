@@ -1,15 +1,30 @@
 
-private _nearbyLocations = nearestLocations [[0,0,0], ["NameVillage", "Name", "NameCity", "NameCityCapital"], 50000];
-private _randomLoacation = getPos selectRandom _nearbyLocations;
-private _find_pos = [_randomLoacation, 500, 1000, 50, 0, 0.8, 0] call BIS_fnc_findSafePos;
+//exeple
+// [pos_mission,heli_classname,second_mission,side_pilot,pilot_classname,pos_base_to_delivery] execVM "${somepath\file.sqf}";
+
+	// 	pos_mission - aryy coordinate mission
+	// 	heli_classname - class name of heli need to find
+	// 	second_mission - arry coordinate next mission
+	// 	side_pilot - side pilot who need to recwest
+	//	pilot_classname - classname pilots who need to recwest
+	//  pos_base_to_delivery - arry coordinate base need to go pilots
+
+// done example
+// [[200,200,0],"RHS_AH64D",[300,300,0],EAST,"rhsusf_army_ocp_ah64_pilot",[1000,1000,0]] execVM "modules\spec_other_missions\mission_3\mission_1.sqf";
+
+//param
+params ["_pos_mission", "_heli_classname", "_second_mission","_side_pilot", "_pilot_classname", "_pos_base_to_delivery"];
 
 //heli
-private _heli_down = "RHS_AH64D" createVehicle _find_pos;
+private _heli_down = _heli_classname createVehicle _pos_mission;
 _heli_down setDamage 0.5;
 _heli_down setVehicleAmmo 0;
 _heli_down setFuel 0;
+_heli_down enableSimulationGlobal false;
 private _voronka1 = "CraterLong" createVehicle (getPos _heli_down);
 _voronka1 setPos(getPos _heli_down);
+
+
 //marker
 private _Marker3 = createMarker ["Marker3", _heli_down getPos [random 300, random 360]];
 "Marker3" setMarkerShape "ELLIPSE";
@@ -39,25 +54,22 @@ sleep 5;
 ["Task_03","SUCCEEDED"] call BIS_fnc_taskSetState;
 deleteMarker _Marker3;
 deleteVehicle _smoke1;
-//select location fom Pilot
-private _nearbyLocations_1 = nearestLocations [_randomLoacation, ["NameVillage", "Name", "NameCity", "NameCityCapital"], 5000];
-private _randomLoacation_1 = getPos selectRandom _nearbyLocations_1;
-private _nearestRoad_1 = [_randomLoacation_1, 500] call BIS_fnc_nearestRoad;
+
 //move mision
-["Task_03_1", getPos _nearestRoad_1] call BIS_fnc_taskSetDestination;
-//create pilit adn grup pilit
-private _group_pilot = createGroup [east, true];
-_pilot1 = _group_pilot createUnit ["rhs_pilot_combat_heli", getPos _nearestRoad_1, [], 0, "FORM"];
-_pilot2 = _group_pilot createUnit ["rhs_pilot_combat_heli", getPos _nearestRoad_1, [], 0, "FORM"];
+["Task_03_1",_second_mission] call BIS_fnc_taskSetDestination;
+//create pilot adn grup pilit
+private _group_pilot = createGroup [_side_pilot, true];
+_pilot1 = _group_pilot createUnit [_pilot_classname, _second_mission, [], 0, "FORM"];
+_pilot2 = _group_pilot createUnit [_pilot_classname, _second_mission, [], 0, "FORM"];
 [_pilot1, true] call ACE_captives_fnc_setHandcuffed;
 [_pilot2, true] call ACE_captives_fnc_setHandcuffed;
 //bot
-private _find_pos_bot_1 = getPos _nearestRoad_1;
-[_find_pos_bot_1,20,false,true,[50,100,150],2000] call SPEC_fnc_other_missions_zoneGref;
+private _find_pos_bot_1 = _second_mission;
+[_find_pos_bot_1,20,false,true,[100,150,300],2000] call SPEC_fnc_other_missions_zoneGref;
 //wait pilot delivery on base or hes die
 waitUntil{
 	sleep 10;
-	((getPos _pilot1) inArea [pos_base, 100, 100, 0, false] or !alive _pilot1) && ((getPos _pilot2) inArea [getMarkerpos "Base", 100, 100, 0, false] or !alive _pilot2)
+	((getPos _pilot1) inArea [_pos_base_to_delivery, 100, 100, 0, false] or !alive _pilot1) && ((getPos _pilot2) inArea [getMarkerpos "Base", 100, 100, 0, false] or !alive _pilot2)
  };
 //set task state
 if(alive _pilot1 and alive _pilot2)then{

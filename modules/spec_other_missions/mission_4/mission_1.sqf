@@ -1,11 +1,58 @@
-//serch location
-private _nearbyLocations = nearestLocations [getmarkerPos "Mission_marker", ["NameVillage", "Name", "NameCity", "NameCityCapital"], 50000];
-private _randomLoacation = getPos selectRandom _nearbyLocations;
-find_pos = [_randomLoacation, 500, 1500, 30, 0, 0.8, 0] call BIS_fnc_findSafePos;
+
+//exeple
+// [pos_mission,drone_classname,classnave_vehicle_bot_attack_btr,classnave_vehicle_bot_attack_heli,side_bot_to_attack,arry_bot_tp_attac] execVM "${somepath\file.sqf}";
+
+	// 	pos_mission - aryy coordinate mission
+	// 	drone_classname - class name of drone need to find
+	// 	classnave_vehicle_bot_attack_btr - arry coordinate next mission
+	// 	classnave_vehicle_bot_attack_heli - side pilot who need to recwest
+	//	side_bot_to_attack - classname pilots who need to recwest
+	//  arry_bot_to_attac - arry coordinate base need to go pilots
+
+// done example
+/*
+[[200,200,0],
+"O_UAV_02_dynamicLoadout_F",
+"CPC_ME_O_KAM_BTR70",
+"CPC_ME_O_KAM_Mi24D_Early",
+EAST,
+["CPC_ME_O_KAM_soldier_AT",
+"CPC_ME_O_KAM_soldier_AT",
+"CPC_ME_O_KAM_soldier_AT",
+"CPC_ME_O_KAM_soldier_AT",
+"CPC_ME_O_KAM_soldier_AA",
+"CPC_ME_O_KAM_soldier_MG",
+"CPC_ME_O_KAM_soldier_AR",
+"CPC_ME_O_KAM_soldier_Medic",
+"CPC_ME_O_KAM_soldier_M",
+"CPC_ME_O_KAM_soldier_MNSPU",
+"CPC_ME_O_KAM_soldier_l1a1",
+"CPC_ME_O_KAM_soldier_GL",
+"CPC_ME_O_KAM_soldier_NSPU",
+"CPC_ME_O_KAM_soldier_LAT",
+"CPC_ME_O_KAM_soldier",
+"CPC_ME_O_KAM_soldier_AA",
+"CPC_ME_O_KAM_soldier_AA",
+"CPC_ME_O_KAM_soldier_AA"]] execVM "modules\spec_other_missions\mission_4\mission_1.sqf";
+
+*/
+
+//param
+
+params [
+	"_pos_mission", 
+	"_drone_classname", 
+	"_classnave_vehicle_bot_attack_btr",
+	"_classnave_vehicle_bot_attack_heli", 
+	"_side_bot_to_attack", 
+	"_arry_bot_to_attac"
+];
+
+
 // lock time
 private _Time_to_failed_mission = time;
 //heli
-dron_down = "O_UAV_02_dynamicLoadout_F" createVehicle find_pos;
+dron_down = "O_UAV_02_dynamicLoadout_F" createVehicle _pos_mission;
 dron_down setDamage 0.2;
 dron_down setVehicleAmmo 0;
 dron_down setFuel 0;
@@ -31,7 +78,7 @@ fnc_drone_add_cation={
 [[], {
 _action_dron = ["TestAction 2","<t color='#ff0000'>Download date</t>","",{
 					[10, [], {Hint "Начата загрузка данных";
-						[find_pos] execVM "Other_mission\Mission_4\download_date.sqf";
+						[find_pos] execVM "modules\spec_other_missions\mission_4\download_date.sqf";
 							[[], {[dron_down,0,["ACE_MainActions","TestAction 2"]] call ace_interact_menu_fnc_removeActionFromObject;}] remoteExec ["call"];
 					}, {hint "Подключение прервано"}, "Подключение..."] call ace_common_fnc_progressBar;
 				},{true}] call ace_interact_menu_fnc_createAction;
@@ -66,7 +113,7 @@ _wp_for_bot_go_tu_drone_btr setWaypointSpeed "FULL";
 private _wp_for_bot_go_tu_drone_heli = _heli_attac_drone select 2 addWaypoint [getPos dron_down, 0];
 _wp_for_bot_go_tu_drone_heli setWaypointType "GUARD";
 _wp_for_bot_go_tu_drone_heli setWaypointSpeed "FULL";
-//arry bot
+//cyrcl from create bot
 _bot_arry = [
 "CPC_ME_O_KAM_soldier_AT",
 "CPC_ME_O_KAM_soldier_AT",
@@ -87,7 +134,6 @@ _bot_arry = [
 "CPC_ME_O_KAM_soldier_AA",
 "CPC_ME_O_KAM_soldier_AA"
 ];
-//cyrcl from create bot
 for "_i" from 0 to 10 do 
 {
 sleep 1;
@@ -134,7 +180,6 @@ if(time > _Time_to_failed_mission + 1800)exitwith{
 };
 // if dron destroy
 if(!alive dron_down)exitwith{
-	dron_down enableSimulationGlobal true;
 	deleteMarker _Marker4;
 	deleteVehicle _smoke1;
 	["Task_04","FAILED"] call BIS_fnc_taskSetState;
@@ -144,7 +189,6 @@ if(!alive dron_down)exitwith{
 	["Task_04_1"] call BIS_fnc_deleteTask;
 };
 //continy mission
-dron_down enableSimulationGlobal true;
 deleteMarker _Marker4;
 ["Task_04","SUCCEEDED"] call BIS_fnc_taskSetState;
 ["Task_04_1","SUCCEEDED"] call BIS_fnc_taskSetState;
