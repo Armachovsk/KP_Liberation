@@ -3,8 +3,6 @@ params [
 ];
 
 switch (typeOf _vehicle) do {
-    case KPLIB_preset_addVehF: {
-    };
     case KPLIB_preset_respawnTruckF: {
         if ([_vehicle] call SPEC_fnc_core_isCBPS) then {
             // Set vehicle as mobile respawn
