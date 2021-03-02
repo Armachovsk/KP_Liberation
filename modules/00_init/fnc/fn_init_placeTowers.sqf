@@ -19,10 +19,15 @@
 */
 
 private _antenna = objNull;
+private _antennaClassname = "Land_Communication_F";
+
+if (!isNil "KPLIB_preset_towerMarkerF") then {
+    _antennaClassname = KPLIB_preset_towerMarkerF;
+};
 
 {
     // Create antenna and make sure it isn't aligned to terrain
-    _antenna = createVehicle ["Land_Communication_F", markerPos _x, [], 0, "CAN_COLLIDE"];
+    _antenna = createVehicle [_antennaClassname, markerPos _x, [], 0, "CAN_COLLIDE"];
     _antenna setpos (markerpos _x);
     _antenna setVectorUp [0,0,1];
 

@@ -98,6 +98,7 @@ KPLIB_PRST_SETVAR("storageLarge", "ContainmentArea_01_sand_F");
 // The small storage area for resources.
 KPLIB_PRST_SETVAR("storageSmall", "ContainmentArea_02_sand_F");
 
+KPLIB_PRST_SETVAR("towerMarker", "BMP2_HQ_TK_unfolded_Base_EP1");
 
 /*------------------------------------------------------------
     --- ADDITIONAL MECHANICS CLASSNAMES ---
