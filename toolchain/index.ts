@@ -1,4 +1,3 @@
+export * from "./mission_paths";
 
-export * from "./MissionPaths";
-
-export * from "./Config";
+export * from "./config";
