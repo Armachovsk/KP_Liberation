@@ -6,7 +6,7 @@ import * as vinylPaths from "vinyl-paths";
 import * as del from "del";
 
 import { resolve } from "path";
-import { readFileSync } from "fs";
+import { readFileSync, lstatSync } from "fs";
 
 import { MissionPaths } from "./toolchain";
 import { Preset, FolderStructureInfo } from "./toolchain";
@@ -22,8 +22,22 @@ if (err) {
  * Mission folders configuration
  */
 const paths: FolderStructureInfo = {
-    frameworkFolder: "./Missionbasefiles",
-    missionsFolder: "./Missionframework",
+    framework: [
+        "./res",
+        "./presets",
+        "./modules",
+        "./KPGUI",
+        "./KPLIB_config.sqf",
+        "./KPLIB_debriefs.hpp",
+        "./KPLIB_functions.hpp",
+        "./KPLIB_ui.hpp",
+        "LICENSE",
+        "README.md",
+        "stringtable.xml",
+        "description.ext",
+        "CHANGELOG.md",
+    ],
+    missionsFolder: "./Missionbasefiles",
     workDir: "./_build",
 };
 
@@ -46,7 +60,15 @@ for (let preset of presets) {
             /** Copy mission framework to output dir */
             function copyFramework() {
                 return gulp
-                    .src(mission.getFrameworkPath().concat("/**/*"))
+                    .src(
+                        mission.getFrameworkPath().map((v) => {
+                            if (lstatSync(v).isDirectory()) {
+                                return v.concat("/**/*");
+                            }
+                            return v;
+                        }),
+                        { base: "." }
+                    )
                     .pipe(gulp.dest(mission.getOutputDir()));
             },
 
@@ -147,7 +169,7 @@ gulp.task("zip", gulp.series(taskNamesZip));
 gulp.task("default", gulp.series(gulp.task("build"), gulp.task("pbo")));
 
 gulp.task("dev", () => {
-    const path = paths.frameworkFolder + "/**/*";
+    const path = paths.framework.map((v) => resolve(v));
     gulp.watch(path, { usePolling: true, ignoreInitial: false }).on(
         "change",
         gulp.series("build")
