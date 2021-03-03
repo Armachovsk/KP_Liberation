@@ -457,6 +457,7 @@ KPLIB_PRST_CAT_BEGIN("lockedVehPl");
 (KPLIB_PRST_GETVAR("lockedVehPl")) pushBack "rhsusf_m109d_usarmy";
 (KPLIB_PRST_GETVAR("lockedVehPl")) pushBack "rhsusf_M142_usarmy_D";
 (KPLIB_PRST_GETVAR("lockedVehPl")) pushBack "vtx_MH60M_DAP";
+(KPLIB_PRST_GETVAR("lockedVehPl")) pushBack "RHS_MELB_AH6M";
 (KPLIB_PRST_GETVAR("lockedVehPl")) pushBack "RHS_AH64D";
 (KPLIB_PRST_GETVAR("lockedVehPl")) pushBack "USAF_MQ9";
 (KPLIB_PRST_GETVAR("lockedVehPl")) pushBack "RHS_A10";
