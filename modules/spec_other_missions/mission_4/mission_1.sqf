@@ -76,22 +76,28 @@ _smoke1 setPos(getPos dron_down);
 //add action to dronOther_mission\Mission_4\download_date.sqf
 fnc_drone_add_cation={
 [[], {
-_action_dron = ["TestAction 2","<t color='#ff0000'>Download date</t>","",{
-					[10, [], {Hint "Начата загрузка данных";
-	[ 
+	_action_dron = ["TestAction 2","<t color='#ff0000'>Download date</t>","",{
+						[10, [], {Hint "Начата загрузка данных";
+		[] execVM "modules\spec_other_missions\mission_4\download_date.sqf";
+								[[], {[dron_down,0,["ACE_MainActions","TestAction 2"]] call ace_interact_menu_fnc_removeActionFromObject;}] remoteExec ["call"];
+						}, {hint "Подключение прервано"}, "Подключение..."] call ace_common_fnc_progressBar;
+					},{true}] call ace_interact_menu_fnc_createAction;
+	[dron_down, 0, ["ACE_MainActions"], _action_dron] call ace_interact_menu_fnc_addActionToObject;
+	}] remoteExec ["call"];
+};
+[] call fnc_drone_add_cation;
+publicVariable "fnc_drone_add_cation";
+
+//spawn bot
+attack_bot_mission_4_true = false;
+publicVariable "attack_bot_mission_4_true";
+[
 	_classnave_vehicle_bot_attack_btr,
 	_classnave_vehicle_bot_attack_heli, 
 	_side_bot_to_attack, 
 	_arry_bot_to_attac
-	] execVM "modules\spec_other_missions\mission_4\download_date.sqf";
-							[[], {[dron_down,0,["ACE_MainActions","TestAction 2"]] call ace_interact_menu_fnc_removeActionFromObject;}] remoteExec ["call"];
-					}, {hint "Подключение прервано"}, "Подключение..."] call ace_common_fnc_progressBar;
-				},{true}] call ace_interact_menu_fnc_createAction;
-[dron_down, 0, ["ACE_MainActions"], _action_dron] call ace_interact_menu_fnc_addActionToObject;
-}] remoteExec ["call"];
-};
-[] call fnc_drone_add_cation;
-publicVariable "fnc_drone_add_cation";
+] execVM "modules\spec_other_missions\mission_4\bot_attack.sqf";
+
 //warning time!
 [[], {hint "Внимание врагам понадобиться не более получаса что бы найти место падения беспилотника! Поторопитесь!"}] remoteExec ["call"];
 sleep 5;
@@ -99,7 +105,6 @@ sleep 5;
 date_download = false;
 publicVariable "date_download";
 
-// wait end of time or download date or kill drone
 waitUntil{
 	sleep 10;
 if(time > _Time_to_failed_mission + 1500)then{

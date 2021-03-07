@@ -21,6 +21,5 @@ class other_missions {
 
     class other_missions_zoneGref {};
 
-    class other_missions_spawnBot {};
 
 };
