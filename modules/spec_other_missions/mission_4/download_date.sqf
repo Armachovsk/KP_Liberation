@@ -1,4 +1,17 @@
-[] call fnc_bot_attac;
+params [ 
+	"_classnave_vehicle_bot_attack_btr",
+	"_classnave_vehicle_bot_attack_heli", 
+	"_side_bot_to_attack", 
+	"_arry_bot_to_attac"
+];
+
+[	
+	_classnave_vehicle_bot_attack_btr,
+	_classnave_vehicle_bot_attack_heli, 
+	_side_bot_to_attack, 
+	_arry_bot_to_attac
+] call SPEC_fnc_other_missions_spawnBot;
+
 sleep 5;
 private _Download = 0;
 hint"Для передачи данных вы должны находиться близко к беспилотнику";

@@ -1,16 +1,25 @@
-private _nearbyLocations = nearestLocations [[0,0,0], ["NameVillage", "Name", "NameCity", "NameCityCapital"], 50000];
-private _randomLoacation = getPos selectRandom _nearbyLocations;
-private _arry_roads = _randomLoacation nearRoads 3000;
-private _select_random_road = selectRandom _arry_roads;
+//exeple
+// [pos_mission,vehicle_to_recwest,vehocle_classname_arry,pos_base] execVM "${somepath\file.sqf}";
+
+	// 	pos_mission - aryy ccordinate
+	//	vehicle_to_recwest - vehicle to need recvest
+	// 	vehocle_classname_arry - class name vehicle in colonna
+	// 	pos_base - pos base to need delivery MHQ
+
+// done example
+// [[200,200,0],"rhsusf_m1152_sicps_usarmy_d",["rhsusf_m1025_d_m2", "rhsusf_M1117_D", "rhsusf_m113d_usarmy"],[1000,1000,0]] execVM "modules\spec_other_missions\mission_5\mission_1.sqf";
+
+//param
+params ["_pos_mission", "_vehicle_to_recwest", "_vehocle_classname_arry", "_pos_base"];
 
 //vehicle
-private _Vehicle_1 = "rhsusf_m1152_sicps_usarmy_d" createVehicle getPos _select_random_road;
-private _Vehicle_2 = "rhsusf_m1025_d_m2" createVehicle (_select_random_road getPos [80 + random 50,random 360]);
-private _Vehicle_3 = "rhsusf_M1117_D" createVehicle (_select_random_road getPos [15 + random 50,random 360]);
-private _Vehicle_4 = "rhsusf_m113d_usarmy" createVehicle (_select_random_road getPos [20 + random 50,random 360]);
+private _Vehicle_1 = "rhsusf_m1152_sicps_usarmy_d" createVehicle _pos_mission;
+private _Vehicle_2 = selectRandom _vehocle_classname_arry createVehicle (_pos_mission getPos [80 + random 50,random 360]);
+private _Vehicle_3 = selectRandom _vehocle_classname_arry createVehicle (_pos_mission getPos [15 + random 50,random 360]);
+private _Vehicle_4 = selectRandom _vehocle_classname_arry createVehicle (_pos_mission getPos [20 + random 50,random 360]);
 
 _Vehicle_1 setDamage 0.5;
-_Vehicle_2 setDamage 0.9;
+_Vehicle_2 setDamage 0.7;
 _Vehicle_3 setDamage 0.7;
 _Vehicle_4 setDamage 0.7;
 
@@ -19,10 +28,10 @@ _Vehicle_2 setVehicleAmmo 0.3;
 _Vehicle_3 setVehicleAmmo 0.3;
 _Vehicle_4 setVehicleAmmo 0.3;
 
-_Vehicle_1 setFuel 0.3;
-_Vehicle_2 setFuel 0.3;
-_Vehicle_3 setFuel 0.3;
-_Vehicle_4 setFuel 0.3;
+_Vehicle_1 setFuel random 1;
+_Vehicle_2 setFuel random 1;
+_Vehicle_3 setFuel random 1;
+_Vehicle_4 setFuel random 1;
 
 //marker
 private _Marker5 = createMarker ["Marker5", _Vehicle_1 getPos [random 300, random 360]];
@@ -40,7 +49,7 @@ pos_for_bot = getPos _Vehicle_1;
 //wait prp on base or destroid
 waitUntil{
 sleep 10;
-(getPos _Vehicle_1) inArea [pos_base, 100, 100, 0, false] or !alive _Vehicle_1
+(getPos _Vehicle_1) inArea [_pos_base, 100, 100, 0, false] or !alive _Vehicle_1
 };
 
 if(!alive _Vehicle_1) exitwith {

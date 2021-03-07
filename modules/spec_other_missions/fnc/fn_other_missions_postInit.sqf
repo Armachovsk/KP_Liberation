@@ -23,8 +23,6 @@ if (isServer) then {
 
     ["Module initializing...", "POST] [MISSIONS", true] call KPLIB_fnc_common_log;
 
-    pos_base = KPLIB_eden_startbase;
-
 };
 
 
