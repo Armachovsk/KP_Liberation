@@ -1,10 +1,14 @@
-
 params [ 
 	"_classnave_vehicle_bot_attack_btr",
 	"_classnave_vehicle_bot_attack_heli", 
 	"_side_bot_to_attack", 
 	"_arry_bot_to_attac"
 ];
+
+waitUntil{
+	sleep 5;
+	attack_bot_mission_4_true
+};
 
 private _group_bot_attac_dron = createGroup [EAST, true];
 //find pos
@@ -27,7 +31,7 @@ _wp_for_bot_go_tu_drone_heli setWaypointSpeed "FULL";
 for "_i" from 0 to 10 do 
 {
 	sleep 1;
-	_unit = _group_bot_attac_dron createUnit [_arry_bot_to_attac, _find_pos_from_bot, [], 0, "FORM"];
+	_unit = _group_bot_attac_dron createUnit [selectRandom _arry_bot_to_attac, _find_pos_from_bot, [], 0, "FORM"];
 };
 
 //waipoint 

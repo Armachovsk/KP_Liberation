@@ -1,25 +1,21 @@
-_fnc_find_pos = {
+//exeple
+// [pos_mission,class_name_vehicle,vehocle_classname_arry,pos_base] execVM "${somepath\file.sqf}";
 
-private _nearbyLocations = nearestLocations [[0,0,0], ["NameVillage", "Name", "NameCity", "NameCityCapital"], 10000];
-private _randomLoacation = getPos selectRandom _nearbyLocations;
-find_pos = [_randomLoacation, 700, 1500, 30, 0, 0.8, 0] call BIS_fnc_findSafePos;
-};
+	// 	pos_mission - aryy ccordinate
+	//	class_name_vehicle - vehicle
+	// 	class_name_box - class name box to need recvest
+	// 	pos_base - pos base to need delivery MHQ
 
-waitUntil{
-	[]call _fnc_find_pos;
-	sleep 0.5;
-	!isNil "find_pos"
-};
+// done example
+// [[200,200,0],"BlackhawkWreck","CargoNet_01_box_F",[1000,1000,0]] execVM "modules\spec_other_missions\mission_6\mission_1.sqf";
+
+//param
+params ["_pos_mission", "_class_name_vehicle", "_class_name_box", "_pos_base"];
 
 
 //vehicle
-private _Plane_1 = "rhsusf_f22" createVehicle find_pos;
-_Plane_ setDamage 0.5;
-_Plane_ setFuel 0;
-_Plane_ setVehicleAmmo 0;
-_Plane_ lock 2;
-Cargo_1 = "CargoNet_01_box_F" createVehicle (_Plane_1 getPos [20 + random 40,random 360]);
-publicVariable "Cargo_1";
+private _Plane_1 = _class_name_vehicle createVehicle _pos_mission;
+_Cargo_1 = _class_name_box createVehicle (_Plane_1 getPos [20 + random 40,random 360]);
 
 //marker
 private _Marker6 = createMarker ["Marker6", _Plane_1 getPos [random 300, random 360]];
@@ -35,16 +31,16 @@ _smoke6 setPos(getPos _Plane_1);
 ["Task_06", true, ["Эвакуировать черный ящик из подбитого F-22","Эвакуировать черный ящик из подбитого F-22","respawn_west"], getMarkerPos _Marker6, "CREATED", 5, true, true, "takeoff", true] call BIS_fnc_setTask;
 
 //bot
-pos_for_bot = getPos Cargo_1;
-[pos_for_bot,20,false,true,[50,100,150],2000] call SPEC_fnc_other_missions_zoneGref;
+
+[_pos_mission,20,false,true,[50,100,150],2000] call SPEC_fnc_other_missions_zoneGref;
 
 //wait continer on base
 waitUntil{
 sleep 10;
-(getPos Cargo_1) inArea [pos_base, 100, 100, 0, false] or !alive Cargo_1
+(getPos _Cargo_1) inArea [_pos_base, 100, 100, 0, false] or !alive _Cargo_1
 };
 
-if(!alive Cargo_1) exitwith {
+if(!alive _Cargo_1) exitwith {
 	deleteMarker _Marker6;
 	["Task_06","FAILED"] call BIS_fnc_taskSetState;
 	sleep 10;
@@ -57,7 +53,7 @@ deleteMarker _Marker6;
 ["Task_06","SUCCEEDED"] call BIS_fnc_taskSetState;
 sleep 10;
 ["Task_06"] call BIS_fnc_deleteTask;
-deleteVehicle Cargo_1;
+deleteVehicle _Cargo_1;
 deleteVehicle _Plane_1;
 deleteVehicle _smoke6;
 
