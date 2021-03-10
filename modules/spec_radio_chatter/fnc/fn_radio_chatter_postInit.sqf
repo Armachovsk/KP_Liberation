@@ -1,10 +1,10 @@
 /*
-    KPLIB_fnc_missions_postInit
+    KPLIB_fnc_core_postInit
 
-    File: fn_missions_postInit.sqf
+    File: fn_core_postInit.sqf
     Author: KP Liberation Dev Team - https://github.com/KillahPotatoes
-    Date: 2019-06-22
-    Last Update: 2019-06-22
+    Date: 2017-08-31
+    Last Update: 2019-04-22
     License: GNU General Public License v3.0 - https://www.gnu.org/licenses/gpl-3.0.html
     Public: No
 
@@ -19,14 +19,23 @@
         Module postInit finished [BOOL]
 */
 
-if (isServer) then {
+if (isServer) then {["Module initializing...", "POST] [CORE", true] call KPLIB_fnc_common_log;};
 
-    ["Module initializing...", "POST] [MISSIONS", true] call KPLIB_fnc_common_log;
+// Server section (dedicated and player hosted)
+if (isServer) then {
+    execVM "modules\spec_radio_chatter\scripts\radioLoop.sqf";
+};
+
+// HC section
+if (!hasInterface && !isDedicated) then {
 
 };
 
+// Player section
+if (hasInterface) then {
 
+};
 
-if (isServer) then {["Module initialized", "POST] [MISSIONS", true] call KPLIB_fnc_common_log;};
+if (isServer) then {["Module initialized", "POST] [CORE", true] call KPLIB_fnc_common_log;};
 
 true

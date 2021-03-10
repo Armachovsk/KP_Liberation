@@ -164,5 +164,15 @@ KPLIB_resupply_refuelSource = [
     Single values, so they aren't grouped in a category.
 ------------------------------------------------------------*/
 
+SPEC_radio_chatter_sounds = [
+    "A3\Sounds_F\sfx\radio\ambient_radio8.wss",
+    "A3\Sounds_F\sfx\radio\ambient_radio09.wss",
+    "A3\Sounds_F\sfx\radio\ambient_radio11.wss",
+    "A3\Sounds_F\sfx\radio\ambient_radio18.wss",
+    "A3\Sounds_F\sfx\radio\ambient_radio19.wss",
+    "A3\Sounds_F\sfx\radio\ambient_radio20.wss",
+    "A3\Sounds_F\sfx\radio\ambient_radio22.wss"
+];
+
 // Config was properly parsed, if this is not set player will be informed about errors
 KPLIB_validationNamespace setVariable ["config", true];

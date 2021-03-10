@@ -1,5 +1,8 @@
-[] call fnc_bot_attac;
 sleep 5;
+//atack boot
+attack_bot_mission_4_true = true;
+publicVariable "attack_bot_mission_4_true";
+//start download
 private _Download = 0;
 hint"Для передачи данных вы должны находиться близко к беспилотнику";
 waitUntil{

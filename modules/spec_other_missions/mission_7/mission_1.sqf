@@ -1,28 +1,35 @@
-private _nearbyLocations = nearestLocations [[0,0,0], ["NameVillage", "Name", "NameCity", "NameCityCapital"], 10000];
-private _randomLoacation = getPos selectRandom _nearbyLocations;
-private _find_pos = [_randomLoacation, 500, 1000, 50, 0, 0.9, 0] call BIS_fnc_findSafePos;
+
+//exeple
+// [pos_mission,class_name_artilery,vehocle_classname_arry,pos_base] execVM "${somepath\file.sqf}";
+
+	// 	pos_mission - aryy ccordinate
+	//	class_name_artilery - vehicle class name spawn artilery
+	// 	arry_pos_bombing - where bobbing arty
+
+// done example
+// [[200,200,0],_class_name_artilery,[400,400,0]] execVM "modules\spec_other_missions\mission_7\mission_1.sqf";
+
+//param
+params ["_pos_mission", "_class_name_artilery", "_arry_pos_bombing"];
+
 
 //artilery
-private _artilery_1 = "CPC_ME_O_KAM_D30" createVehicle _find_pos;
-private _artilery_2 = "CPC_ME_O_KAM_D30" createVehicle (_artilery_1 getPos[10 + random 10,random 360]);
-private _artilery_3 = "CPC_ME_O_KAM_D30" createVehicle (_artilery_1 getPos[30 + random 10,random 360]);
+private _artilery_1 = _class_name_artilery createVehicle _pos_mission;
+private _artilery_2 = _class_name_artilery createVehicle (_artilery_1 getPos[10 + random 10,random 360]);
+private _artilery_3 = _class_name_artilery createVehicle (_artilery_1 getPos[30 + random 10,random 360]);
 
-waitUntil {
-	sleep 5;
-	Hint "Ожидаеие спауна КШМ";
-	alive MHQ_1
-};
+
 //bombing
 hint "";
-private	_bomb_1 = createVehicle ["BO_GBU12_LGB", MHQ_1 getPos [150 + random 100, random 360], [], 0, "FLY"];
+private	_bomb_1 = createVehicle ["BO_GBU12_LGB",_arry_pos_bombing, [], 0, "FLY"];
 sleep 2 + random 20;
-private	_bomb_1 = createVehicle ["BO_GBU12_LGB", MHQ_1 getPos [150 + random 100, random 360], [], 0, "FLY"];
+private	_bomb_1 = createVehicle ["BO_GBU12_LGB",_arry_pos_bombing, [], 0, "FLY"];
 sleep 2 + random 20;
-private	_bomb_1 = createVehicle ["BO_GBU12_LGB", MHQ_1 getPos [150 + random 100, random 360], [], 0, "FLY"];
+private	_bomb_1 = createVehicle ["BO_GBU12_LGB",_arry_pos_bombing, [], 0, "FLY"];
 sleep 2 + random 20;
-private	_bomb_1 = createVehicle ["BO_GBU12_LGB", MHQ_1 getPos [150 + random 100, random 360], [], 0, "FLY"];
+private	_bomb_1 = createVehicle ["BO_GBU12_LGB",_arry_pos_bombing, [], 0, "FLY"];
 sleep 2 + random 20;
-private	_bomb_1 = createVehicle ["BO_GBU12_LGB", MHQ_1 getPos [150 + random 100, random 360], [], 0, "FLY"];
+private	_bomb_1 = createVehicle ["BO_GBU12_LGB",_arry_pos_bombing, [], 0, "FLY"];
 
 [[], {hint "Вражеская артелерия обстреливает КШМ! Уничтожте артелерию!"}] remoteExec ["call"];
 
