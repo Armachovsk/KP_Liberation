@@ -82,10 +82,12 @@ waitUntil{
 
 if(!alive _unit_officer) exitWith {
 ["Task_12","SUCCEEDED"] call BIS_fnc_taskSetState;
+sleep 10;
 ["Task_12"] call BIS_fnc_deleteTask;    
 };
 
 if((getPos _unit_officer) inArea [_arry_pos_coordinate_delivery_officer, 100, 100, 0, false]) exitWith {
-["Task_12","SUCCEEDED"] call BIS_fnc_taskSetState; 
+["Task_12","SUCCEEDED"] call BIS_fnc_taskSetState;
+sleep 10; 
 ["Task_12"] call BIS_fnc_deleteTask;      
 };

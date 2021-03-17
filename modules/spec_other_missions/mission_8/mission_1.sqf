@@ -23,20 +23,17 @@ randomLoacation_1 = getPos selectRandom nearbyLocations_1;
 nearestRoad_1 = [randomLoacation_1, 500] call BIS_fnc_nearestRoad;
 };
 
+waitUntil{
+sleep 0.1;
 [] call _fnc_find_pos_delivery;
+_randomLoacation distance randomLoacation_1 > 4000
+};
 
 //waipoint for BMP
 private _wp_for_bot_go_tu_drone_heli = (_BMP_delivery_explousion select 2) addWaypoint [getPos nearestRoad_1, 0];
 _wp_for_bot_go_tu_drone_heli setWaypointType "MOVE";
 _wp_for_bot_go_tu_drone_heli setWaypointSpeed "FULL";
 [(_BMP_delivery_explousion select 2), 0] setWaypointCombatMode "BLUE";
-
-waitUntil{
-private	_find_pos_from_delivery = false;
-sleep 0.1;
-if(_randomLoacation distance randomLoacation_1 > 4000)then{_find_pos_from_delivery = true;}else{[] call _fnc_find_pos_delivery};
-_find_pos_from_delivery
-};
 
 //marker from delivery
 private _Marker8_1 = createMarker ["Marker8_1", getPos nearestRoad_1];
