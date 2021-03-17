@@ -13,8 +13,7 @@ private _Marker9 = createMarker ["Marker9", getPos _nearestRoad];
 ["Task_09", true, ["Освободить город","Освободить город","respawn_west"], getMarkerPos _Marker9, "ASSIGNED", 5, true, true, "attack", true] call BIS_fnc_setTask;
 
 //bot from defend gorod
-grup_defend_gorod = getPos _nearestRoad;
-[grup_defend_gorod,7,false,true,[20,40,50],2000] call SPEC_fnc_other_missions_zoneGref;
+[getPos _nearestRoad,7,false,true,[20,40,50],2000] call SPEC_fnc_other_missions_zoneGref;
 
 //spawn heli
 private _heli_defend_gorod = [getPos _nearestRoad, 180, selectRandom["CPC_ME_O_KAM_uh1h_gunship", "CPC_ME_O_KAM_Mi24D_Early","CPC_ME_O_KAM_uh1hCPC_ME_O_KAM_uh1h_gunship"], EAST] call BIS_fnc_spawnVehicle;

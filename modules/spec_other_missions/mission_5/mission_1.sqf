@@ -43,8 +43,7 @@ private _Marker5 = createMarker ["Marker5", _Vehicle_1 getPos [random 300, rando
 //task
 ["Task_05", true, ["Эвакуировать КШМ на базу","Эвакуировать КШМ на базу","respawn_west"], getMarkerPos _Marker5, "CREATED", 5, true, true, "car", true] call BIS_fnc_setTask;
 //bot
-pos_for_bot = getPos _Vehicle_1;
-[pos_for_bot,20,false,true,[50,100,150],2000] call SPEC_fnc_other_missions_zoneGref;
+[getPos _Vehicle_1,20,false,true,[50,100,150],2000] call SPEC_fnc_other_missions_zoneGref;
 
 //wait prp on base or destroid
 waitUntil{

@@ -7,7 +7,7 @@
 	// 	arry_pos_bombing - where bobbing arty
 
 // done example
-// [[200,200,0],_class_name_artilery,[400,400,0]] execVM "modules\spec_other_missions\mission_7\mission_1.sqf";
+// [[200,200,0],"CPC_ME_O_KAM_D30",[400,400,0]] execVM "modules\spec_other_missions\mission_7\mission_1.sqf";
 
 //param
 params ["_pos_mission", "_class_name_artilery", "_arry_pos_bombing"];
@@ -21,15 +21,25 @@ private _artilery_3 = _class_name_artilery createVehicle (_artilery_1 getPos[30 
 
 //bombing
 hint "";
-private	_bomb_1 = createVehicle ["BO_GBU12_LGB",_arry_pos_bombing, [], 0, "FLY"];
+_area_pos_bombing_x = (_arry_pos_bombing select 0) + selectRandom[+100,-100] + random [-200, 0, 200];
+_area_pos_bombing_y = (_arry_pos_bombing select 1) + selectRandom[+100,-100] + random [-200, 0, 200];
+private	_bomb_1 = createVehicle ["BO_GBU12_LGB",[_area_pos_bombing_x, _area_pos_bombing_y, _arry_pos_bombing select 2], [], 0, "FLY"];
 sleep 2 + random 20;
-private	_bomb_1 = createVehicle ["BO_GBU12_LGB",_arry_pos_bombing, [], 0, "FLY"];
+_area_pos_bombing_x = (_arry_pos_bombing select 0) + selectRandom[+100,-100] + random [-200, 0, 200];
+_area_pos_bombing_y = (_arry_pos_bombing select 1) + selectRandom[+100,-100] + random [-200, 0, 200];
+private	_bomb_1 = createVehicle ["BO_GBU12_LGB",[_area_pos_bombing_x, _area_pos_bombing_y, _arry_pos_bombing select 2], [], 0, "FLY"];
 sleep 2 + random 20;
-private	_bomb_1 = createVehicle ["BO_GBU12_LGB",_arry_pos_bombing, [], 0, "FLY"];
+_area_pos_bombing_x = (_arry_pos_bombing select 0) + selectRandom[+100,-100] + random [-200, 0, 200];
+_area_pos_bombing_y = (_arry_pos_bombing select 1) + selectRandom[+100,-100] + random [-200, 0, 200];
+private	_bomb_1 = createVehicle ["BO_GBU12_LGB",[_area_pos_bombing_x, _area_pos_bombing_y, _arry_pos_bombing select 2], [], 0, "FLY"];
 sleep 2 + random 20;
-private	_bomb_1 = createVehicle ["BO_GBU12_LGB",_arry_pos_bombing, [], 0, "FLY"];
+_area_pos_bombing_x = (_arry_pos_bombing select 0) + selectRandom[+100,-100] + random [-200, 0, 200];
+_area_pos_bombing_y = (_arry_pos_bombing select 1) + selectRandom[+100,-100] + random [-200, 0, 200];
+private	_bomb_1 = createVehicle ["BO_GBU12_LGB",[_area_pos_bombing_x, _area_pos_bombing_y, _arry_pos_bombing select 2], [], 0, "FLY"];
 sleep 2 + random 20;
-private	_bomb_1 = createVehicle ["BO_GBU12_LGB",_arry_pos_bombing, [], 0, "FLY"];
+_area_pos_bombing_x = (_arry_pos_bombing select 0) + selectRandom[+100,-100] + random [-200, 0, 200];
+_area_pos_bombing_y = (_arry_pos_bombing select 1) + selectRandom[+100,-100] + random [-200, 0, 200];
+private	_bomb_1 = createVehicle ["BO_GBU12_LGB",[_area_pos_bombing_x, _area_pos_bombing_y, _arry_pos_bombing select 2], [], 0, "FLY"];
 
 [[], {hint "Вражеская артелерия обстреливает КШМ! Уничтожте артелерию!"}] remoteExec ["call"];
 
@@ -45,7 +55,7 @@ private _Marker7 = createMarker ["Marker7", _artilery_1 getPos [random 300, rand
 
 
 //bot
-[_artilery_1,20,false,true,[50,100,150],2000] call SPEC_fnc_other_missions_zoneGref;
+[getPos _artilery_1,20,false,true,[50,100,150],2000] call SPEC_fnc_other_missions_zoneGref;
 
 
 waitUntil{
@@ -58,3 +68,5 @@ deleteMarker _Marker7;
 ["Task_07","SUCCEEDED"] call BIS_fnc_taskSetState;
 sleep 10;
 ["Task_07"] call BIS_fnc_deleteTask;
+
+
