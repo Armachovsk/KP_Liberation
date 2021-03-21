@@ -34,3 +34,5 @@ waitUntil{
 deleteMarker _marker1;
 sleep 10;
 ["Task_02"] call BIS_fnc_deleteTask;
+
+["KPLIB_missionEnd", ["Destroy_Heli"]] call CBA_fnc_serverEvent;

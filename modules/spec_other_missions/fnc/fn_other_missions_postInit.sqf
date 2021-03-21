@@ -23,6 +23,127 @@ if (isServer) then {
 
     ["Module initializing...", "POST] [MISSIONS", true] call KPLIB_fnc_common_log;
 
+        [
+        "Destroy_Tank",
+        {true},
+        false,
+        [0, 0, 0, 0],
+        10,
+        10,
+        "modules\spec_other_missions\mission_1\start.sqf",
+        "modules\90_missions\example\abort.sqf"
+    ] call KPLIB_fnc_mission_registerMission;
+
+        [
+        "Destroy_Heli",
+        {true},
+        false,
+        [0, 0, 0, 0],
+        10,
+        10,
+        "modules\spec_other_missions\mission_2\start.sqf",
+        "modules\90_missions\example\abort.sqf"
+    ] call KPLIB_fnc_mission_registerMission;
+
+        [
+        "Recvest_pilots",
+        {true},
+        false,
+        [0, 0, 0, 0],
+        10,
+        10,
+        "modules\spec_other_missions\mission_3\start.sqf",
+        "modules\90_missions\example\abort.sqf"
+    ] call KPLIB_fnc_mission_registerMission;
+
+    [
+        "Recvest_intel_from_UAV",
+        {true},
+        false,
+        [0, 0, 0, 0],
+        10,
+        10,
+        "modules\spec_other_missions\mission_4\start.sqf",
+        "modules\90_missions\example\abort.sqf"
+    ] call KPLIB_fnc_mission_registerMission;
+
+    [
+        "Recwest_MHQ",
+        {true},
+        false,
+        [0, 0, 0, 0],
+        10,
+        10,
+        "modules\spec_other_missions\mission_5\start.sqf",
+        "modules\90_missions\example\abort.sqf"
+    ] call KPLIB_fnc_mission_registerMission;
+
+    [
+        "Damage_transport",
+        {true},
+        false,
+        [0, 0, 0, 0],
+        10,
+        10,
+        "modules\spec_other_missions\mission_6\start.sqf",
+        "modules\90_missions\example\abort.sqf"
+    ] call KPLIB_fnc_mission_registerMission;
+
+    [
+        "Destroy_arty",
+        {true},
+        false,
+        [0, 0, 0, 0],
+        10,
+        10,
+        "modules\spec_other_missions\mission_7\start.sqf",
+        "modules\90_missions\example\abort.sqf"
+    ] call KPLIB_fnc_mission_registerMission;
+
+    [
+        "Destroy_vehicle",
+        {true},
+        false,
+        [0, 0, 0, 0],
+        10,
+        10,
+        "modules\spec_other_missions\mission_8\mission_1.sqf",
+        "modules\90_missions\example\abort.sqf"
+    ] call KPLIB_fnc_mission_registerMission;
+
+    [
+        "Destroy_radar",
+        {true},
+        false,
+        [0, 0, 0, 0],
+        10,
+        10,
+        "modules\spec_other_missions\mission_10\start.sqf",
+        "modules\90_missions\example\abort.sqf"
+    ] call KPLIB_fnc_mission_registerMission;
+
+    [
+        "Recwest_hostage",
+        {true},
+        false,
+        [0, 0, 0, 0],
+        10,
+        10,
+        "modules\spec_other_missions\mission_11\start.sqf",
+        "modules\90_missions\example\abort.sqf"
+    ] call KPLIB_fnc_mission_registerMission;
+
+    [
+        "Kill_general",
+        {true},
+        false,
+        [0, 0, 0, 0],
+        10,
+        10,
+        "modules\spec_other_missions\mission_12\start.sqf",
+        "modules\90_missions\example\abort.sqf"
+    ] call KPLIB_fnc_mission_registerMission;
+    
 };
 
 
