@@ -1,0 +1,26 @@
+_pos_misison = call SPEC_fnc_other_missions_findPosFromMision;
+
+
+[_pos_misison,
+"O_UAV_02_dynamicLoadout_F",
+"CPC_ME_O_KAM_BTR70",
+"CPC_ME_O_KAM_Mi24D_Early",
+EAST,
+["CPC_ME_O_KAM_soldier_AT",
+"CPC_ME_O_KAM_soldier_AT",
+"CPC_ME_O_KAM_soldier_AT",
+"CPC_ME_O_KAM_soldier_AT",
+"CPC_ME_O_KAM_soldier_AA",
+"CPC_ME_O_KAM_soldier_MG",
+"CPC_ME_O_KAM_soldier_AR",
+"CPC_ME_O_KAM_soldier_Medic",
+"CPC_ME_O_KAM_soldier_M",
+"CPC_ME_O_KAM_soldier_MNSPU",
+"CPC_ME_O_KAM_soldier_l1a1",
+"CPC_ME_O_KAM_soldier_GL",
+"CPC_ME_O_KAM_soldier_NSPU",
+"CPC_ME_O_KAM_soldier_LAT",
+"CPC_ME_O_KAM_soldier",
+"CPC_ME_O_KAM_soldier_AA",
+"CPC_ME_O_KAM_soldier_AA",
+"CPC_ME_O_KAM_soldier_AA"]] execVM "modules\spec_other_missions\mission_4\mission_1.sqf";

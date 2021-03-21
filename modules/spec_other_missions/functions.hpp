@@ -19,7 +19,11 @@ class other_missions {
         postInit = 1;
     };
 
-    class other_missions_zoneGref {};
+    class other_missions_spawnEnemyBot {};
+
+    class other_missions_findPosFromMision {};
 
 
 };
+
+

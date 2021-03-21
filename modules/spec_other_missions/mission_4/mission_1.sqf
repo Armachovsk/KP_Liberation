@@ -69,7 +69,7 @@ private _Marker4 = createMarker ["Marker4", dron_down getPos [random 300, random
 //mission
 ["Task_04", true, ["Не дать уничтожить дрон","Не дать уничтожить дрон","respawn_west"], getMarkerPos _Marker4, "CREATED", 5, true, true, "defend", true] call BIS_fnc_setTask;
 sleep 3;
-["Task_04_1", true, ["Сказать развед данные с дрона","Сказать развед данные с дрона","respawn_west"], getMarkerPos _Marker4, "ASSIGNED", 5, true, true, "download", true] call BIS_fnc_setTask;
+["Task_04_1", true, ["Скачать развед данные с дрона","Скачать развед данные с дрона","respawn_west"], getMarkerPos _Marker4, "ASSIGNED", 5, true, true, "download", true] call BIS_fnc_setTask;
 //smoke
 private _smoke1 = "test_EmptyObjectForSmoke" createVehicle getPos dron_down;
 _smoke1 setPos(getPos dron_down);
@@ -166,3 +166,4 @@ sleep 10;
 	
 
 
+["KPLIB_missionEnd", ["Recvest_intel_from_UAV"]] call CBA_fnc_serverEvent;
