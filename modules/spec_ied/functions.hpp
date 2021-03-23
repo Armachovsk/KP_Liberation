@@ -32,4 +32,63 @@ class ied {
 
     // CBA Settings for this module
     class ied_settings {};
+
+    class ied_allahuAkbar {};
+
+    class ied_belt {};
+
+    class ied_boom {};
+
+    class ied_check {};
+
+    class ied_checkLoop {};
+
+    class ied_create {};
+
+    class ied_deleteLoop {};
+
+    class ied_droneActive {};
+
+    class ied_droneCreate {};
+
+    class ied_droneFire {};
+
+    class ied_droneLoop {};
+
+    class ied_effectBlurEffect {};
+
+    class ied_effectColorSmoke {};
+
+    class ied_effectRocks {};
+
+    class ied_effects {};
+
+    class ied_effectShockWave {};
+
+    class ied_effectSmoke {};
+
+    class ied_firedNear {};
+
+    class ied_initArea {};
+
+    class ied_loadData {};
+
+    class ied_postInit {};
+
+    class ied_preInit {};
+
+    class ied_randomRoadPos {};
+
+    class ied_saveData {};
+
+    class ied_settings {};
+
+    class ied_suiciderActive {};
+
+    class ied_suiciderActiveLoop {};
+
+    class ied_suiciderCreate {};
+
+    class ied_suiciderLoop {};
+
 };

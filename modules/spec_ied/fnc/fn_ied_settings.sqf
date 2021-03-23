@@ -22,4 +22,26 @@
     ----- EXAMPLE SETTINGS -----
 */
 
+[
+    "SPEC_param_iedPlacement",
+    "LIST",
+    [localize "STR_SPEC_PARAMS_IED_PLACEMENT", localize "STR_SPEC_PARAMS_IED_PLACEMENT_TT"],
+    localize "STR_SPEC_SETTINGS_RESISTANCE",
+    [
+        [
+            2,
+            -1,
+            3
+        ],
+        [
+            localize "STR_SPEC_PARAMS_IED_PLACEMENT_ROADSIDE",
+            localize "STR_SPEC_PARAMS_IED_PLACEMENT_MIDDLE",
+            localize "STR_3DEN_ATTRIBUTES_OBJECTTEXTURE_RANDOM_TEXT"
+        ],
+        2
+    ],
+    1,
+    {}
+] call CBA_Settings_fnc_init;
+
 true

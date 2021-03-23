@@ -54,7 +54,14 @@ if (isServer) then {
 
     ["KPLIB_sector_activated", {[_this select 0] call SPEC_fnc_resistance_handleSector;}] call CBA_fnc_addEventHandler;
 
-    ["SPEC_resistance_spawnGuerilla", {[_this select 0] call SPEC_fnc_resistance_handleGuerilla;}] call CBA_fnc_addEventHandler;
+    ["SPEC_resistance_spawnGuerilla", {
+        if (typeName (_this select 0) isEqualTo "STRING") exitWith {
+            [markerPos (_this select 0)] call SPEC_fnc_resistance_handleGuerilla;
+        };
+        if (typeName (_this select 0) isEqualTo "ARRAY") exitWith {
+            [_this select 0] call SPEC_fnc_resistance_handleGuerilla;
+        };
+    }] call CBA_fnc_addEventHandler;
     ["SPEC_resistance_spawnCiv", {[_this select 0] call SPEC_fnc_resistance_handleCiv;}] call CBA_fnc_addEventHandler;
     ["SPEC_resistance_spawnIED", {[_this select 0] call SPEC_fnc_resistance_handleIED;}] call CBA_fnc_addEventHandler;
 };

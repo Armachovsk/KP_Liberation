@@ -2144,6 +2144,21 @@
             <Korean>많음</Korean>
             <Czech>Zvýšená</Czech>
         </Key>
+        <Key ID="STR_SPEC_PARAMS_IED_PLACEMENT">
+            <Original>IEDs type of placement:</Original>
+            <German>IED Art der Platzierung</German>
+            <Chinesesimp>IED放置位置</Chinesesimp>
+        </Key>
+        <Key ID="STR_SPEC_PARAMS_IED_PLACEMENT_MIDDLE">
+            <Original>Middle</Original>
+            <German>Straßenmitte</German>
+            <Chinesesimp>道路中间</Chinesesimp>
+        </Key>
+        <Key ID="STR_SPEC_PARAMS_IED_PLACEMENT_ROADSIDE">
+            <Original>Roadside</Original>
+            <German>Straßenrand</German>
+            <Chinesesimp>道路两旁</Chinesesimp>
+        </Key>
     </Package>
 
     <!-- UNITS -->

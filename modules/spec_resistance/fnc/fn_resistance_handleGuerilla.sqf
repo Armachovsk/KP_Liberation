@@ -1,10 +1,10 @@
 params [
-    ["_sector", "", [""]]
+    ["_pos", [0, 0, 0], [[]]]
 ];
 
-private _startpos = (markerPos _sector) getPos [(1200 + (round (random 400))), (random 360)];
+private _startpos = _pos getPos [(1200 + (round (random 400))), (random 360)];
 
-private _incDir = (markerPos _sector) getDir _startpos;
+private _incDir = _pos getDir _startpos;
 private _incString = "unknown";
 
 if (_incDir < 23) then {
@@ -49,22 +49,22 @@ private _grp = [_startpos] call SPEC_fnc_resistance_spawnGuerillaGroup;
 while {(count (waypoints _grp)) != 0} do {deleteWaypoint ((waypoints _grp) select 0);};
 {_x doFollow (leader _grp)} forEach (units _grp);
 
-private _waypoint = _grp addWaypoint [markerpos _sector, 100];
+private _waypoint = _grp addWaypoint [_pos, 100];
 _waypoint setWaypointType "MOVE";
 _waypoint setWaypointSpeed "FULL";
 _waypoint setWaypointBehaviour "AWARE";
 _waypoint setWaypointCombatMode "YELLOW";
 _waypoint setWaypointCompletionRadius 30;
-_waypoint = _grp addWaypoint [markerpos _sector, 200];
+_waypoint = _grp addWaypoint [_pos, 200];
 _waypoint setWaypointSpeed "NORMAL";
 _waypoint setWaypointType "SAD";
-_waypoint = _grp addWaypoint [markerpos _sector, 200];
+_waypoint = _grp addWaypoint [_pos, 200];
 _waypoint setWaypointSpeed "NORMAL";
 _waypoint setWaypointType "SAD";
-_waypoint = _grp addWaypoint [markerpos _sector, 200];
+_waypoint = _grp addWaypoint [_pos, 200];
 _waypoint setWaypointSpeed "NORMAL";
 _waypoint setWaypointType "SAD";
-_waypoint = _grp addWaypoint [markerpos _sector, 200];
+_waypoint = _grp addWaypoint [_pos, 200];
 _waypoint setWaypointSpeed "NORMAL";
 _waypoint setWaypointType "CYCLE";
 
@@ -80,22 +80,22 @@ if (((random 100) <= 25) && !(KPLIB_preset_vehLightArmedPlR isEqualTo [])) then 
     ((units _grp) select 0) moveInDriver _vehicle;
     ((units _grp) select 1) moveInGunner _vehicle;
 
-    _waypoint = _grp addWaypoint [markerpos _sector, 100];
+    _waypoint = _grp addWaypoint [_pos, 100];
     _waypoint setWaypointType "MOVE";
     _waypoint setWaypointSpeed "LIMITED";
     _waypoint setWaypointBehaviour "AWARE";
     _waypoint setWaypointCombatMode "YELLOW";
     _waypoint setWaypointCompletionRadius 30;
-    _waypoint = _grp addWaypoint [markerpos _sector, 300];
+    _waypoint = _grp addWaypoint [_pos, 300];
     _waypoint setWaypointSpeed "LIMITED";
     _waypoint setWaypointType "SAD";
-    _waypoint = _grp addWaypoint [markerpos _sector, 300];
+    _waypoint = _grp addWaypoint [_pos, 300];
     _waypoint setWaypointSpeed "LIMITED";
     _waypoint setWaypointType "SAD";
-    _waypoint = _grp addWaypoint [markerpos _sector, 300];
+    _waypoint = _grp addWaypoint [_pos, 300];
     _waypoint setWaypointSpeed "LIMITED";
     _waypoint setWaypointType "SAD";
-    _waypoint = _grp addWaypoint [markerpos _sector, 300];
+    _waypoint = _grp addWaypoint [_pos, 300];
     _waypoint setWaypointSpeed "LIMITED";
     _waypoint setWaypointType "CYCLE";
 

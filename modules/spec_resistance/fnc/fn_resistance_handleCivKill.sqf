@@ -1,4 +1,4 @@
-params ["_unit"];
+params ["_unit", "_killer"];
 
 if (KPLIB_param_debug) then {[format ["Civilian killed by: %1", name _killer], "CIVREP"] call KPLIB_fnc_log;};
 
