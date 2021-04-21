@@ -54,3 +54,7 @@ Temporary Items
 # KP-Steam
 steam_appid.txt
 kp_steam*.log
+/node_modules
+/mission.sqm
+Missionframework.Altis/mission.sqm
+/_build
