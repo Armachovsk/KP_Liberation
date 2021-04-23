@@ -120,8 +120,9 @@ KPLIB_presetCivilians = 0;
     7  = Unsung US arsenal preset
     8  = SFP arsenal preset
     9  = BWMod arsenal preset
+    10 = SPEC arsenal preset
 */
-KPLIB_presetArsenal = 0;
+KPLIB_presetArsenal = "rhs_blufor";
 
 
 /*

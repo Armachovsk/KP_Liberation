@@ -15,7 +15,7 @@
         Function reached the end [BOOL]
 */
 
-if (KPLIB_param_useArsenalPreset) then {
+if (KPLIB_param_useArsenalPreset isEqualType false && {KPLIB_param_useArsenalPreset == 1}) exitWith {
     KPLIB_arsenalWeapons = [];
     KPLIB_arsenalMagazines = [];
     KPLIB_arsenalItems = [];
@@ -86,12 +86,23 @@ if (KPLIB_param_useArsenalPreset) then {
 
     // Lowering to avoid issues with incorrect capitalized classnames in KPLIB_fnc_checkGear
     KPLIB_arsenalAllowed = KPLIB_arsenalAllowed apply {toLower _x};
-} else {
+
+    true
+};
+
+if (KPLIB_param_useArsenalPreset isEqualType false && {KPLIB_param_useArsenalPreset == 0}) exitWith {
     [missionNamespace, true] call BIS_fnc_addVirtualWeaponCargo;
     [missionNamespace, true] call BIS_fnc_addVirtualMagazineCargo;
     [missionNamespace, true] call BIS_fnc_addVirtualItemCargo;
     [missionNamespace, true] call BIS_fnc_addVirtualBackpackCargo;
     if (KPLIB_ace && KPLIB_param_arsenalType) then {[player, true, false] call ace_arsenal_fnc_addVirtualItems;};
+
+    true
 };
 
-true
+if (KPLIB_param_useArsenalPreset isEqualType 0 && {KPLIB_param_useArsenalPreset == 2}) exitWith {
+    ["SPEC_arsenal_02_readyToCreate", [player, true]] call CBA_fnc_globalEvent;
+    true
+};
+
+false

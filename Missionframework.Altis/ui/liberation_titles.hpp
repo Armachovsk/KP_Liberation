@@ -5,6 +5,7 @@ class CfgSounds {
         sound[] = {"res\c130.ogg", 1.0, 1};
         titles[] = {};
     };
+    #include "..\modules\spec_arsenal_02\sounds.hpp"
 };
 
 class RscTitles {

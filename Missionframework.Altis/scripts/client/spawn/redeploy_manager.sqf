@@ -217,7 +217,7 @@ while {true} do {
         };
     };
 
-    if (KPLIB_param_useArsenalPreset) then {
+    if (KPLIB_param_useArsenalPreset isEqualType false && {KPLIB_param_useArsenalPreset == 1}) then {
         [_backpack] call KPLIB_fnc_checkGear;
     };
 

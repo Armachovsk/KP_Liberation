@@ -88,12 +88,17 @@ while { dialog && (alive player) && edit_loadout == 0 } do {
             [player, [profileNamespace, _loaded_loadout]] call BIS_fnc_loadInventory;
         };
 
-        if (KPLIB_param_useArsenalPreset) then {
+        if (KPLIB_param_useArsenalPreset isEqualType false && {KPLIB_param_useArsenalPreset == 1}) then {
             if ([_backpack] call KPLIB_fnc_checkGear) then {
                 hint format [ localize "STR_HINT_LOADOUT_LOADED", _loaded_loadout param [0]];
             };
-        } else {
+        };
+        if (KPLIB_param_useArsenalPreset isEqualType false && {KPLIB_param_useArsenalPreset == 0}) then {
             hint format [ localize "STR_HINT_LOADOUT_LOADED", _loaded_loadout param [0]];
+        };
+
+        if (KPLIB_param_useArsenalPreset isEqualType 0 && {KPLIB_param_useArsenalPreset == 2}) then {
+            [localize "STR_HINT_LOADOUT_LOADED", "SPEC_arsenal_02_loadgun", 3, 2] call SPEC_fnc_arsenal_02_displayText;
         };
 
         if ( exit_on_load == 1 ) then {
@@ -129,7 +134,7 @@ if ( edit_loadout > 0 ) then {
         [ "Open", false ] spawn BIS_fnc_arsenal;
     };
 
-    if (KPLIB_param_useArsenalPreset) then {
+    if (KPLIB_param_useArsenalPreset isEqualType false && {KPLIB_param_useArsenalPreset == 1}) then {
         uiSleep 5;
         private _arsenalDisplay = ["RSCDisplayArsenal", "ace_arsenal_display"] select (KPLIB_ace && KPLIB_param_arsenalType);
         waitUntil {sleep 1; isNull (uinamespace getvariable [_arsenalDisplay, displayNull])};

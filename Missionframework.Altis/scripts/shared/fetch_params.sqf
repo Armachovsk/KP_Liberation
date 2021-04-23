@@ -81,7 +81,7 @@ if(isServer) then {
     ["--- Gameplay Options ---", "PARAM"] call KPLIB_fnc_log;
     GET_PARAM_BOOL(KPLIB_param_fatigue, "Fatigue", 1);
     GET_PARAM_BOOL(KPLIB_param_weaponSway, "WeaponSway", 1);
-    GET_PARAM_BOOL(KPLIB_param_useArsenalPreset, "ArsenalUsePreset", 1);
+    GET_PARAM(KPLIB_param_useArsenalPreset, "ArsenalUsePreset", 2);
     GET_PARAM_BOOL(KPLIB_param_mapMarkers, "MapMarkers", 1);
     GET_PARAM_BOOL(KPLIB_param_mobileRespawn, "MobileRespawn", 1);
     GET_PARAM(KPLIB_param_mobileRespawnCooldown, "RespawnCooldown", 900);
@@ -375,7 +375,7 @@ if (!isDedicated && hasInterface) then {
     _text = _text + format ["<font color='#ff8000'>%1</font><br />%2<br /><br />", _param, _value];
 
     _param = localize "STR_PARAMS_ARSENALUSEPRESET";
-    _value = if (KPLIB_param_useArsenalPreset) then {localize "STR_PARAMS_USEPRESET";} else {localize "STR_PARAMS_NORESTRICTIONS";};
+    _value = [localize "STR_PARAMS_NORESTRICTIONS",localize "STR_PARAMS_USEPRESET",localize "STR_PARAMS_USECUSTOMPRESETMETHOD"] select KPLIB_param_useArsenalPreset;
     _text = _text + format ["<font color='#ff8000'>%1</font><br />%2<br /><br />", _param, _value];
 
     _param = localize "STR_PARAMS_MAPMARKERS";

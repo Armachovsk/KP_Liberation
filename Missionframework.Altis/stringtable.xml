@@ -5096,6 +5096,19 @@
             <Korean>사용자 설정(기본임무설정)</Korean>
             <Czech>Použít nastavení z configu</Czech>
         </Key>
+        <Key ID="STR_PARAMS_USECUSTOMPRESETMETHOD">
+            <Original>Use preset from JSON</Original>
+            <!-- <German>Benutze Preset aus Konfiguration</German>
+            <Spanish>Usar pre-definición desde configuracion</Spanish>
+            <Russian>Использовать предустановки из конфигурации</Russian>
+            <Italian>Usa il file config.sqf</Italian>
+            <Chinesesimp>使用配置文件中的预设内容</Chinesesimp>
+            <Chinese>使用設定文件中的預設內容</Chinese>
+            <Turkish>config.sqf kullan</Turkish>
+            <Portuguese>Usar predefinição de config.sqf</Portuguese>
+            <Korean>사용자 설정(기본임무설정)</Korean>
+            <Czech>Použít nastavení z configu</Czech> -->
+        </Key>
         <Key ID="STR_ACTION_CRATE_PUSH">
             <Original>-- PUSH CRATE</Original>
             <German>-- KISTE SCHIEBEN</German>
@@ -6941,7 +6954,7 @@
             <Original>Do you want to enable the interactive tutorial?&lt;br/&gt;It'll guide you through the aspects of the mission. Check your tasks area on the map for further information on each task.&lt;br/&gt;&lt;br/&gt;(This popup can be disabled in the mission parameters)</Original>
             <German>Möchtest du das interaktive Tutorial aktivieren?&lt;br/&gt;Es wird dich durch einzelnen Missionsaspekte führen. Prüfe die Aufgaben im Kartenbildschirm für weitere Informationen zu den einzelnen Aufgaben.&lt;br/&gt;&lt;br/&gt;(Dieses Pop-Up kann in den Missionsparametern deaktiviert werden)</German>
             <Czech>Chcete povolit interaktivní výukový program?&lt;br/&gt;Provede vás aspekty mise. Další informace o jednotlivých úkolech naleznete v oblasti úkolů na mapě.&lt;br/&gt;&lt;br/&gt;(Toto okno lze v parametrech mise deaktivovat)</Czech>
-            <Italian>Vuoi abilitare il tutorial interattivo?&lt;br/&gt;Ti guiderà attraverso gli aspetti della missione. Controlla la tua area delle attività sulla mappa per ulteriori informazioni su ciascuna attività&lt;br/&gt;&lt;br/&gt;(questo popup può essere disabilitato nei parametri della missione)</Italian>      
+            <Italian>Vuoi abilitare il tutorial interattivo?&lt;br/&gt;Ti guiderà attraverso gli aspetti della missione. Controlla la tua area delle attività sulla mappa per ulteriori informazioni su ciascuna attività&lt;br/&gt;&lt;br/&gt;(questo popup può essere disabilitato nei parametri della missione)</Italian>
         </Key>
         <Key ID="STR_TUTORIAL_DIALOG_TEXT_END">
             <Original>You've completed all currently available/implemented tutorials.&lt;br/&gt;Have a lot of fun with playing this mission.&lt;br/&gt;&lt;br/&gt;Should you've questions or want to learn the more deeper mechanics, make sure you visit the &lt;a href="https://github.com/KillahPotatoes/KP-Liberation/wiki"&gt;KP Liberation Wiki&lt;/a&gt;.&lt;br/&gt;We've also a &lt;a href="https://discord.gg/Qk35Sw8"&gt;Discord Server&lt;/a&gt; where hundreds of KP Libertion players are around.</Original>

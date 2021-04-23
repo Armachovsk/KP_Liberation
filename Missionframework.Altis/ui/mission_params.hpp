@@ -223,9 +223,9 @@ class Params {
     };
     class ArsenalUsePreset {
         title = $STR_PARAMS_ARSENALUSEPRESET;
-        values[] = {0, 1};
-        texts[] = {$STR_PARAMS_NORESTRICTIONS, $STR_PARAMS_USEPRESET};
-        default = 1;
+        values[] = {0, 1, 2};
+        texts[] = {$STR_PARAMS_NORESTRICTIONS, $STR_PARAMS_USEPRESET, $STR_PARAMS_USECUSTOMPRESETMETHOD};
+        default = 2;
     };
     class MapMarkers {
         title = $STR_PARAMS_MAPMARKERS;

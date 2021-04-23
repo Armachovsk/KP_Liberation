@@ -101,3 +101,7 @@ class KPLIB {
     #include "scripts\client\CfgFunctions.hpp"
     #include "scripts\server\CfgFunctions.hpp"
 };
+
+class SPEC {
+    #include "modules\spec_arsenal_02\functions.hpp"
+};
