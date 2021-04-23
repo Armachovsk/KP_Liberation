@@ -13,7 +13,7 @@ rem CD into build tool directory
 cd %~dp0_tools
 
 rem Install dependencies and build missions
-call npm install --loglevel=error
+call pnpm i --loglevel=error
 call npx gulp
 
 echo.

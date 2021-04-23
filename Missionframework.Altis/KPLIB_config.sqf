@@ -53,7 +53,7 @@
     29 = SFP (Desert)
     30 = LDF (Contact DLC)
 */
-KPLIB_presetPlayer = 0;
+KPLIB_presetPlayer = 31;
 
 /*
     ----- Enemy preset -----
@@ -79,7 +79,7 @@ KPLIB_presetPlayer = 0;
     19 = CUP British Armed Forces (Desert)
     20 = CUP British Armed Forces (Woodland)
 */
-KPLIB_presetEnemy = 0;
+KPLIB_presetEnemy = 21;
 
 /*
     ----- Resistance preset -----
@@ -93,7 +93,7 @@ KPLIB_presetEnemy = 0;
     7  = CUP Takistani Locals
     8  = CUP National Party of Chernarus
 */
-KPLIB_presetResistance = 0;
+KPLIB_presetResistance = 9;
 
 /*
     ----- Civilians preset -----
