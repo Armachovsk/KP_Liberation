@@ -1,5 +1,5 @@
 class arsenal_02 {
-  file = "modules\spec_arsenal_02\fnc";
+  file = "SPEC\arsenal_02\fnc";
 
   class arsenal_02_preInit {
     preInit = 1;
@@ -17,7 +17,9 @@ class arsenal_02 {
 
   class arsenal_02_aceVirtualItems {};
 
-  class arsenal_02_addArsenalAction {};
+  class arsenal_02_onPresetsCompiled {};
+
+  class arsenal_02_onCompile {};
 
   class arsenal_02_filter {};
 
