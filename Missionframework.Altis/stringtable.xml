@@ -7450,4 +7450,15 @@
             <Czech>KP Player Menu v1.0.2\nby Wyqer</Czech>
         </Key>
     </Package>
+
+    <Package name="SPEC">
+        <Key ID="STR_SECONDARY_MISSION3">
+            <Original>Destroy Tank</Original>
+            <Russian>Уничтожить танк</Russian>
+        </Key>
+        <Key ID="STR_SECONDARY_BRIEFING3">
+            <Original>&lt;t size='1.3' color='#ffa000'&gt;DESTROY TANK&lt;/t&gt;&lt;br/&gt;&lt;t size='10'&gt;&lt;img image='SPEC\other_missions\res\krobik.jpg'/&gt;&lt;/t&gt;</Original>
+            <Russian>&lt;t size='1.3' color='#ffa000'&gt;УНИЧТОЖИТЬ ТАНК&lt;/t&gt;&lt;br/&gt;&lt;t size='10'&gt;&lt;img image='SPEC\other_missions\res\krobik.jpg'/&gt;&lt;/t&gt;</Russian>
+        </Key>
+    </Package>
 </Project>

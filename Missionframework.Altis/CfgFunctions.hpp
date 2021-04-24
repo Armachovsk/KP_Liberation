@@ -103,6 +103,7 @@ class KPLIB {
 };
 
 class SPEC {
-    #include "modules\spec_arsenal_02\functions.hpp"
-    #include "modules\spec_rabbit_support\functions.hpp"
+    #include "SPEC\arsenal_02\functions.hpp"
+    #include "SPEC\rabbit_support\functions.hpp"
+    #include "SPEC\other_missions\functions.hpp"
 };
