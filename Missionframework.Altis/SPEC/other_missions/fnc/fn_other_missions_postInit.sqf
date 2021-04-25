@@ -156,6 +156,6 @@ if (isServer) then {
     ["SPEC_liberation_missionEnd", {
         _this call SPEC_fnc_other_missions_liberation_onMissionEnd;
     }] call CBA_fnc_addEventHandler;
-}
+};
 
 true
