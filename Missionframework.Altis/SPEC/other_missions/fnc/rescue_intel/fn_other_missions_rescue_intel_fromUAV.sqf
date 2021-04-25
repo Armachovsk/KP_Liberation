@@ -133,6 +133,11 @@ if(time > _Time_to_failed_mission + 1800)exitwith{
 	sleep 5;
 	["Task_04_1","FAILED"] call BIS_fnc_taskSetState;
 	sleep 10;
+
+    private _penalty = createHashMap;
+    _penalty set ["intel", 10];
+    ["SPEC_liberation_missionEnd", ["SPEC_other_missions_rescue_intel_fromUAV", "FAILED", _penalty]] call CBA_fnc_serverEvent;
+
 	["Task_04"] call BIS_fnc_deleteTask;
 	["Task_04_1"] call BIS_fnc_deleteTask;
 };
@@ -142,6 +147,11 @@ if(!alive dron_down)exitwith{
 	deleteVehicle _smoke1;
 	["Task_04","FAILED"] call BIS_fnc_taskSetState;
 	["Task_04_1","FAILED"] call BIS_fnc_taskSetState;
+
+    private _penalty = createHashMap;
+    _penalty set ["intel", 10];
+    ["SPEC_liberation_missionEnd", ["SPEC_other_missions_rescue_intel_fromUAV", "FAILED", _penalty]] call CBA_fnc_serverEvent;
+
 	sleep 10;
 	["Task_04"] call BIS_fnc_deleteTask;
 	["Task_04_1"] call BIS_fnc_deleteTask;
@@ -158,10 +168,12 @@ waitUntil{
 };
 ["Task_04_2","SUCCEEDED"] call BIS_fnc_taskSetState;
 
+private _rewards = createHashMap;
+_rewards set ["intel", 10];
+["SPEC_liberation_missionEnd", ["SPEC_other_missions_rescue_intel_fromUAV", "SUCCEEDED", _rewards]] call CBA_fnc_serverEvent;
+
 deleteVehicle _smoke1;
 sleep 10;
 ["Task_04"] call BIS_fnc_deleteTask;
 ["Task_04_1"] call BIS_fnc_deleteTask;
 ["Task_04_2"] call BIS_fnc_deleteTask;
-
-["SPEC_liberation_missionEnd", ["SPEC_other_missions_rescue_intel_fromUAV", 10]] call CBA_fnc_serverEvent;

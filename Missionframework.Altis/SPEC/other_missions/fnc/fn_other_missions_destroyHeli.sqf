@@ -31,8 +31,11 @@ waitUntil{
 };
 
 ["Task_02","SUCCEEDED"] call BIS_fnc_taskSetState;
+
+private _rewards = createHashMap;
+_rewards set ["intel", 10];
+["SPEC_liberation_missionEnd", ["SPEC_other_missions_destroyHeli", "SUCCEEDED", _rewards]] call CBA_fnc_serverEvent;
+
 deleteMarker _marker1;
 sleep 10;
 ["Task_02"] call BIS_fnc_deleteTask;
-
-["SPEC_liberation_missionEnd", ["SPEC_other_missions_destroyHeli", 10]] call CBA_fnc_serverEvent;

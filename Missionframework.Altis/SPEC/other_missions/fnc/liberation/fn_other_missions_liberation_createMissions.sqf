@@ -23,6 +23,7 @@ if (_mission_index == 4) then {
 
 if (_mission_index == 5) then {
     private _pos_misison = call SPEC_fnc_other_missions_findPosFromMision;
+    private _pos_misison_for_friend = call SPEC_fnc_other_missions_findPosFromMision;
     private _friend = selectRandom (KPLIB_b_air_classes select { _x isKindOf "Heli_Attack_01_base_F" });
 
     // TODO: what if we don't have fobs?
@@ -30,8 +31,8 @@ if (_mission_index == 5) then {
     [
         _pos_misison,
         _friend,
-        _pos_misison,
-        KPLIB_side_enemy,
+        _pos_misison_for_friend,
+        KPLIB_side_player,
         KPLIB_b_heliPilotUnit,
         _rescuePosFob
     ] spawn SPEC_fnc_other_missions_rescuePilots;
