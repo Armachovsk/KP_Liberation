@@ -12,12 +12,13 @@ waitUntil { dialog };
     "STR_SECONDARY_MISSION0",
     "STR_SECONDARY_MISSION1",
     "STR_SECONDARY_MISSION2",
-    "STR_SECONDARY_MISSION3",
-    "STR_SECONDARY_MISSION4",
-    "STR_SECONDARY_MISSION5",
-    "STR_SECONDARY_MISSION6",
-    "STR_SECONDARY_MISSION7",
-    "STR_SECONDARY_MISSION8"
+    "STR_SPEC_OTHER_MISSIONS_DESTROY_TANK",
+    "STR_SPEC_OTHER_MISSIONS_DESTROY_HELI",
+    "STR_SPEC_OTHER_MISSIONS_RESCUE_PILOT",
+    "STR_SPEC_OTHER_MISSIONS_DOWNLOAD_INTEL_FROM_UAV",
+    "STR_SPEC_OTHER_MISSIONS_RESCUE_MHQ",
+    "STR_SPEC_OTHER_MISSIONS_RESCUE_BLACK_BOX",
+    "STR_SPEC_OTHER_MISSIONS_DESTROY_BCW"
 ];
 
 private [ "_oldchoice", "_images", "_briefings", "_missioncost" ];
@@ -31,6 +32,7 @@ _images = [
     "SPEC\other_missions\res\krobik.jpg",
     "SPEC\other_missions\res\krobik.jpg",
     "SPEC\other_missions\res\krobik.jpg",
+    "SPEC\other_missions\res\krobik.jpg",
     "SPEC\other_missions\res\krobik.jpg"
 ];
 
@@ -38,12 +40,13 @@ _briefings = [
     "STR_SECONDARY_BRIEFING0",
     "STR_SECONDARY_BRIEFING1",
     "STR_SECONDARY_BRIEFING2",
-    "STR_SECONDARY_BRIEFING3",
-    "STR_SECONDARY_BRIEFING4",
-    "STR_SECONDARY_BRIEFING5",
-    "STR_SECONDARY_BRIEFING6",
-    "STR_SECONDARY_BRIEFING7",
-    "STR_SECONDARY_BRIEFING8"
+    "STR_SPEC_OTHER_MISSIONS_BRIEFING_DESTROY_TANK",
+    "STR_SPEC_OTHER_MISSIONS_BRIEFING_DESTROY_HELI",
+    "STR_SPEC_OTHER_MISSIONS_BRIEFING_RESCUE_PILOT",
+    "STR_SPEC_OTHER_MISSIONS_BRIEFING_DOWNLOAD_INTEL_FROM_UAV",
+    "STR_SPEC_OTHER_MISSIONS_BRIEFING_RESCUE_MHQ",
+    "STR_SPEC_OTHER_MISSIONS_BRIEFING_RESCUE_BLACK_BOX",
+    "STR_SPEC_OTHER_MISSIONS_BRIEFING_DESTROY_BCW"
 ];
 
 _oldchoice = -1;
@@ -58,7 +61,6 @@ while { dialog && alive player && dostartsecondary == 0 } do {
     };
 
     private _missioncost = KPLIB_secondary_missions_costs param [_oldchoice, 5];
-    diag_log format["SECONDARY_UI _missioncost = %1",_missioncost];
 
     if ( ( _missioncost <= resources_intel ) && ( !KPLIB_secondary_starting ) )  then {
         ctrlEnable [ 103, true ];

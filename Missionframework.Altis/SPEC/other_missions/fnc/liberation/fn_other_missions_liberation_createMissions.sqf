@@ -101,3 +101,7 @@ if (_mission_index == 8) then {
         _rescuePosFob
     ] spawn SPEC_fnc_other_missions_damageTransport;
 };
+
+if (_mission_index == 9) then {
+    [KPLIB_o_rifleman, KPLIB_side_enemy] spawn SPEC_fnc_other_missions_destroyBCW;
+};

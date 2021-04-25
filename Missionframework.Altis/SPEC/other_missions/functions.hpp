@@ -14,15 +14,6 @@
 class other_missions {
     file = "SPEC\other_missions\fnc";
 
-    // Module post initialization
-    class other_missions_postInit {
-        postInit = 1;
-    };
-
-    class other_missions_spawnEnemyBot {};
-
-    class other_missions_findPosFromMision {};
-
     class other_missions_captureCity {};
 
     class other_missions_damageTransport {};
@@ -44,6 +35,25 @@ class other_missions {
     class other_missions_rescueMHQ {};
 
     class other_missions_rescuePilots {};
+
+    class other_missions_destroyBCW {};
+};
+
+class other_missions_init {
+    file = "SPEC\other_missions\fnc\init";
+
+    // Module post initialization
+    class other_missions_postInit {
+        postInit = 1;
+    };
+};
+
+class other_missions_utils {
+    file = "SPEC\other_missions\fnc\utils";
+
+    class other_missions_spawnEnemyBot {};
+
+    class other_missions_findPosFromMision {};
 };
 
 class other_missions_rescue_intel {
