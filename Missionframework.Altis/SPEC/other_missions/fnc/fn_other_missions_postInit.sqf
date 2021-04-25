@@ -151,3 +151,10 @@
 // if (isServer) then {["Module initialized", "POST] [MISSIONS", true] call KPLIB_fnc_common_log;};
 
 // true
+
+if (isServer) then {
+    ["KPLIB_missionEnd", {
+        params ["_missionName", "_intel"];
+        resources_intel = resources_intel + _intel;
+    }] call CBA_fnc_addEventHandler;
+}

@@ -19,7 +19,9 @@ if (_mission_index == 1) then {[] spawn convoy_hijack;};
 if (_mission_index == 2) then {[] spawn search_and_rescue;};
 
 // SPEC
-[_mission_index] call SPEC_fnc_other_missions_liberation_create;
+if (!isNil "SPEC_fnc_other_missions_liberation_createMissions") then {
+    [_mission_index] call SPEC_fnc_other_missions_liberation_createMissions;
+};
 
 KPLIB_secondary_starting = false; publicVariable "KPLIB_secondary_starting";
 

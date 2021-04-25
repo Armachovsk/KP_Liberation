@@ -12,7 +12,10 @@ waitUntil { dialog };
     "STR_SECONDARY_MISSION0",
     "STR_SECONDARY_MISSION1",
     "STR_SECONDARY_MISSION2",
-    "STR_SECONDARY_MISSION3"
+    "STR_SECONDARY_MISSION3",
+    "STR_SECONDARY_MISSION4",
+    "STR_SECONDARY_MISSION5",
+    "STR_SECONDARY_MISSION6"
 ];
 
 private [ "_oldchoice", "_images", "_briefings", "_missioncost" ];
@@ -21,6 +24,9 @@ _images = [
     "res\secondary\fob_hunting.jpg",
     "res\secondary\convoy_hijack.jpg",
     "res\secondary\sar.jpg",
+    "SPEC\other_missions\res\krobik.jpg",
+    "SPEC\other_missions\res\krobik.jpg",
+    "SPEC\other_missions\res\krobik.jpg",
     "SPEC\other_missions\res\krobik.jpg"
 ];
 
@@ -28,7 +34,10 @@ _briefings = [
     "STR_SECONDARY_BRIEFING0",
     "STR_SECONDARY_BRIEFING1",
     "STR_SECONDARY_BRIEFING2",
-    "STR_SECONDARY_BRIEFING3"
+    "STR_SECONDARY_BRIEFING3",
+    "STR_SECONDARY_BRIEFING4",
+    "STR_SECONDARY_BRIEFING5",
+    "STR_SECONDARY_BRIEFING6"
 ];
 
 _oldchoice = -1;

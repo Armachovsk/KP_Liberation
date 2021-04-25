@@ -57,3 +57,9 @@ class other_missions_rescue_intel {
 
     class other_missions_rescue_intel_fromUAV {};
 };
+
+class other_missions_liberation {
+    file = "SPEC\other_missions\fnc\liberation";
+
+    class other_missions_liberation_createMissions {};
+};

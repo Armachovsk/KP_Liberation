@@ -52,7 +52,7 @@ params [
 // lock time
 private _Time_to_failed_mission = time;
 //heli
-dron_down = "O_UAV_02_dynamicLoadout_F" createVehicle _pos_mission;
+dron_down = _drone_classname createVehicle _pos_mission;
 dron_down setDamage 0.2;
 dron_down setVehicleAmmo 0;
 dron_down setFuel 0;
@@ -78,7 +78,7 @@ fnc_drone_add_cation={
 [[], {
 	_action_dron = ["TestAction 2","<t color='#ff0000'>Download date</t>","",{
 						[10, [], {Hint "Начата загрузка данных";
-		[] execVM "SPEC\other_missions\mission_4\download_date.sqf";
+		[] spawn SPEC_fnc_other_missions_rescue_intel_downloadData;
 								[[], {[dron_down,0,["ACE_MainActions","TestAction 2"]] call ace_interact_menu_fnc_removeActionFromObject;}] remoteExec ["call"];
 						}, {hint "Подключение прервано"}, "Подключение..."] call ace_common_fnc_progressBar;
 					},{true}] call ace_interact_menu_fnc_createAction;
@@ -96,7 +96,7 @@ publicVariable "attack_bot_mission_4_true";
 	_classnave_vehicle_bot_attack_heli,
 	_side_bot_to_attack,
 	_arry_bot_to_attac
-] execVM "SPEC\other_missions\mission_4\bot_attack.sqf";
+] spawn SPEC_fnc_other_missions_rescue_intel_botAttack;
 
 //warning time!
 [[], {hint "Внимание врагам понадобиться не более получаса что бы найти место падения беспилотника! Поторопитесь!"}] remoteExec ["call"];
@@ -164,6 +164,4 @@ sleep 10;
 ["Task_04_1"] call BIS_fnc_deleteTask;
 ["Task_04_2"] call BIS_fnc_deleteTask;
 
-
-
-["KPLIB_missionEnd", ["Recvest_intel_from_UAV"]] call CBA_fnc_serverEvent;
+["KPLIB_missionEnd", ["SPEC_other_missions_rescue_intel_fromUAV", 10]] call CBA_fnc_serverEvent;
