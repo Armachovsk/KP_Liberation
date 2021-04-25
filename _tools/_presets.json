@@ -14,7 +14,7 @@
         "workshopId": "1578862234"
     },
     {
-        "sourceFolder": "kp_liberation.Altis",
+        "sourceFolder": "spec_liberation.Altis",
         "missionName": "spec_liberation_chdkz",
         "map": "Altis",
         "configFile": "KPLIB_config.sqf",
