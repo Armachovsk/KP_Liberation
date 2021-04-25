@@ -8,10 +8,11 @@ if (_state isEqualTo "SUCCEEDED") then {
 };
 if (_state isEqualTo "FAILED") then {
     private _intel = _rewardsOrPenaltyHash getOrDefault ["intel", 0];
-    if (resources_intel <= 0) then {
+    private _minus = resources_intel - _intel;
+    if (_minus <= 0) then {
         resources_intel = 0;
     };
-    resources_intel = resources_intel - _intel;
+    resources_intel = _minus;
 };
 
 KPLIB_secondary_in_progress = -1;

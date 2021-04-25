@@ -70,3 +70,34 @@ if (_mission_index == 6) then {
         ]
     ] spawn SPEC_fnc_other_missions_rescue_intel_fromUAV;
 };
+
+if (_mission_index == 7) then {
+    private _pos_misison = call SPEC_fnc_other_missions_findPosFromMision;
+    private _colonaPool = KPLIB_b_light_classes select { _x isKindOf "MRAP_01_base_F" };
+    private _colona = [
+        (_colonaPool param [0, "rhsusf_m1025_d_m2"]),
+        (_colonaPool param [1, "rhsusf_M1117_D"]),
+        (_colonaPool param [2, "rhsusf_m113d_usarmy"])
+    ];
+
+    // TODO: what if we don't have fobs?
+    private _rescuePosFob = [] call KPLIB_fnc_getNearestFob;
+    [
+        _pos_misison,
+        KPLIB_b_fobTruck,
+        _colona,
+        _rescuePosFob
+    ] spawn SPEC_fnc_other_missions_rescueMHQ;
+};
+
+if (_mission_index == 8) then {
+    private _pos_misison = call SPEC_fnc_other_missions_findPosFromMision;
+    // TODO: what if we don't have fobs?
+    private _rescuePosFob = [] call KPLIB_fnc_getNearestFob;
+    [
+        _pos_misison,
+        KPLIB_sarWreck,
+        "CBRNContainer_01_closed_olive_F",
+        _rescuePosFob
+    ] spawn SPEC_fnc_other_missions_damageTransport;
+};

@@ -7484,5 +7484,21 @@
             <Original>&lt;t size='1.3' color='#ffa000'&gt;DOWNLOAD INTEL FROM UAV&lt;/t&gt;&lt;br/&gt;</Original>
             <Russian>&lt;t size='1.3' color='#ffa000'&gt;СКАЧАТЬ РАЗВЕД. ДАННЫЕ С ДРОНА&lt;/t&gt;&lt;br/&gt;</Russian>
         </Key>
+        <Key ID="STR_SECONDARY_MISSION7">
+            <Original>Rescue MHQ</Original>
+            <Russian>Эвакуировать КШМ на базу</Russian>
+        </Key>
+        <Key ID="STR_SECONDARY_BRIEFING7">
+            <Original>&lt;t size='1.3' color='#ffa000'&gt;RESCUE MHQ&lt;/t&gt;&lt;br/&gt;</Original>
+            <Russian>&lt;t size='1.3' color='#ffa000'&gt;ЭВАКУИРОВАТЬ КШМ НА БАЗУ&lt;/t&gt;&lt;br/&gt;</Russian>
+        </Key>
+        <Key ID="STR_SECONDARY_MISSION8">
+            <Original>Rescue black box from damaged heli</Original>
+            <Russian>Эвакуировать черный ящик из подбитого вертолета</Russian>
+        </Key>
+        <Key ID="STR_SECONDARY_BRIEFING8">
+            <Original>&lt;t size='1.3' color='#ffa000'&gt;RESCUE BLACK BOX FROM DAMAGED HELI&lt;/t&gt;&lt;br/&gt;</Original>
+            <Russian>&lt;t size='1.3' color='#ffa000'&gt;ЭВАКУИРОВАТЬ ЧЕРНЫЙ ЯЩИК ИЗ ПОДБИТОГО ВЕРТОЛЕТА&lt;/t&gt;&lt;br/&gt;</Russian>
+        </Key>
     </Package>
 </Project>
