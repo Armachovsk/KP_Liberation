@@ -51,11 +51,8 @@ while { dialog && alive player && dostartsecondary == 0 } do {
         ((findDisplay 6842) displayCtrl (102)) ctrlSetStructuredText parseText localize (_briefings select _oldchoice);
     };
 
-    _missioncost = KPLIB_secondary_missions_costs select _oldchoice;
-
-    if (isNil "_missioncost") then {
-        _missioncost = 5;
-    };
+    private _missioncost = KPLIB_secondary_missions_costs param [_oldchoice, 5];
+    diag_log format["SECONDARY_UI _missioncost = %1",_missioncost];
 
     if ( ( _missioncost <= resources_intel ) && ( !KPLIB_secondary_starting ) )  then {
         ctrlEnable [ 103, true ];

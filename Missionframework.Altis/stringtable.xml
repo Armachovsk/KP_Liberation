@@ -7457,32 +7457,32 @@
             <Russian>Уничтожить танк</Russian>
         </Key>
         <Key ID="STR_SECONDARY_BRIEFING3">
-            <Original>&lt;t size='1.3' color='#ffa000'&gt;DESTROY TANK&lt;/t&gt;&lt;br/&gt;&lt;t size='10'&gt;&lt;img image='SPEC\other_missions\res\krobik.jpg'/&gt;&lt;/t&gt;</Original>
-            <Russian>&lt;t size='1.3' color='#ffa000'&gt;УНИЧТОЖИТЬ ТАНК&lt;/t&gt;&lt;br/&gt;&lt;t size='10'&gt;&lt;img image='SPEC\other_missions\res\krobik.jpg'/&gt;&lt;/t&gt;</Russian>
+            <Original>&lt;t size='1.3' color='#ffa000'&gt;DESTROY TANK&lt;/t&gt;&lt;br/&gt;</Original>
+            <Russian>&lt;t size='1.3' color='#ffa000'&gt;УНИЧТОЖИТЬ ТАНК&lt;/t&gt;&lt;br/&gt;</Russian>
         </Key>
         <Key ID="STR_SECONDARY_MISSION4">
             <Original>Destroy Heli</Original>
             <Russian>Уничтожить вертолет</Russian>
         </Key>
         <Key ID="STR_SECONDARY_BRIEFING4">
-            <Original>&lt;t size='1.3' color='#ffa000'&gt;DESTROY HELI&lt;/t&gt;&lt;br/&gt;&lt;t size='10'&gt;&lt;img image='SPEC\other_missions\res\krobik.jpg'/&gt;&lt;/t&gt;</Original>
-            <Russian>&lt;t size='1.3' color='#ffa000'&gt;УНИЧТОЖИТЬ ВЕРТОЛЕТ&lt;/t&gt;&lt;br/&gt;&lt;t size='10'&gt;&lt;img image='SPEC\other_missions\res\krobik.jpg'/&gt;&lt;/t&gt;</Russian>
+            <Original>&lt;t size='1.3' color='#ffa000'&gt;DESTROY HELI&lt;/t&gt;&lt;br/&gt;</Original>
+            <Russian>&lt;t size='1.3' color='#ffa000'&gt;УНИЧТОЖИТЬ ВЕРТОЛЕТ&lt;/t&gt;&lt;br/&gt;</Russian>
         </Key>
         <Key ID="STR_SECONDARY_MISSION5">
             <Original>Rescue Pilot</Original>
             <Russian>Спасти пилота</Russian>
         </Key>
         <Key ID="STR_SECONDARY_BRIEFING5">
-            <Original>&lt;t size='1.3' color='#ffa000'&gt;RESCUE PILOT&lt;/t&gt;&lt;br/&gt;&lt;t size='10'&gt;&lt;img image='SPEC\other_missions\res\krobik.jpg'/&gt;&lt;/t&gt;</Original>
-            <Russian>&lt;t size='1.3' color='#ffa000'&gt;СПАСТИ ПИЛОТА&lt;/t&gt;&lt;br/&gt;&lt;t size='10'&gt;&lt;img image='SPEC\other_missions\res\krobik.jpg'/&gt;&lt;/t&gt;</Russian>
+            <Original>&lt;t size='1.3' color='#ffa000'&gt;RESCUE PILOT&lt;/t&gt;&lt;br/&gt;</Original>
+            <Russian>&lt;t size='1.3' color='#ffa000'&gt;СПАСТИ ПИЛОТА&lt;/t&gt;&lt;br/&gt;</Russian>
         </Key>
         <Key ID="STR_SECONDARY_MISSION6">
             <Original>Download intel from UAV</Original>
             <Russian>Скачать развед. данные с дрона</Russian>
         </Key>
         <Key ID="STR_SECONDARY_BRIEFING6">
-            <Original>&lt;t size='1.3' color='#ffa000'&gt;DOWNLOAD INTEL FROM UAV&lt;/t&gt;&lt;br/&gt;&lt;t size='10'&gt;&lt;img image='SPEC\other_missions\res\krobik.jpg'/&gt;&lt;/t&gt;</Original>
-            <Russian>&lt;t size='1.3' color='#ffa000'&gt;СКАЧАТЬ РАЗВЕД. ДАННЫЕ С ДРОНА&lt;/t&gt;&lt;br/&gt;&lt;t size='10'&gt;&lt;img image='SPEC\other_missions\res\krobik.jpg'/&gt;&lt;/t&gt;</Russian>
+            <Original>&lt;t size='1.3' color='#ffa000'&gt;DOWNLOAD INTEL FROM UAV&lt;/t&gt;&lt;br/&gt;</Original>
+            <Russian>&lt;t size='1.3' color='#ffa000'&gt;СКАЧАТЬ РАЗВЕД. ДАННЫЕ С ДРОНА&lt;/t&gt;&lt;br/&gt;</Russian>
         </Key>
     </Package>
 </Project>
