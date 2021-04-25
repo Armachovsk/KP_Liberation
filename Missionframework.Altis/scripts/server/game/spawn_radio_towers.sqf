@@ -9,7 +9,12 @@ private _tower = objNull;
     _sector = _x;
     _saved = KPLIB_sectorTowers select {(_x select 0) isEqualTo _sector};
     if (_saved isEqualTo []) then {
-        _classname = selectRandom KPLIB_radioTowerClassnames;
+        if (KPLIB_radioTowerClassnames isEqualType []) then {
+            _classname = selectRandom KPLIB_radioTowerClassnames;
+        };
+        if (KPLIB_radioTowerClassnames isEqualType "") then {
+            _classname = KPLIB_radioTowerClassnames;
+        };
         KPLIB_sectorTowers pushBack [_sector, _classname];
     } else {
         _classname = (_saved select 0) select 1;

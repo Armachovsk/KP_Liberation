@@ -428,9 +428,15 @@ KPLIB_intelBuildingClasses = [
 ];
 
 // Array of radio tower classnames to place at radio tower sectors. If more than one is added, it'll be selected random for each sector on campaign start.
-KPLIB_radioTowerClassnames = [
-    "Land_Communication_F"
-];
+if (isClass (configfile >> "CfgPatches" >> "CUP_Core")) then {
+    KPLIB_radioTowerClassnames = [
+        "Land_Antenna"
+    ];
+} else {
+    KPLIB_radioTowerClassnames = [
+        "Land_Communication_F"
+    ];
+};
 
 // Classnames of objects which should be ignored when building
 KPLIB_collisionIgnoreObjects = [
