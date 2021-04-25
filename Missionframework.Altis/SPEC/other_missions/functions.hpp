@@ -44,8 +44,6 @@ class other_missions {
     class other_missions_rescueMHQ {};
 
     class other_missions_rescuePilots {};
-
-    class other_missions_liberation_create {};
 };
 
 class other_missions_rescue_intel {
