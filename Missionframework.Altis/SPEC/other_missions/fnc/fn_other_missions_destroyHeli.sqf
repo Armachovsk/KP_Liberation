@@ -35,4 +35,4 @@ deleteMarker _marker1;
 sleep 10;
 ["Task_02"] call BIS_fnc_deleteTask;
 
-["KPLIB_missionEnd", ["SPEC_other_missions_destroyHeli", 10]] call CBA_fnc_serverEvent;
+["SPEC_liberation_missionEnd", ["SPEC_other_missions_destroyHeli", 10]] call CBA_fnc_serverEvent;

@@ -80,7 +80,7 @@ waitUntil{
     ((getPos _unit_officer) inArea [_arry_pos_coordinate_delivery_officer, 100, 100, 0, false] or !alive _unit_officer)
 };
 
-["KPLIB_missionEnd", ["Destroy_Tank"]] call CBA_fnc_serverEvent;
+["SPEC_liberation_missionEnd", ["Destroy_Tank"]] call CBA_fnc_serverEvent;
 
 if(!alive _unit_officer) exitWith {
 ["Task_12","SUCCEEDED"] call BIS_fnc_taskSetState;

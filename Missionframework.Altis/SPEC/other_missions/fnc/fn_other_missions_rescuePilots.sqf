@@ -81,4 +81,4 @@ deleteVehicle _pilot2;
 ["Task_03_1"] call BIS_fnc_deleteTask;
 
 
-["KPLIB_missionEnd", ["SPEC_other_missions_rescuePilots", 10]] call CBA_fnc_serverEvent;
+["SPEC_liberation_missionEnd", ["SPEC_other_missions_rescuePilots", 10]] call CBA_fnc_serverEvent;

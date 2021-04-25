@@ -60,4 +60,6 @@ class other_missions_liberation {
     file = "SPEC\other_missions\fnc\liberation";
 
     class other_missions_liberation_createMissions {};
+
+    class other_missions_liberation_onMissionEnd {};
 };

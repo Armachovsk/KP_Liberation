@@ -164,4 +164,4 @@ sleep 10;
 ["Task_04_1"] call BIS_fnc_deleteTask;
 ["Task_04_2"] call BIS_fnc_deleteTask;
 
-["KPLIB_missionEnd", ["SPEC_other_missions_rescue_intel_fromUAV", 10]] call CBA_fnc_serverEvent;
+["SPEC_liberation_missionEnd", ["SPEC_other_missions_rescue_intel_fromUAV", 10]] call CBA_fnc_serverEvent;

@@ -153,8 +153,9 @@
 // true
 
 if (isServer) then {
-    ["KPLIB_missionEnd", {
-        params ["_missionName", "_intel"];
-        resources_intel = resources_intel + _intel;
+    ["SPEC_liberation_missionEnd", {
+        _this call SPEC_fnc_other_missions_liberation_onMissionEnd;
     }] call CBA_fnc_addEventHandler;
 }
+
+true
