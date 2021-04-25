@@ -4,23 +4,29 @@ export interface Preset {
      * If mission.sqm is in root of "missionsFolder" should be empty string.
      *
      * @see FolderStructureInfo.missionsFolder
-    */
+     */
     readonly sourceFolder: string;
 
     /**
      * Path to file with mission configuration.
      * Replacement of variables will be applied here.
-    */
+     */
     readonly configFile: string;
 
     /**
+     * Path to file with mission configuration.
+     * Replacement of variables will be applied here.
+     */
+    readonly classnamesFile: string;
+
+    /**
      * Name of mission (part before mapname)
-    */
+     */
     readonly missionName: string;
 
     /**
      * Map name
-    */
+     */
     readonly map: string;
 
     /**
@@ -31,8 +37,14 @@ export interface Preset {
     /**
      * key=>val of values to replace in config file
      * @see {VariablesReplacements}
-    */
+     */
     readonly variables: VariablesReplacements;
+
+    /**
+     * key=>val of values to replace in config file
+     * @see {VariablesReplacements}
+     */
+    readonly classnames: VariablesReplacements;
 
     /**
      * Steam Workshop Id

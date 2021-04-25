@@ -19,7 +19,7 @@ const presets: Preset[] = require("./_presets.json");
 const paths: FolderStructureInfo = {
     frameworkFolder: resolve("..", "Missionframework.Altis"),
     missionsFolder: resolve("..", "Missionbasefiles"),
-    workDir: resolve("./build"),
+    workDir: resolve("../build"),
 };
 
 /**
@@ -65,6 +65,30 @@ for (let preset of presets) {
                         "ig"
                     );
                     const value = JSON.stringify(preset.variables[variable]);
+
+                    // replace variable value
+                    src = src.pipe(gulpReplace(regex, `$1${value}`));
+                }
+
+                return src.pipe(gulp.dest(mission.getOutputDir()));
+            },
+
+            /** Replace variables values in configuration file */
+            function classnamesReplace() {
+                let src = gulp.src(mission.getMissionClassnamesFilePath());
+
+                const variables = Object.getOwnPropertyNames(
+                    preset.classnames || []
+                );
+                for (let variable of variables) {
+                    // https://regex101.com/r/YknC8r/1
+                    const regex = new RegExp(
+                        `(${variable} += +)(?:\\d+|".+"|\[.*?\])`,
+                        "ig"
+                    );
+                    const value = JSON.stringify(
+                        (preset.classnames || [])[variable]
+                    );
 
                     // replace variable value
                     src = src.pipe(gulpReplace(regex, `$1${value}`));
@@ -189,7 +213,9 @@ for (let preset of presets) {
 
 // Main tasks
 gulp.task("clean", () => {
-    return gulp.src(paths.workDir).pipe(vinylPaths(del));
+    return gulp
+        .src(paths.workDir)
+        .pipe(vinylPaths((path) => del(path, { force: true })));
 });
 
 gulp.task("build", gulp.series(taskNames));

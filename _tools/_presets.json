@@ -18,12 +18,16 @@
         "missionName": "spec_liberation_chdkz",
         "map": "Altis",
         "configFile": "KPLIB_config.sqf",
+        "classnamesFile": "KPLIB_classnameLists.sqf",
         "variables": {
             "KPLIB_preset_blufor": 31,
             "KPLIB_preset_opfor": 21,
             "KPLIB_preset_resistance": 9,
             "KPLIB_preset_civilians": 0,
             "KPLIB_presetArsenal": "rhs_blufor"
+        },
+        "classnames": {
+            "KPLIB_radioTowerClassnames": "Land_Antenna"
         },
         "workshopId": ""
     },

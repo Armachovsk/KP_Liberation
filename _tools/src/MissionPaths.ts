@@ -1,9 +1,8 @@
-import { Preset, FolderStructureInfo } from './Config';
+import { Preset, FolderStructureInfo } from "./Config";
 import * as path from "path";
 
 export class MissionPaths {
-
-    static readonly missionSQM = 'mission.sqm';
+    static readonly missionSQM = "mission.sqm";
 
     private preset: Preset;
 
@@ -23,7 +22,7 @@ export class MissionPaths {
     }
 
     public getFullName(): string {
-        return [this.getName(), this.getMap()].join('.');
+        return [this.getName(), this.getMap()].join(".");
     }
 
     public getWorkDir(): string {
@@ -37,7 +36,7 @@ export class MissionPaths {
         return path.resolve(
             this.folderStructure.missionsFolder,
             this.preset.sourceFolder,
-            'mission.sqm'
+            "mission.sqm"
         );
     }
 
@@ -48,25 +47,29 @@ export class MissionPaths {
         return path.resolve(this.folderStructure.frameworkFolder);
     }
 
-    /** 
-     * Get path to folder containing mission files 
+    /**
+     * Get path to folder containing mission files
      */
     public getOutputDir(): string {
-        return path.resolve(
-            this.folderStructure.workDir,
-            this.getFullName()
-        );
+        return path.resolve(this.folderStructure.workDir, this.getFullName());
     }
 
-    /** 
+    /**
      * Get path to file with mission configuration.
      * As defined in preset.
      */
     public getMissionConfigFilePath(): string {
-        return path.resolve(
-            this.getOutputDir(),
-            this.preset.configFile
-        );
+        return path.resolve(this.getOutputDir(), this.preset.configFile);
     }
 
+    /**
+     * Get path to file with mission configuration.
+     * As defined in preset.
+     */
+    public getMissionClassnamesFilePath(): string {
+        return path.resolve(
+            this.getOutputDir(),
+            this.preset.classnamesFile || ""
+        );
+    }
 }
