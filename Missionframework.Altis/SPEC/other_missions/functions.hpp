@@ -72,4 +72,8 @@ class other_missions_liberation {
     class other_missions_liberation_createMissions {};
 
     class other_missions_liberation_onMissionEnd {};
+
+    class other_missions_liberation_eventsInit {
+        postInit = 1;
+    };
 };

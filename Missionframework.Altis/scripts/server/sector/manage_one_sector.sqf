@@ -12,6 +12,8 @@ waitUntil {!isNil "KPLIB_enemyReadiness"};
 
 [format ["Sector %1 (%2) activated - Managed on: %3", (markerText _sector), _sector, debug_source], "SECTORSPAWN"] remoteExecCall ["KPLIB_fnc_log", 2];
 
+["KPLIB_sectorActivated", [_sector]] call CBA_fnc_serverEvent;
+
 private _sectorpos = markerPos _sector;
 private _stopit = false;
 private _spawncivs = false;
