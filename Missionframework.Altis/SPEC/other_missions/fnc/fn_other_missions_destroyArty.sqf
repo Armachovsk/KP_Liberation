@@ -10,7 +10,12 @@
 // [[200,200,0],"CPC_ME_O_KAM_D30",[400,400,0]] execVM "SPEC\other_missions\mission_7\mission_1.sqf";
 
 //param
-params ["_spawnPointSector", "_class_name_artilery", "_arry_pos_bombing", ["_bot_spawn_cb", {}, [{}]], ["_clean_cb", {}, [{}]]];
+params [
+    "_spawnPointSector",
+    "_class_name_artilery",
+    "_arry_pos_bombing",
+    ["_bot_spawn_cb", {}, [{}]]
+];
 
 
 //artilery
@@ -53,7 +58,7 @@ private _Marker7 = createMarker ["Marker7", _artilery_1 getPos [random 300, rand
 //task
 ["Task_07", true, ["Уничтожить артелерию","Уничтожить артелерию","respawn_west"], getMarkerPos _Marker7, "ASSIGNED", 5, true, true, "destroy", true] call BIS_fnc_setTask;
 
-private _managed_units = [_spawnPointSector] call _bot_spawn_cb;
+([_spawnPointSector] call _bot_spawn_cb) params ["_onDestroy", "_onDestroyArgs"];
 
 waitUntil {
 	sleep 10;
@@ -63,8 +68,12 @@ waitUntil {
 deleteMarker _Marker7;
 ["Task_07","SUCCEEDED"] call BIS_fnc_taskSetState;
 
+private _rewards = createHashMap;
+_rewards set ["intel", 0];
+["SPEC_liberation_missionEnd", ["SPEC_other_missions_destroyArty", "SUCCEEDED", _rewards]] call CBA_fnc_serverEvent;
+
 sleep 10;
 ["Task_07"] call BIS_fnc_deleteTask;
 
 sleep 600;
-[_managed_units] call _clean_cb;
+_onDestroyArgs call _onDestroy;
