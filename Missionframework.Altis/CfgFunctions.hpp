@@ -106,4 +106,5 @@ class SPEC {
     #include "SPEC\arsenal_02\functions.hpp"
     #include "SPEC\rabbit_support\functions.hpp"
     #include "SPEC\other_missions\functions.hpp"
+    #include "SPEC\radio_chatter\functions.hpp"
 };
