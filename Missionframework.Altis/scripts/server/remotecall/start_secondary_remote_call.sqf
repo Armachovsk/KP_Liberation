@@ -12,7 +12,15 @@ if (isNil "used_positions") then {used_positions = [];};
 
 KPLIB_secondary_starting = true; publicVariable "KPLIB_secondary_starting";
 
-resources_intel = resources_intel - ( KPLIB_secondary_missions_costs select _mission_index );
+private _missionCost = KPLIB_secondary_missions_costs param [_mission_index, 5];
+resources_intel = resources_intel - _missionCost;
+
+["SPEC_liberation_missionEnd", {
+    params ["_missionName", "_state", "_rewardsOrPenaltyHashOrErr"];
+    if (_state isEqualTo "ERROR") then {
+        resources_intel = resources_intel + _thisArgs;
+    };
+}, _missionCost] call CBA_fnc_addEventHandlerArgs;
 
 if (_mission_index == 0) then {[] spawn fob_hunting;};
 if (_mission_index == 1) then {[] spawn convoy_hijack;};

@@ -48,7 +48,7 @@ private _bilding_from_mission_general = [];
 
 
 if (_bilding_from_mission_general isEqualTo []) exitWith {
-    ["SPEC_liberation_missionEnd", ["SPEC_other_missions_rescueHostage", "ERROR", "Не найдено подходящих зданий!"]] call CBA_fnc_serverEvent;
+    ["SPEC_liberation_missionEnd", ["SPEC_other_missions_rescueHostage", "ERROR", "No matching buildings found!"]] call CBA_fnc_serverEvent;
 };
 
 

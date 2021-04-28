@@ -37,7 +37,9 @@ private _bilding_from_mission_general = [];
 };
 
 
-if (_bilding_from_mission_general isEqualTo [])exitWith{hint"Не найдено подходящих зданий"};
+if (_bilding_from_mission_general isEqualTo []) exitWith {
+    ["SPEC_liberation_missionEnd", ["SPEC_other_missions_rescueHostage", "ERROR", "No matching buildings found!"]] call CBA_fnc_serverEvent;
+};
 
 
 ["Task_12", true, ["Захватить или убить офицера","Захватить или убить офицера","respawn_west"], _pos_mission, "CREATED", 5, true, true, "kill", true] call BIS_fnc_setTask;
@@ -80,16 +82,24 @@ waitUntil{
     ((getPos _unit_officer) inArea [_arry_pos_coordinate_delivery_officer, 100, 100, 0, false] or !alive _unit_officer)
 };
 
-["SPEC_liberation_missionEnd", ["Destroy_Tank"]] call CBA_fnc_serverEvent;
-
 if(!alive _unit_officer) exitWith {
 ["Task_12","SUCCEEDED"] call BIS_fnc_taskSetState;
+
+private _penalty = createHashMap;
+_penalty set ["intel", 10];
+["SPEC_liberation_missionEnd", ["SPEC_other_missions_killGeneral", "FAILED", _penalty]] call CBA_fnc_serverEvent;
+
 sleep 10;
 ["Task_12"] call BIS_fnc_deleteTask;
 };
 
 if((getPos _unit_officer) inArea [_arry_pos_coordinate_delivery_officer, 100, 100, 0, false]) exitWith {
 ["Task_12","SUCCEEDED"] call BIS_fnc_taskSetState;
+
+private _rewards = createHashMap;
+_rewards set ["intel", 20];
+["SPEC_liberation_missionEnd", ["SPEC_other_missions_killGeneral", "SUCCEEDED", _rewards]] call CBA_fnc_serverEvent;
+
 sleep 10;
 ["Task_12"] call BIS_fnc_deleteTask;
 };

@@ -120,3 +120,24 @@ if (_mission_index == 10) then {
         200
     ] spawn SPEC_fnc_other_missions_rescueHostage;
 };
+
+if (_mission_index == 11) then {
+    private _pos_misison = call SPEC_fnc_other_missions_findPosFromMision;
+    // TODO: what if we don't have fobs?
+    private _rescuePosFob = [] call KPLIB_fnc_getNearestFob;
+    [
+        _pos_misison,
+        [
+            KPLIB_o_officer,
+            KPLIB_o_squadLeader
+        ],
+        [
+            KPLIB_o_riflemanLAT,
+            KPLIB_o_rifleman,
+            KPLIB_o_heavyGunner,
+            KPLIB_o_machinegunner
+        ],
+        200,
+        _rescuePosFob
+    ] spawn SPEC_fnc_other_missions_killGeneral;
+};

@@ -7516,5 +7516,13 @@
             <Original>&lt;t size='1.3' color='#ffa000'&gt;RESCUE HOSTAGE&lt;/t&gt;&lt;br/&gt;</Original>
             <Russian>&lt;t size='1.3' color='#ffa000'&gt;ОСВОБОДИТЬ ЗАЛОЖНИКА&lt;/t&gt;&lt;br/&gt;</Russian>
         </Key>
+        <Key ID="STR_SPEC_OTHER_MISSIONS_KILL_GENERAL">
+            <Original>Capture or kill officer</Original>
+            <Russian>Захватить или убить офицера</Russian>
+        </Key>
+        <Key ID="STR_SPEC_OTHER_MISSIONS_BRIEFING_KILL_GENERAL">
+            <Original>&lt;t size='1.3' color='#ffa000'&gt;CAPTURE OR KILL OFFICER&lt;/t&gt;&lt;br/&gt;</Original>
+            <Russian>&lt;t size='1.3' color='#ffa000'&gt;ЗАХВАТИТЬ ИЛИ УБИТЬ ОФИЦЕРА&lt;/t&gt;&lt;br/&gt;</Russian>
+        </Key>
     </Package>
 </Project>
