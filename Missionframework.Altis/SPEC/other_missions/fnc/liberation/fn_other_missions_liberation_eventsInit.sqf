@@ -1,6 +1,6 @@
 if (isServer) then {
     ["KPLIB_sectorActivated", {
-        if (10 > random 100 && {KPLIB_enemyReadiness >= 75}) then {
+        if (5 > random 100 && {KPLIB_enemyReadiness >= 75}) then {
             KPLIB_secondary_in_progress = 1;
             publicVariable "KPLIB_secondary_in_progress";
 
