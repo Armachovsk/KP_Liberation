@@ -47,7 +47,9 @@ private _bilding_from_mission_general = [];
 };
 
 
-if (_bilding_from_mission_general isEqualTo [])exitWith{hint"Не найдено подходящих зданий"};
+if (_bilding_from_mission_general isEqualTo []) exitWith {
+    ["SPEC_liberation_missionEnd", ["SPEC_other_missions_rescueHostage", "ERROR", "Не найдено подходящих зданий!"]] call CBA_fnc_serverEvent;
+};
 
 
 ["Task_11", true, ["Освободить заложнка","Освободить заложнка","respawn_west"], _pos_mission, "CREATED", 5, true, true, "meet", true] call BIS_fnc_setTask;
@@ -94,12 +96,20 @@ waitUntil{
 
 if(!alive _unit_1_zaloznic)exitWith{
 	["Task_11","FAILED"] call BIS_fnc_taskSetState;
+
+    private _penalty = createHashMap;
+    _penalty set ["intel", 10];
+    ["SPEC_liberation_missionEnd", ["SPEC_other_missions_rescueHostage", "FAILED", _penalty]] call CBA_fnc_serverEvent;
+
 	sleep 10;
 	["Task_11"] call BIS_fnc_deleteTask;
 };
 
 ["Task_11","SUCCEEDED"] call BIS_fnc_taskSetState;
 
-sleep 10;
+private _rewards = createHashMap;
+_rewards set ["intel", 10];
+["SPEC_liberation_missionEnd", ["SPEC_other_missions_rescueHostage", "SUCCEEDED", _rewards]] call CBA_fnc_serverEvent;
 
+sleep 10;
 ["Task_11"] call BIS_fnc_deleteTask;

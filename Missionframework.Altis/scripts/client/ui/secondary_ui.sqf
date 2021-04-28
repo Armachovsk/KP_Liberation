@@ -18,7 +18,8 @@ waitUntil { dialog };
     "STR_SPEC_OTHER_MISSIONS_DOWNLOAD_INTEL_FROM_UAV",
     "STR_SPEC_OTHER_MISSIONS_RESCUE_MHQ",
     "STR_SPEC_OTHER_MISSIONS_RESCUE_BLACK_BOX",
-    "STR_SPEC_OTHER_MISSIONS_DESTROY_BCW"
+    "STR_SPEC_OTHER_MISSIONS_DESTROY_BCW",
+    "STR_SPEC_OTHER_MISSIONS_RESCUE_HOSTAGE"
 ];
 
 private [ "_oldchoice", "_images", "_briefings", "_missioncost" ];
@@ -26,14 +27,7 @@ private [ "_oldchoice", "_images", "_briefings", "_missioncost" ];
 _images = [
     "res\secondary\fob_hunting.jpg",
     "res\secondary\convoy_hijack.jpg",
-    "res\secondary\sar.jpg",
-    "SPEC\other_missions\res\krobik.jpg",
-    "SPEC\other_missions\res\krobik.jpg",
-    "SPEC\other_missions\res\krobik.jpg",
-    "SPEC\other_missions\res\krobik.jpg",
-    "SPEC\other_missions\res\krobik.jpg",
-    "SPEC\other_missions\res\krobik.jpg",
-    "SPEC\other_missions\res\krobik.jpg"
+    "res\secondary\sar.jpg"
 ];
 
 _briefings = [
@@ -46,7 +40,8 @@ _briefings = [
     "STR_SPEC_OTHER_MISSIONS_BRIEFING_DOWNLOAD_INTEL_FROM_UAV",
     "STR_SPEC_OTHER_MISSIONS_BRIEFING_RESCUE_MHQ",
     "STR_SPEC_OTHER_MISSIONS_BRIEFING_RESCUE_BLACK_BOX",
-    "STR_SPEC_OTHER_MISSIONS_BRIEFING_DESTROY_BCW"
+    "STR_SPEC_OTHER_MISSIONS_BRIEFING_DESTROY_BCW",
+    "STR_SPEC_OTHER_MISSIONS_BRIEFING_RESCUE_HOSTAGE"
 ];
 
 _oldchoice = -1;
@@ -56,7 +51,7 @@ while { dialog && alive player && dostartsecondary == 0 } do {
 
     if ( _oldchoice != lbCurSel 101 ) then {
         _oldchoice = lbCurSel 101;
-        ctrlSetText [ 106, _images select _oldchoice ];
+        ctrlSetText [ 106, _images param [_oldchoice, "SPEC\other_missions\res\krobik.jpg"] ];
         ((findDisplay 6842) displayCtrl (102)) ctrlSetStructuredText parseText localize (_briefings select _oldchoice);
     };
 

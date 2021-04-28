@@ -105,3 +105,18 @@ if (_mission_index == 8) then {
 if (_mission_index == 9) then {
     [KPLIB_o_rifleman, KPLIB_side_enemy] spawn SPEC_fnc_other_missions_destroyBCW;
 };
+
+if (_mission_index == 10) then {
+    private _pos_misison = call SPEC_fnc_other_missions_findPosFromMision;
+    [
+        _pos_misison,
+        KPLIB_c_units,
+        [
+            KPLIB_o_riflemanLAT,
+            KPLIB_o_rifleman,
+            KPLIB_o_heavyGunner,
+            KPLIB_o_machinegunner
+        ],
+        200
+    ] spawn SPEC_fnc_other_missions_rescueHostage;
+};

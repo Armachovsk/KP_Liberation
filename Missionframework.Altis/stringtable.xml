@@ -7508,5 +7508,13 @@
             <Original>&lt;t size='1.3' color='#ffa000'&gt;DESTROY SAMPLES OF BIOCHEMICAL WEAPON&lt;/t&gt;&lt;br/&gt;</Original>
             <Russian>&lt;t size='1.3' color='#ffa000'&gt;УНИЧТОЖИТЬ ОБРАЗЦЫ ХИМ ОРУЖИЯ&lt;/t&gt;&lt;br/&gt;</Russian>
         </Key>
+        <Key ID="STR_SPEC_OTHER_MISSIONS_RESCUE_HOSTAGE">
+            <Original>Rescue Hostage</Original>
+            <Russian>Освободить заложника</Russian>
+        </Key>
+        <Key ID="STR_SPEC_OTHER_MISSIONS_BRIEFING_RESCUE_HOSTAGE">
+            <Original>&lt;t size='1.3' color='#ffa000'&gt;RESCUE HOSTAGE&lt;/t&gt;&lt;br/&gt;</Original>
+            <Russian>&lt;t size='1.3' color='#ffa000'&gt;ОСВОБОДИТЬ ЗАЛОЖНИКА&lt;/t&gt;&lt;br/&gt;</Russian>
+        </Key>
     </Package>
 </Project>
