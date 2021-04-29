@@ -107,4 +107,5 @@ class SPEC {
     #include "SPEC\rabbit_support\functions.hpp"
     #include "SPEC\other_missions\functions.hpp"
     #include "SPEC\radio_chatter\functions.hpp"
+    #include "SPEC\jammer\functions.hpp"
 };

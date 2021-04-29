@@ -23,4 +23,6 @@ private _tower = objNull;
     _tower setPos (markerpos _x);
     _tower setVectorUp [0, 0, 1];
     _tower addEventHandler ["HandleDamage", {0}];
+
+    ["KPLIB_sectorTowerSpawned", [_sector, _classname, _tower]] call CBA_fnc_serverEvent;
 } forEach KPLIB_sectors_tower;
