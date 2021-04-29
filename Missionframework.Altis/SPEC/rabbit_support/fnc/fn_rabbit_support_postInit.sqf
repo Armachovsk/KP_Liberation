@@ -15,5 +15,5 @@ if (!isDedicated && hasInterface) then {
 };
 
 if (isServer) then {
-    [] spawn SPEC_fnc_rabbit_support_vehicleOnFire;
+    execVM "SPEC\rabbit_support\scripts\vehicleOnFire.sqf";
 };

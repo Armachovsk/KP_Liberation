@@ -67,4 +67,3 @@ while {STOP_burning_vehicle_car} do {
 	} forEach _vehicle;
 	sleep 15;
 };
-
