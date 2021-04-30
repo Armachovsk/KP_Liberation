@@ -19,3 +19,13 @@ class rabbit_support {
       postInit = 1;
   };
 };
+
+class rabbit_support_vof {
+    file = "SPEC\rabbit_support\fnc\vehicle_on_fire";
+
+    class rabbit_support_vof_condition {};
+
+    class rabbit_support_vof_onDestroy {};
+
+    class rabbit_support_vof_sendMsg {};
+};
