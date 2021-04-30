@@ -18,6 +18,7 @@ for "_i" from 1 to 36 do {
 { _x setObjectTexture [0, "#(rgb,8,8,3)color(0,1,0,1)"]; } foreach _object_spheres;
 
 if (isNil "manned") then { manned = false };
+if (isNil "KPLIB_simplex_support_buy") then { KPLIB_simplex_support_buy = false };
 if (isNil "gridmode" ) then { gridmode = 0 };
 if (isNil "repeatbuild" ) then { repeatbuild = false };
 if (isNil "build_rotation" ) then { build_rotation = 0 };
@@ -97,7 +98,7 @@ while { true } do {
             _idactrotate = player addAction ["<t color='#B0FF00'>" + localize "STR_ROTATION" + "</t> <img size='2' image='res\ui_rotation.paa'/>",{build_rotation = build_rotation + 90;},"",-750,false,false,"","build_confirmed == 1"];
             _idactraise = player addAction ["<t color='#B0FF00'>" + localize "STR_RAISE" + "</t>",{build_elevation = build_elevation + 0.2;},"",-765,false,false,"","build_confirmed == 1"];
             _idactlower = player addAction ["<t color='#B0FF00'>" + localize "STR_LOWER" + "</t>",{build_elevation = build_elevation - 0.2;},"",-766,false,false,"","build_confirmed == 1"];
-            _idactplace = player addAction ["<t color='#B0FF00'>" + localize "STR_PLACEMENT" + "</t> <img size='2' image='res\ui_confirm.paa'/>",{build_confirmed = 2; hint localize "STR_CONFIRM_HINT";},"",-775,false,true,"","build_invalid == 0 && build_confirmed == 1"];
+            _idactplace = player addAction ["<t color='#B0FF00'>" + localize "STR_PLACEMENT" + "</t> <img size='2' image='res\ui_confirm.paa'/>",{build_confirmed = 2;},"",-775,false,true,"","build_invalid == 0 && build_confirmed == 1"];
 
             _ghost_spot = (markerPos "ghost_spot") findEmptyPosition [0,100];
 
@@ -295,7 +296,9 @@ while { true } do {
                 };
             };
 
-            if ( build_confirmed == 2 ) then {
+            if ( build_confirmed == 2 && !KPLIB_simplex_support_buy ) then {
+                hint localize "STR_CONFIRM_HINT";
+
                 _vehpos = getpos _vehicle;
                 _vehdir = getdir _vehicle;
                 deleteVehicle _vehicle;
@@ -337,6 +340,16 @@ while { true } do {
                 };
             };
 
+            if ( build_confirmed == 2 && KPLIB_simplex_support_buy ) then {
+                hint format["_classname = %1", _classname];
+
+                // Remove green vehicle placeholder
+                _vehpos = getpos _vehicle;
+                _vehdir = getdir _vehicle;
+                deleteVehicle _vehicle;
+                sleep 0.1;
+            };
+
             if ( _idactcancel != -1 ) then {
                 player removeAction _idactcancel;
             };
@@ -370,4 +383,5 @@ while { true } do {
         dobuild = 0;
     };
     manned = false;
+    KPLIB_simplex_support_buy = false;
 };

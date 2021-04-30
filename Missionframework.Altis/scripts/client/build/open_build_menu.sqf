@@ -20,6 +20,7 @@ if (player == [] call KPLIB_fnc_getCommander) then {
 ctrlShow [108, _iscommandant];
 ctrlShow [1085, _iscommandant];
 ctrlShow [121, _iscommandant];
+ctrlShow [122, _iscommandant];
 
 _squadname = "";
 _buildpages = [
@@ -149,7 +150,7 @@ while {dialog && alive player && (dobuild == 0 || buildtype == 1)} do {
             { if ( ( _build_item select 0 ) == ( _x select 0 ) ) exitWith { _base_link = _x select 1; _linked = true; } } foreach KPLIB_vehicle_to_military_base_links;
 
             if ( _linked ) then {
-                if ( !(_base_link in blufor_sectors) ) then { _linked_unlocked = false };
+                if ( !(_base_link in KPLIB_sectors_player) ) then { _linked_unlocked = false };
             };
         };
     };
@@ -164,6 +165,7 @@ while {dialog && alive player && (dobuild == 0 || buildtype == 1)} do {
 
     ctrlEnable [ 120, _affordable && _linked_unlocked && !(_squad_full) ];
     ctrlEnable [ 121, _affordable_crew && _linked_unlocked ];
+    ctrlEnable [ 122, _affordable && _linked_unlocked && !(_squad_full) ];
 
     ctrlSetText [131, format [ "%1 : %2" , localize "STR_MANPOWER", (floor KPLIB_supplies)]] ;
     ctrlSetText [132, format [ "%1 : %2" , localize "STR_AMMO", (floor KPLIB_ammo)]];
@@ -196,6 +198,7 @@ while {dialog && alive player && (dobuild == 0 || buildtype == 1)} do {
     if(buildtype == 1 && dobuild != 0) then {
         ctrlEnable [120, false];
         ctrlEnable [121, false];
+        ctrlEnable [122, false];
         sleep 1;
         dobuild = 0;
     };

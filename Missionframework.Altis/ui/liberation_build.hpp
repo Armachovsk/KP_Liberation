@@ -9,8 +9,8 @@ class liberation_build {
     "BuildSupportButton","BuildSquadButton","BuildBuildingButton","BuildInfantryImage",
     "BuildTransportVehicleImage","BuildCombatVehicleImage","BuildAerialImage","ManpowerImageShadow","AmmoImageShadow","FuelImageShadow",
     "BuildDefenceImage","BuildSupportImage","BuildSquadImage","BuildBuildingImage","ListBG","ManpowerImage","AmmoImage","FuelImage",
-    "BuildList","BuildButton","LabelManpower","LabelAmmo","LabelFuel","LabelCap","BuildMannedButton","PageLabel", "LinkedSector"
-
+    "BuildList","BuildButton","LabelManpower","LabelAmmo","LabelFuel","LabelCap","BuildMannedButton","PageLabel", "LinkedSector",
+    "BuildSimplexButton"
     };
 
     objects[] = {};
@@ -272,36 +272,52 @@ class liberation_build {
         h = (0.05 * safezoneH);
         sizeEx = 0.03 * safezoneH;
     };
-
-    class BuildButton: StdButton {
+    class BuildButton: StdButton
+    {
         idc = 120;
-        x = (0.55 * safezoneW + safezoneX);
-        y = (0.75 * safezoneH + safezoneY);
-        w = (0.1 * safezoneW);
-        h = (0.045 * safezoneH);
-        sizeEx = 0.03 * safezoneH;
-        text = $STR_BUILD_BUTTON;
         action = "dobuild = 1;";
+
+        text = $STR_BUILD_BUTTON;
+        x = 0.577344 * safezoneW + safezoneX;
+        y = 0.698 * safezoneH + safezoneY;
+        w = 0.0721875 * safezoneW;
+        h = 0.044 * safezoneH;
+        sizeEx = 0.03 * safezoneH;
     };
-    class BuildMannedButton: StdButton {
+    class BuildMannedButton: StdButton
+    {
         idc = 121;
-        x = (0.55 * safezoneW + safezoneX);
-        y = (0.7 * safezoneH + safezoneY);
-        w = (0.1 * safezoneW);
-        h = (0.045 * safezoneH);
-        sizeEx = 0.02 * safezoneH;
-        text = $STR_BUILD_CREW;
         action = "dobuild = 1; manned = true;";
+
+        text = $STR_BUILD_CREW;
+        x = 0.577344 * safezoneW + safezoneX;
+        y = 0.753 * safezoneH + safezoneY;
+        w = 0.0721875 * safezoneW;
+        h = 0.044 * safezoneH;
+        sizeEx = 0.02 * safezoneH;
     };
-    class LinkedSector {
+    class BuildSimplexButton: StdButton
+    {
+        idc = 122;
+        action = "dobuild = 1; KPLIB_simplex_support_buy = true;";
+        colorBackground[] = { 0.1, 0.83, 1, 0.8 };
+        colorBackgroundDisabled[] = { 0.1, 0.83, 1, 0.5 };
+        colorBackgroundActive[] = { 0.1, 0.83, 1, 1 };
+        text = "Build (SSS)";
+        x = 0.5 * safezoneW + safezoneX;
+        y = 0.753 * safezoneH + safezoneY;
+        w = 0.0721875 * safezoneW;
+        h = 0.044 * safezoneH;
+        sizeEx = 0.02 * safezoneH;
+        // WIP, disable for now
+        onLoad = "(_this # 0) ctrlEnable false;";
+    };
+    class LinkedSector: RscText
+    {
         idc = 161;
         type = CT_STRUCTURED_TEXT;
         colorBackground[] = COLOR_NOALPHA;
         style = ST_LEFT;
-        x = 0.45 * safezoneW + safezoneX;
-        w = 0.1 * safezoneW;
-        y = 0.725 * safezoneH + safezoneY;
-        h = 0.05 * safezoneH;
         text= "";
         size = 0.02 * safezoneH;
         sizeEx = 0.02 * safezoneH;
@@ -310,5 +326,9 @@ class liberation_build {
         color = "#e0e000";
         align = "right";
         valign = "top";
+        x = 0.5 * safezoneW + safezoneX;
+        y = 0.698 * safezoneH + safezoneY;
+        w = 0.0721875 * safezoneW;
+        h = 0.044 * safezoneH;
     };
 };
