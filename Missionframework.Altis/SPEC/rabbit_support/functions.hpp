@@ -13,6 +13,8 @@ class rabbit_support {
 
   class rabbit_support_selectPosition {};
 
+  class rabbit_support_compileSimpleActions {};
+
   class rabbit_support_postInit {
       postInit = 1;
   };
