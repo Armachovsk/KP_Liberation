@@ -15,7 +15,7 @@ Parameter(s):
 Example: jamRadios = [[JAMMER],500] execVM "TFARjamRadios.sqf";
 */
 
-#define DEBUG true
+#define DEBUG false
 
 if (!hasInterface) exitwith {};
 waituntil {!isnull player};
