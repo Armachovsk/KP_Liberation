@@ -53,7 +53,7 @@
     29 = SFP (Desert)
     30 = LDF (Contact DLC)
 */
-KPLIB_presetPlayer = 31;
+KPLIB_presetPlayer = 32;
 
 /*
     ----- Enemy preset -----

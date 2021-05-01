@@ -20,7 +20,7 @@
         "configFile": "KPLIB_config.sqf",
         "classnamesFile": "KPLIB_classnameLists.sqf",
         "variables": {
-            "KPLIB_preset_blufor": 31,
+            "KPLIB_preset_blufor": 32,
             "KPLIB_preset_opfor": 21,
             "KPLIB_preset_resistance": 9,
             "KPLIB_preset_civilians": 0,
