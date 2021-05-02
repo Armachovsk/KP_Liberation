@@ -87,7 +87,7 @@ KPLIB_b_vehLight = [
     ["rhsusf_m1045_w_s",120,100,50],                                     // M1045A2 (M220A2)
     ["rhsusf_M1165A1_GMV_SAG2_M134D_M240_base",150,90,70],               // M1165A1 GMV (SAG-2/M134D)
     ["rhsusf_m1165a1_gmv_mk19_m240_socom_d",150,90,70],                  // M1165A1 GMV (SAG-2/Mk19)
-    ["rhsusf_m1165a1_gmv_mk19_m240_socom_d",150,120,70],                 // M1165A1 GMV (SAG-2/Mk19)    
+    ["rhsusf_m1165a1_gmv_mk19_m240_socom_d",150,120,70],                 // M1165A1 GMV (SAG-2/Mk19)
     ["rhsusf_M1232_MC_M2_usmc_wd",210,50,110],                           // M1232 (MCTAGS/M2)
     ["rhsusf_M1232_MC_MK19_usmc_wd",210,80,110],                         // M1232 (MCTAGS/Mk19)
     ["rhsusf_m1245_m2crows_socom_deploy",210,100,110],                   // M1245 Deploy (CROWS/M2)
@@ -210,7 +210,7 @@ KPLIB_b_vehSupport = [
     [KPLIB_b_slotHeli,300,0,0],
     [KPLIB_b_slotPlane,600,0,0],
     ["ACE_medicalSupplyCrate_advanced",5,0,0],
-    ["ACE_Box_82mm_Mo_HE",0,40,0],s
+    ["ACE_Box_82mm_Mo_HE",0,40,0],
     ["ACE_Box_82mm_Mo_Smoke",0,10,0],
     ["ACE_Box_82mm_Mo_Illum",0,10,0],
     ["ACE_Wheel",10,0,0],
