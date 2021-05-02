@@ -205,7 +205,7 @@ class FSM
                                         priority = 1.000000;
                                         to="Activate_sector";
                                         precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-                                        condition=/*%FSM<CONDITION""">*/"!isNil "_sector" && {([markerPos _sector, _range, KPLIB_side_player] call KPLIB_fnc_getUnitsCount) > 0}"/*%FSM</CONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"!isNil {_sector} && {([markerPos _sector, _range, KPLIB_side_player] call KPLIB_fnc_getUnitsCount) > 0}"/*%FSM</CONDITION""">*/;
                                         action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
                                 };
                                 /*%FSM</LINK>*/
