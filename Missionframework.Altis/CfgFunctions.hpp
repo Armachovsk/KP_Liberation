@@ -98,6 +98,11 @@ class KPLIB {
 
         class overlayUpdateResources    {};
     };
+    class functions_simplex_support_services {
+        file = "functions\simplex_support_services";
+
+        class sss_registerSupport {};
+    };
     #include "scripts\client\CfgFunctions.hpp"
     #include "scripts\server\CfgFunctions.hpp"
 };

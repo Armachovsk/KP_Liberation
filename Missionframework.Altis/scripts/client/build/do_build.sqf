@@ -348,6 +348,14 @@ while { true } do {
                 _vehdir = getdir _vehicle;
                 deleteVehicle _vehicle;
                 sleep 0.1;
+
+                private _state = [_classname] call SPEC_fnc_sss_registerSupport;
+
+                if (!_state) then {
+                    dobuild = 1;
+                    build_confirmed = 2;
+                    KPLIB_simplex_support_buy = false;
+                };
             };
 
             if ( _idactcancel != -1 ) then {
