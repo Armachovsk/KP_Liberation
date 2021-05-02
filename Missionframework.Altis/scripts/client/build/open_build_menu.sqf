@@ -54,7 +54,7 @@ while {dialog && alive player && (dobuild == 0 || buildtype == 1)} do {
 
                 switch (_classnamevar) do {
                     case KPLIB_b_fobBox: {_entrytext = localize "STR_FOBBOX";};
-                    case KPLIB_b_arsenal: {if (KPLIB_param_mobileArsenal) then {_entrytext = localize "STR_ARSENAL_BOX";};};
+                    case KPLIB_b_arsenal: {_entrytext = localize "STR_ARSENAL_BOX";};
                     case KPLIB_b_mobileRespawn: {if (KPLIB_param_mobileRespawn) then {_entrytext = localize "STR_RESPAWN_TRUCK";};};
                     case KPLIB_b_fobTruck: {_entrytext = localize "STR_FOBTRUCK";};
                     case "Flag_White_F": {_entrytext = localize "STR_INDIV_FLAG";};

@@ -43,9 +43,7 @@ while {true} do {
     player setVariable ["KPLIB_isAwayFromStart", (player distance2d startbase) > 1000];
 
     // Is near an arsenal object
-    if (KPLIB_param_mobileArsenal) then {
-        player setVariable ["KPLIB_isNearArsenal", !(((player nearObjects [KPLIB_b_arsenal, 5]) select {getObjectType _x >= 8}) isEqualTo [])];
-    };
+    player setVariable ["KPLIB_isNearArsenal", !(((player nearObjects [KPLIB_b_arsenal, 5]) select {getObjectType _x >= 8}) isEqualTo [])];
 
     // Is near a mobile respawn
     if (KPLIB_param_mobileRespawn) then {
