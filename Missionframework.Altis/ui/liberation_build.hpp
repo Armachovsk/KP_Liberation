@@ -309,8 +309,6 @@ class liberation_build {
         w = 0.0721875 * safezoneW;
         h = 0.044 * safezoneH;
         sizeEx = 0.02 * safezoneH;
-        // WIP, disable for now
-        onLoad = "(_this # 0) ctrlEnable false;";
     };
     class LinkedSector: RscText
     {

@@ -165,7 +165,10 @@ while {dialog && alive player && (dobuild == 0 || buildtype == 1)} do {
 
     ctrlEnable [ 120, _affordable && _linked_unlocked && !(_squad_full) ];
     ctrlEnable [ 121, _affordable_crew && _linked_unlocked ];
-    ctrlEnable [ 122, _affordable && _linked_unlocked && !(_squad_full) ];
+    ctrlEnable [ 122, _affordable && {_linked_unlocked} && {!(_squad_full)} && {
+        private _build_item = _build_list select _selected_item;
+        [_build_item select 0, true] call KPLIB_fnc_sss_registerSupport
+    }];
 
     ctrlSetText [131, format [ "%1 : %2" , localize "STR_MANPOWER", (floor KPLIB_supplies)]] ;
     ctrlSetText [132, format [ "%1 : %2" , localize "STR_AMMO", (floor KPLIB_ammo)]];
