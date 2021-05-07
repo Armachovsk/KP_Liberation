@@ -32,6 +32,24 @@
         "workshopId": ""
     },
     {
+        "sourceFolder": "spec_liberation.Altis",
+        "missionName": "spec_liberation_altis_90",
+        "map": "Altis",
+        "configFile": "KPLIB_config.sqf",
+        "classnamesFile": "KPLIB_classnameLists.sqf",
+        "variables": {
+            "KPLIB_preset_blufor": 32,
+            "KPLIB_preset_opfor": 22,
+            "KPLIB_preset_resistance": 10,
+            "KPLIB_preset_civilians": 0,
+            "KPLIB_presetArsenal": "rhs_blufor"
+        },
+        "classnames": {
+            "KPLIB_radioTowerClassnames": "Land_Antenna"
+        },
+        "workshopId": ""
+    },
+    {
         "sourceFolder": "kp_liberation.Chernarus",
         "missionName": "kp_liberation",
         "map": "Chernarus",

@@ -38,7 +38,8 @@ for "_i" from 1 to _amount do {
     // Create unit
     _unit = [selectRandom KPLIB_r_units, _pos, _grp, "PRIVATE", 5] call KPLIB_fnc_createManagedUnit;
 
-    // Clear inventory
+    // TODO: Do not use this for now
+    /* // Clear inventory
     removeAllWeapons _unit;
     removeAllItems _unit;
     removeAllAssignedItems _unit;
@@ -74,7 +75,7 @@ for "_i" from 1 to _amount do {
         _unit addBackpack "B_FieldPack_cbr";
         for "_i" from 1 to 3 do {_unit addItemToBackpack "RPG7_F";};
         _unit addWeapon "launch_RPG7_F";
-    };
+    }; */
 };
 
 _grp

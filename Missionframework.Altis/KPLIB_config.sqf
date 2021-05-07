@@ -79,7 +79,7 @@ KPLIB_presetPlayer = 32;
     19 = CUP British Armed Forces (Desert)
     20 = CUP British Armed Forces (Woodland)
 */
-KPLIB_presetEnemy = 21;
+KPLIB_presetEnemy = 22;
 
 /*
     ----- Resistance preset -----
@@ -93,7 +93,7 @@ KPLIB_presetEnemy = 21;
     7  = CUP Takistani Locals
     8  = CUP National Party of Chernarus
 */
-KPLIB_presetResistance = 9;
+KPLIB_presetResistance = 10;
 
 /*
     ----- Civilians preset -----

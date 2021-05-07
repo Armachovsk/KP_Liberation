@@ -64,6 +64,7 @@ switch (KPLIB_presetEnemy) do {
     case 19: {[] call compile preprocessFileLineNumbers "presets\enemies\cup_baf_desert.sqf";};
     case 20: {[] call compile preprocessFileLineNumbers "presets\enemies\cup_baf_woodland.sqf";};
     case 21: {[] call compile preprocessFileLineNumbers "presets\enemies\spec_chdkz.sqf";};
+    case 22: {[] call compile preprocessFileLineNumbers "presets\enemies\gm_aaf_90.sqf";};
     default  {[] call compile preprocessFileLineNumbers "presets\enemies\custom.sqf";};
 };
 
@@ -77,6 +78,7 @@ switch (KPLIB_presetResistance) do {
     case  7: {[] call compile preprocessFileLineNumbers "presets\resistance\cup_takistan.sqf";};
     case  8: {[] call compile preprocessFileLineNumbers "presets\resistance\cup_napa.sqf";};
     case  9: {[] call compile preprocessFileLineNumbers "presets\resistance\spec_chdkz_altis.sqf";};
+    case  10: {[] call compile preprocessFileLineNumbers "presets\resistance\gm_operation_xiphos.sqf";};
     default  {[] call compile preprocessFileLineNumbers "presets\resistance\custom.sqf";};
 };
 
