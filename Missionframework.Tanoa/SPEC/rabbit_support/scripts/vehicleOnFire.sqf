@@ -42,6 +42,13 @@ SPEC_rabbit_support_vehicleOnFilePFH = [{
             _time_to_destroid set ["time", 60 + round random 40];
             // talk about vehicle in fine
             [_vehicle_select] call SPEC_fnc_rabbit_support_vof_sendMsg;
+
+            [
+                _time_to_destroid,
+                _vehicle_select,
+                _Fire
+            ] spawn SPEC_fnc_rabbit_support_vof_playFire;
+
             // wait until !alive vehicle or "hitEngine" <= 0.6
             [
                 {

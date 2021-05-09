@@ -28,4 +28,6 @@ class rabbit_support_vof {
     class rabbit_support_vof_onDestroy {};
 
     class rabbit_support_vof_sendMsg {};
+
+    class rabbit_support_vof_playFire {};
 };
