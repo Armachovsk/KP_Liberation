@@ -1,5 +1,7 @@
 import { Preset, FolderStructureInfo } from "./Config";
 import * as path from "path";
+const fs = require("fs");
+const os = require("os");
 
 export class MissionPaths {
     static readonly missionSQM = "mission.sqm";
@@ -51,7 +53,11 @@ export class MissionPaths {
      * Get path to folder containing mission files
      */
     public getOutputDir(): string {
-        return path.resolve(this.folderStructure.workDir, this.getFullName());
+        return path.resolve(
+            fs.realpathSync(os.tmpdir()),
+            "KP-Liberation",
+            this.getFullName()
+        );
     }
 
     /**

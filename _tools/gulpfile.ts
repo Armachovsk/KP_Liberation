@@ -29,6 +29,7 @@ let taskNames: string[] = [];
 let taskNamesPbo: string[] = [];
 let taskNamesZip: string[] = [];
 let taskNamesWorkshop: string[] = [];
+let taskNamesCleanTemp: string[] = [];
 
 for (let preset of presets) {
     const mission = new MissionPaths(preset, paths);
@@ -209,6 +210,13 @@ for (let preset of presets) {
             await uploadLegacy(preset.workshopId, pboPath);
         });
     }
+
+    taskNamesCleanTemp.push("clean-temp_" + taskName);
+    gulp.task("clean-temp_" + taskName, () => {
+        return gulp
+            .src(mission.getOutputDir())
+            .pipe(vinylPaths((path) => del(path, { force: true })));
+    });
 }
 
 // Main tasks
@@ -226,7 +234,14 @@ gulp.task("zip", gulp.series(taskNamesZip));
 
 gulp.task("workshop", gulp.series(taskNamesWorkshop));
 
+gulp.task("clean-temp", gulp.series(taskNamesCleanTemp));
+
 gulp.task(
     "default",
-    gulp.series(gulp.task("build"), gulp.task("pbo"), gulp.task("zip"))
+    gulp.series(
+        gulp.task("build"),
+        gulp.task("pbo"),
+        gulp.task("zip"),
+        gulp.task("clean-temp")
+    )
 );
