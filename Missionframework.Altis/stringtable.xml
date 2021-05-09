@@ -202,7 +202,7 @@
             <Chinese>將於 %1 秒後失血致死</Chinese>
             <Turkish>Kanamadan ölmeye %1 saniye</Turkish>
             <Portuguese>Morte por hemorragia em %1 segundos</Portuguese>
-            <Korean>%1 초 후 의식을 잃거나 과다출혈로 사망합니다. </Korean>
+            <Korean>%1 초 후 의식을 잃거나 과다출혈로 사망합니다.</Korean>
             <Czech>Vykrvácíš za %1 vteřin</Czech>
         </Key>
         <Key ID="STR_BLEEDOUT_STABILIZED">
@@ -512,7 +512,7 @@
             <Chinese>無法在距離前線基地 %1 公尺外的區域建造</Chinese>
             <Turkish>FOB'den %1 metre uzakta inşaat yapılamaz.</Turkish>
             <Portuguese>Não é possível construir com mais de %1 metros de distância da FOB.</Portuguese>
-            <Korean>전초기지에서 %1 미터 이상 떨어지면 건설(설치)할 수 없습니다. </Korean>
+            <Korean>전초기지에서 %1 미터 이상 떨어지면 건설(설치)할 수 없습니다.</Korean>
             <Czech>Nemůžeš stavět dál než %1 metrů od FOB.</Czech>
         </Key>
         <Key ID="STR_FOBBOX">
@@ -778,7 +778,7 @@
             <Chinese>！！警告，存檔將被刪除，且無法復原！！</Chinese>
             <Turkish>!! KAYITLI OYUN SİLİNECEKTİR, GERİ GETİRELEMEZ !!</Turkish>
             <Portuguese>!! O JOGO SALVO SERÁ APAGADO, NÃO SERÁ POSSÍVEL RECUPERÁ-LO !!</Portuguese>
-            <Korean>주의! 저장된 내용이 복구할 수 없게 삭제됩니다. </Korean>
+            <Korean>주의! 저장된 내용이 복구할 수 없게 삭제됩니다.</Korean>
             <Czech>!! ULOŽENÁ POZICE BUDE SMAZÁNA BEZ MOŽNOSTI NÁVRATU !!</Czech>
         </Key>
         <Key ID="STR_UNFLIP">
@@ -2004,7 +2004,8 @@
             <Chinesesimp>附身</Chinesesimp>
             <Chinese>取代</Chinese>
             <Turkish>Değiştir</Turkish>
-            <Portuguese>Substituir</Portuguese>.
+            <Portuguese>Substituir</Portuguese>
+            .
             <Korean>분대원 교체</Korean>
             <Czech>Nahradit</Czech>
         </Key>
@@ -2267,7 +2268,7 @@
             <Chinese>所選的班級成員距離前線基地或機動重生點太遠。</Chinese>
             <Turkish>Seçilen tim üyesi bir FOB veya mobil spawn noktasına yakın değil.</Turkish>
             <Portuguese>O membro selecionado do grupo não está próximo o suficiente de uma FOB ou respawn móvel.</Portuguese>
-            <Korean>선택된 분대원이 전초기지 또는 재투입차량에 가까이 있지 않습니다. </Korean>
+            <Korean>선택된 분대원이 전초기지 또는 재투입차량에 가까이 있지 않습니다.</Korean>
             <Czech>Vybraný člen družstva není dostatečně blízko k FOB nebo mobilnímu spawnu.</Czech>
         </Key>
         <Key ID="STR_PERMISSIONS_TITLE">
@@ -2703,6 +2704,28 @@
             <Portuguese>Você tem certeza que quer mobilizar esta FOB?</Portuguese>
             <Korean>이 전초기지를 재배치하시겠습니까?</Korean>
             <Czech>Jste si jistý že chcete zabalit FOB?</Czech>
+        </Key>
+        <Key ID="STR_PARAMS_HALO_MODE">
+            <Original>HALO Mode</Original>
+            <Russian>Тип HALO</Russian>
+        </Key>
+        <Key ID="STR_PARAMS_HALO_MODE_DEFAULT">
+            <Original>Default</Original>
+            <Russian>Стандартный</Russian>
+        </Key>
+        <Key ID="STR_PARAMS_HALO_MODE_SPEC">
+            <Original>SPEC</Original>
+        </Key>
+        <Key ID="STR_HALO_YOUCANNOTJUMPHERE">
+            <Original>Where are you going, fighter?</Original>
+            <German>Wo gehst du hin, Kämpfer?</German>
+            <Spanish>¿A dónde vas, luchador?</Spanish>
+            <Russian>Куда собрался, боец?</Russian>
+            <Italian>Dove stai andando, combattente?</Italian>
+            <Chinesesimp>你要去哪里，战斗机？</Chinesesimp>
+            <Chinese>你要去哪裡，戰鬥機？</Chinese>
+            <Turkish>Nereye gidiyorsun savaşçı?</Turkish>
+            <Portuguese>Onde você está indo, lutador?</Portuguese>
         </Key>
         <Key ID="STR_HALO_PARAM">
             <Original>HALO Jump</Original>
@@ -4368,7 +4391,7 @@
             <German>Nicht genug Ressourcen.\n\nDu benötigst:\n%1 Nachschub\n%2 Munition\n%3 Kraftstoff</German>
             <Spanish>No tienes suficientes recursos.\n\nNecesitas:\n%1 Suministros\n%2 Munición\n%3 Combustible</Spanish>
             <Russian>Недостаточно ресурсов.\n\nВам нужно:\n%1 Припасы\n%2 Боеприпасы\n%3 Топливо</Russian>
-            <Italian>Risorse insufficenti.\n\nHai bisogno di:\n%1 approvvigionamenti\n%2 Munizioni\n%3 Carburante </Italian>
+            <Italian>Risorse insufficenti.\n\nHai bisogno di:\n%1 approvvigionamenti\n%2 Munizioni\n%3 Carburante</Italian>
             <Chinesesimp>资源不足。\n\n你需要\n%1补给\n%2弹药\n%3燃料</Chinesesimp>
             <Chinese>資源不足。\n\n你需要\n%1補給\n%2彈藥\n%3油料</Chinese>
             <Turkish>Yetersiz kaynak.\n\nLazım olan: \n%1 İkmal \n%2 Mermi\n%3 Benzin</Turkish>
@@ -4964,7 +4987,7 @@
             <Chinese>7. 建造</Chinese>
             <Turkish>7. İnşa etmek</Turkish>
             <Portuguese>7. Construção</Portuguese>
-            <Korean>7. 건설(배치) </Korean>
+            <Korean>7. 건설(배치)</Korean>
             <Czech>7. Stavění</Czech>
         </Key>
         <Key ID="STR_TUTO_TEXT7">
@@ -5638,7 +5661,7 @@
             <Chinese>平民們對 %1 的建築物戰損有所怨言。</Chinese>
             <Turkish>Siviller %1 kadar yıkılan binaları hakkında konuşuyorlar.</Turkish>
             <Portuguese>Civis estão reclamando sobre %1 construções destruídas</Portuguese>
-            <Korean>민간인들이 %1 건물이 파괴된 것에 대해 불평하고 있다. </Korean>
+            <Korean>민간인들이 %1 건물이 파괴된 것에 대해 불평하고 있다.</Korean>
             <Czech>Civilisté si stěžují na %1 zničené budovy.</Czech>
         </Key>
         <Key ID="STR_CR_HEALMSG">
@@ -5649,7 +5672,7 @@
             <Italian>Il civile di nome %1 ti ringrazia per l'aiuto.</Italian>
             <Portuguese>Um civil chamado %1 agradeceu sua ajuda.</Portuguese>
             <Chinese>平民 %1 感謝你的幫助。</Chinese>
-            <Korean>시민 %1 가 도와줘서 고맙다고 인사한다. </Korean>
+            <Korean>시민 %1 가 도와줘서 고맙다고 인사한다.</Korean>
             <Czech>Civilista jménem %1 ti děkuje za pomoc.</Czech>
         </Key>
         <Key ID="STR_PARAM_CR_BUILDING">

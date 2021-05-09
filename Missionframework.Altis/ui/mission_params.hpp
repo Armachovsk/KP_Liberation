@@ -269,6 +269,12 @@ class Params {
         texts[] = {$STR_PARAM_CR_DAMAGED, $STR_PARAM_CR_DESTROYED};
         default = 0;
     };
+    class HaloMode {
+        title = $STR_PARAMS_HALO_MODE;
+        values[] = {0, 1};
+        texts[] = {$STR_PARAMS_HALO_MODE_DEFAULT, $STR_PARAMS_HALO_MODE_SPEC};
+        default = 1;
+    };
     class HaloJump {
         title = $STR_HALO_PARAM;
         values[] = {1, 5, 10, 15, 20, 30, 0};

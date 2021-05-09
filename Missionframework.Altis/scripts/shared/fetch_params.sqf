@@ -89,6 +89,7 @@ if(isServer) then {
     GET_PARAM_BOOL(KPLIB_param_attackedFobRespawn, "AttackedSectorRespawn", 0);
     GET_PARAM_BOOL(KPLIB_param_logistic, "AiLogistics", 1);
     GET_PARAM_BOOL(KPLIB_param_buildingDamaged, "CR_Building", 0);
+    GET_PARAM(KPLIB_param_haloMode, "HaloMode", 1);
     GET_PARAM(KPLIB_param_halo, "HaloJump", 1);
     GET_PARAM_BOOL(KPLIB_param_clearCargo, "ClearCargo", 1);
     GET_PARAM(KPLIB_param_allowEnemiesInImmobile, "AllowEnemiesInImmobile", 50);
@@ -404,6 +405,13 @@ if (!isDedicated && hasInterface) then {
 
     _param = localize "STR_PARAM_CR_BUILDING";
     _value = if (KPLIB_param_buildingDamaged) then {localize "STR_PARAM_CR_DAMAGED";} else {localize "STR_PARAM_CR_DESTROYED";};
+    _text = _text + format ["<font color='#ff8000'>%1</font><br />%2<br /><br />", _param, _value];
+
+    _param = localize "STR_PARAMS_HALO_MODE";
+    switch (KPLIB_param_haloMode) do {
+        case 0: {_value = localize "STR_PARAMS_HALO_MODE_DEFAULT";};
+        case 1: {_value = localize "STR_PARAMS_HALO_MODE_SPEC";};
+    };
     _text = _text + format ["<font color='#ff8000'>%1</font><br />%2<br /><br />", _param, _value];
 
     _param = localize "STR_HALO_PARAM";

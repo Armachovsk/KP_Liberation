@@ -18,7 +18,13 @@ _backpackcontents = [];
 
 waitUntil { dialog };
 while { dialog && alive player && dojump == 0 } do {
-    "spawn_marker" setMarkerPosLocal halo_position;
+    if (KPLIB_param_haloMode == 0) then {
+        "spawn_marker" setMarkerPosLocal halo_position;
+    };
+
+    if (KPLIB_param_haloMode == 1) then {
+        SPEC_halo_restrict_allowed = [halo_position, "spawn_marker"] call SPEC_fnc_halo_restrict_isAllowed;
+    };
 
     sleep 0.1;
 };
@@ -33,7 +39,7 @@ if ( dialog ) then {
 
 [ "halo_map_event", "onMapSingleClick" ] call BIS_fnc_removeStackedEventHandler;
 
-if ( dojump > 0 ) then {
+if ( dojump > 0 && {KPLIB_param_haloMode == 1 && {SPEC_halo_restrict_allowed}} ) then {
     KPLIB_last_halo_jump = time;
     halo_position = halo_position getPos [random 250, random 360];
     halo_position = [ halo_position select 0, halo_position select 1, KPLIB_height_halo + (random 200) ];

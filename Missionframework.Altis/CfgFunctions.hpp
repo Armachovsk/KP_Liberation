@@ -113,4 +113,5 @@ class SPEC {
     #include "SPEC\other_missions\functions.hpp"
     #include "SPEC\radio_chatter\functions.hpp"
     #include "SPEC\jammer\functions.hpp"
+    #include "SPEC\halo_restrict\functions.hpp"
 };
