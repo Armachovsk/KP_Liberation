@@ -42,6 +42,7 @@ KPLIB_b_slotPlane = "Land_TentHangar_V1_F";                              // The 
 KPLIB_b_crateSupply = "CargoNet_01_box_F";                               // This defines the supply crates, as in resources.
 KPLIB_b_crateAmmo = "B_CargoNet_01_ammo_F";                              // This defines the ammunition crates.
 KPLIB_b_crateFuel = "CargoNet_01_barrels_F";                             // This defines the fuel crates.
+KPLIB_b_haloParachute = "moh_Parachute_high";                            // This defines parachute for halo. (Optional)
 
 /*
     --- Friendly classnames ---
