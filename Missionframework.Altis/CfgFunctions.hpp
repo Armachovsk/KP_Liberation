@@ -114,4 +114,5 @@ class SPEC {
     #include "SPEC\radio_chatter\functions.hpp"
     #include "SPEC\jammer\functions.hpp"
     #include "SPEC\halo_restrict\functions.hpp"
+    #include "SPEC\ambient_music\functions.hpp"
 };
