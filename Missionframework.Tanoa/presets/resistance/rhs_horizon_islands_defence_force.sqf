@@ -18,26 +18,27 @@
 /* Classnames of the guerilla faction which is friendly or hostile, depending on the civil reputation
 Standard loadout of the units will be replaced with a scripted one, which depends on the guerilla strength, after spawn */
 KPLIB_r_units = [
-    "XIPH_soldier_TL",
-    "XIPH_soldier_sl",
-    "XIPH_soldier_nf",
-    "Xiph_soldier_lite",
-    "XIPH_soldier_at",
-    "XIPH_soldier",
-    "XIPH_soldier_m",
-    "XIPH_soldier_medic",
-    "XIPH_CBRN",
-    "XIPH_soldier_ar",
-    "XIPH_soldier_LATGM"
+    "rhsgref_hidf_autorifleman",
+    "rhsgref_hidf_autorifleman_assist",
+    "rhsgref_hidf_medic",
+    "rhsgref_hidf_crewman",
+    "rhsgref_hidf_boat_driver",
+    "rhsgref_hidf_grenadier",
+    "rhsgref_hidf_grenadier_m79",
+    "rhsgref_hidf_machinegunner",
+    "rhsgref_hidf_machinegunner_assist",
+    "rhsgref_hidf_marksman",
+    "rhsgref_hidf_rifleman",
+    "rhsgref_hidf_rifleman_m72",
+    "rhsgref_hidf_sniper",
+    "rhsgref_hidf_squadleader",
+    "rhsgref_hidf_teamleader"
 ];
 
 // Armed vehicles
 KPLIB_r_vehicles = [
-    "ACM_XIPH_Motorbike",
-    "ACM_XIPH_Iltis",
-    "ACM_XIPH_Iltis_milan",
-    "ACM_XIPH_U1300_Flatbed",
-    "ACM_XIPH_U1300_medic",
-    "ACM_XIPH_U1300_repair",
-    "ACM_XIPH_U1300_cargo"
+    "rhsgref_hidf_m1025_m2",
+    "rhsgref_hidf_m113a3_m2",
+    "RHSGREF_A29B_HIDF",
+    "rhs_uh1h_hidf_gunship"
 ];

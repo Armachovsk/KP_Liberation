@@ -38,44 +38,45 @@ for "_i" from 1 to _amount do {
     // Create unit
     _unit = [selectRandom KPLIB_r_units, _pos, _grp, "PRIVATE", 5] call KPLIB_fnc_createManagedUnit;
 
-    // TODO: Do not use this for now
-    /* // Clear inventory
-    removeAllWeapons _unit;
-    removeAllItems _unit;
-    removeAllAssignedItems _unit;
-    removeUniform _unit;
-    removeVest _unit;
-    removeBackpack _unit;
-    removeHeadgear _unit;
-    removeGoggles _unit;
+    if (!isNil "_weapons" && !isNil "_uniforms" && !isNil "_vests" && !isNil "_headgear") then {
+        // Clear inventory
+        removeAllWeapons _unit;
+        removeAllItems _unit;
+        removeAllAssignedItems _unit;
+        removeUniform _unit;
+        removeVest _unit;
+        removeBackpack _unit;
+        removeHeadgear _unit;
+        removeGoggles _unit;
 
-    // Add uniform etc.
-    _unit forceAddUniform (selectRandom _uniforms);
-    _unit addItemToUniform "FirstAidKit";
-    _unit addItemToUniform "MiniGrenade";
-    _unit addVest (selectRandom _vests);
-    _unit addHeadgear (selectRandom _headgear);
-    if (_tier > 1) then {_unit addGoggles (selectRandom KPLIB_r_facegear);};
+        // Add uniform etc.
+        _unit forceAddUniform (selectRandom _uniforms);
+        _unit addItemToUniform "FirstAidKit";
+        _unit addItemToUniform "MiniGrenade";
+        _unit addVest (selectRandom _vests);
+        _unit addHeadgear (selectRandom _headgear);
+        if (_tier > 1) then {_unit addGoggles (selectRandom KPLIB_r_facegear);};
 
-    // Add standard items
-    _unit linkItem "ItemMap";
-    _unit linkItem "ItemCompass";
-    _unit linkItem "ItemWatch";
-    _unit linkItem "ItemRadio";
+        // Add standard items
+        _unit linkItem "ItemMap";
+        _unit linkItem "ItemCompass";
+        _unit linkItem "ItemWatch";
+        _unit linkItem "ItemRadio";
 
-    // Add weapon
-    _weapon = selectRandom _weapons;
-    _unit addWeapon (_weapon select 0);
-    for "_i" from 1 to (_weapon select 2) do {_unit addItemToVest (_weapon select 1);};
-    _unit addPrimaryWeaponItem (_weapon select 3);
-    _unit addPrimaryWeaponItem (_weapon select 4);
+        // Add weapon
+        _weapon = selectRandom _weapons;
+        _unit addWeapon (_weapon select 0);
+        for "_i" from 1 to (_weapon select 2) do {_unit addItemToVest (_weapon select 1);};
+        _unit addPrimaryWeaponItem (_weapon select 3);
+        _unit addPrimaryWeaponItem (_weapon select 4);
 
-    // Add possible RPG launcher
-    if ((_tier > 1) && ((random 100) <= KPLIB_resistance_at_chance)) then {
-        _unit addBackpack "B_FieldPack_cbr";
-        for "_i" from 1 to 3 do {_unit addItemToBackpack "RPG7_F";};
-        _unit addWeapon "launch_RPG7_F";
-    }; */
+        // Add possible RPG launcher
+        if ((_tier > 1) && ((random 100) <= KPLIB_resistance_at_chance)) then {
+            _unit addBackpack "B_FieldPack_cbr";
+            for "_i" from 1 to 3 do {_unit addItemToBackpack "RPG7_F";};
+            _unit addWeapon "launch_RPG7_F";
+        };
+    };
 };
 
 _grp
