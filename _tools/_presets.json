@@ -241,6 +241,19 @@
         "workshopId": "884703460"
     },
     {
+        "sourceFolder": "kp_liberation.Tanoa",
+        "missionName": "spec_liberation_rhs",
+        "map": "Tanoa",
+        "configFile": "KPLIB_config.sqf",
+        "variables": {
+            "KPLIB_preset_blufor": 32,
+            "KPLIB_preset_opfor": 23,
+            "KPLIB_preset_resistance": 11,
+            "KPLIB_preset_civilians": 1,
+            "KPLIB_arsenal": "rhs_blufor"
+        }
+    },
+    {
         "sourceFolder": "kp_liberation.xcam_taunus",
         "missionName": "kp_liberation",
         "map": "xcam_taunus",
