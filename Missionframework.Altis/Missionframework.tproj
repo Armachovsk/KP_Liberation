@@ -1,0 +1,1703 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ProjectRootNode Name="Missionframework" FileName="">
+    <SubNodes>
+      <ProjectNodeViewModel xsi:type="ProjectFolderNodeViewModel" Name="fobhunt_templates" FileName="fobhunt_templates">
+        <SubNodes>
+          <ProjectNodeViewModel xsi:type="ProjectFolderNodeViewModel" Name="apex" FileName="fobhunt_templates\apex">
+            <SubNodes>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="template1.sqf" FileName="fobhunt_templates\apex\template1.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="template2.sqf" FileName="fobhunt_templates\apex\template2.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="template3.sqf" FileName="fobhunt_templates\apex\template3.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="template4.sqf" FileName="fobhunt_templates\apex\template4.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="template5.sqf" FileName="fobhunt_templates\apex\template5.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+            </SubNodes>
+          </ProjectNodeViewModel>
+          <ProjectNodeViewModel xsi:type="ProjectFolderNodeViewModel" Name="default" FileName="fobhunt_templates\default">
+            <SubNodes>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="template1.sqf" FileName="fobhunt_templates\default\template1.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="template10.sqf" FileName="fobhunt_templates\default\template10.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="template2.sqf" FileName="fobhunt_templates\default\template2.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="template3.sqf" FileName="fobhunt_templates\default\template3.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="template4.sqf" FileName="fobhunt_templates\default\template4.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="template5.sqf" FileName="fobhunt_templates\default\template5.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="template6.sqf" FileName="fobhunt_templates\default\template6.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="template7.sqf" FileName="fobhunt_templates\default\template7.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="template8.sqf" FileName="fobhunt_templates\default\template8.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="template9.sqf" FileName="fobhunt_templates\default\template9.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+            </SubNodes>
+          </ProjectNodeViewModel>
+          <ProjectNodeViewModel xsi:type="ProjectFolderNodeViewModel" Name="unsung" FileName="fobhunt_templates\unsung">
+            <SubNodes>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="template1.sqf" FileName="fobhunt_templates\unsung\template1.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="template2.sqf" FileName="fobhunt_templates\unsung\template2.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="template3.sqf" FileName="fobhunt_templates\unsung\template3.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="template4.sqf" FileName="fobhunt_templates\unsung\template4.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="template5.sqf" FileName="fobhunt_templates\unsung\template5.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+            </SubNodes>
+          </ProjectNodeViewModel>
+          <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="export_template.sqf" FileName="fobhunt_templates\export_template.sqf">
+            <SubNodes />
+          </ProjectNodeViewModel>
+        </SubNodes>
+      </ProjectNodeViewModel>
+      <ProjectNodeViewModel xsi:type="ProjectFolderNodeViewModel" Name="functions" FileName="functions">
+        <SubNodes>
+          <ProjectNodeViewModel xsi:type="ProjectFolderNodeViewModel" Name="curator" FileName="functions\curator">
+            <SubNodes>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_initCuratorHandlers.sqf" FileName="functions\curator\fn_initCuratorHandlers.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_requestZeus.sqf" FileName="functions\curator\fn_requestZeus.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+            </SubNodes>
+          </ProjectNodeViewModel>
+          <ProjectNodeViewModel xsi:type="ProjectFolderNodeViewModel" Name="simplex_support_services" FileName="functions\simplex_support_services">
+            <SubNodes>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_sss_registerSupport.sqf" FileName="functions\simplex_support_services\fn_sss_registerSupport.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+            </SubNodes>
+          </ProjectNodeViewModel>
+          <ProjectNodeViewModel xsi:type="ProjectFolderNodeViewModel" Name="ui" FileName="functions\ui">
+            <SubNodes>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_overlayUpdateResources.sqf" FileName="functions\ui\fn_overlayUpdateResources.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+            </SubNodes>
+          </ProjectNodeViewModel>
+          <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_addActionsFob.sqf" FileName="functions\fn_addActionsFob.sqf">
+            <SubNodes />
+          </ProjectNodeViewModel>
+          <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_addActionsPlayer.sqf" FileName="functions\fn_addActionsPlayer.sqf">
+            <SubNodes />
+          </ProjectNodeViewModel>
+          <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_addObjectInit.sqf" FileName="functions\fn_addObjectInit.sqf">
+            <SubNodes />
+          </ProjectNodeViewModel>
+          <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_addRopeAttachEh.sqf" FileName="functions\fn_addRopeAttachEh.sqf">
+            <SubNodes />
+          </ProjectNodeViewModel>
+          <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_allowCrewInImmobile.sqf" FileName="functions\fn_allowCrewInImmobile.sqf">
+            <SubNodes />
+          </ProjectNodeViewModel>
+          <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_checkClass.sqf" FileName="functions\fn_checkClass.sqf">
+            <SubNodes />
+          </ProjectNodeViewModel>
+          <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_checkCrateValue.sqf" FileName="functions\fn_checkCrateValue.sqf">
+            <SubNodes />
+          </ProjectNodeViewModel>
+          <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_checkGear.sqf" FileName="functions\fn_checkGear.sqf">
+            <SubNodes />
+          </ProjectNodeViewModel>
+          <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_checkWeaponCargo.sqf" FileName="functions\fn_checkWeaponCargo.sqf">
+            <SubNodes />
+          </ProjectNodeViewModel>
+          <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_cleanOpforVehicle.sqf" FileName="functions\fn_cleanOpforVehicle.sqf">
+            <SubNodes />
+          </ProjectNodeViewModel>
+          <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_clearCargo.sqf" FileName="functions\fn_clearCargo.sqf">
+            <SubNodes />
+          </ProjectNodeViewModel>
+          <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_crAddAceAction.sqf" FileName="functions\fn_crAddAceAction.sqf">
+            <SubNodes />
+          </ProjectNodeViewModel>
+          <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_crateFromStorage.sqf" FileName="functions\fn_crateFromStorage.sqf">
+            <SubNodes />
+          </ProjectNodeViewModel>
+          <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_crateToStorage.sqf" FileName="functions\fn_crateToStorage.sqf">
+            <SubNodes />
+          </ProjectNodeViewModel>
+          <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_crawlAllItems.sqf" FileName="functions\fn_crawlAllItems.sqf">
+            <SubNodes />
+          </ProjectNodeViewModel>
+          <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_createClearance.sqf" FileName="functions\fn_createClearance.sqf">
+            <SubNodes />
+          </ProjectNodeViewModel>
+          <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_createClearanceConfirm.sqf" FileName="functions\fn_createClearanceConfirm.sqf">
+            <SubNodes />
+          </ProjectNodeViewModel>
+          <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_createCrate.sqf" FileName="functions\fn_createCrate.sqf">
+            <SubNodes />
+          </ProjectNodeViewModel>
+          <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_createManagedUnit.sqf" FileName="functions\fn_createManagedUnit.sqf">
+            <SubNodes />
+          </ProjectNodeViewModel>
+          <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_crGetMulti.sqf" FileName="functions\fn_crGetMulti.sqf">
+            <SubNodes />
+          </ProjectNodeViewModel>
+          <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_crGlobalMsg.sqf" FileName="functions\fn_crGlobalMsg.sqf">
+            <SubNodes />
+          </ProjectNodeViewModel>
+          <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_doSave.sqf" FileName="functions\fn_doSave.sqf">
+            <SubNodes />
+          </ProjectNodeViewModel>
+          <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_fillStorage.sqf" FileName="functions\fn_fillStorage.sqf">
+            <SubNodes />
+          </ProjectNodeViewModel>
+          <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_forceBluforCrew.sqf" FileName="functions\fn_forceBluforCrew.sqf">
+            <SubNodes />
+          </ProjectNodeViewModel>
+          <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_getAdaptiveVehicle.sqf" FileName="functions\fn_getAdaptiveVehicle.sqf">
+            <SubNodes />
+          </ProjectNodeViewModel>
+          <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_getBluforRatio.sqf" FileName="functions\fn_getBluforRatio.sqf">
+            <SubNodes />
+          </ProjectNodeViewModel>
+          <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_getCommander.sqf" FileName="functions\fn_getCommander.sqf">
+            <SubNodes />
+          </ProjectNodeViewModel>
+          <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_getCrateHeight.sqf" FileName="functions\fn_getCrateHeight.sqf">
+            <SubNodes />
+          </ProjectNodeViewModel>
+          <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_getFobName.sqf" FileName="functions\fn_getFobName.sqf">
+            <SubNodes />
+          </ProjectNodeViewModel>
+          <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_getFobResources.sqf" FileName="functions\fn_getFobResources.sqf">
+            <SubNodes />
+          </ProjectNodeViewModel>
+          <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_getGroupType.sqf" FileName="functions\fn_getGroupType.sqf">
+            <SubNodes />
+          </ProjectNodeViewModel>
+          <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_getLessLoadedHC.sqf" FileName="functions\fn_getLessLoadedHC.sqf">
+            <SubNodes />
+          </ProjectNodeViewModel>
+          <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_getLoadout.sqf" FileName="functions\fn_getLoadout.sqf">
+            <SubNodes />
+          </ProjectNodeViewModel>
+          <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_getLocalCap.sqf" FileName="functions\fn_getLocalCap.sqf">
+            <SubNodes />
+          </ProjectNodeViewModel>
+          <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_getLocationName.sqf" FileName="functions\fn_getLocationName.sqf">
+            <SubNodes />
+          </ProjectNodeViewModel>
+          <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_getMilitaryId.sqf" FileName="functions\fn_getMilitaryId.sqf">
+            <SubNodes />
+          </ProjectNodeViewModel>
+          <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_getMobileRespawns.sqf" FileName="functions\fn_getMobileRespawns.sqf">
+            <SubNodes />
+          </ProjectNodeViewModel>
+          <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_getNearbyPlayers.sqf" FileName="functions\fn_getNearbyPlayers.sqf">
+            <SubNodes />
+          </ProjectNodeViewModel>
+          <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_getNearestBluforObjective.sqf" FileName="functions\fn_getNearestBluforObjective.sqf">
+            <SubNodes />
+          </ProjectNodeViewModel>
+          <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_getNearestFob.sqf" FileName="functions\fn_getNearestFob.sqf">
+            <SubNodes />
+          </ProjectNodeViewModel>
+          <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_getNearestSector.sqf" FileName="functions\fn_getNearestSector.sqf">
+            <SubNodes />
+          </ProjectNodeViewModel>
+          <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_getNearestTower.sqf" FileName="functions\fn_getNearestTower.sqf">
+            <SubNodes />
+          </ProjectNodeViewModel>
+          <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_getNearestViVTransport.sqf" FileName="functions\fn_getNearestViVTransport.sqf">
+            <SubNodes />
+          </ProjectNodeViewModel>
+          <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_getOpforCap.sqf" FileName="functions\fn_getOpforCap.sqf">
+            <SubNodes />
+          </ProjectNodeViewModel>
+          <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_getOpforFactor.sqf" FileName="functions\fn_getOpforFactor.sqf">
+            <SubNodes />
+          </ProjectNodeViewModel>
+          <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_getOpforSpawnPoint.sqf" FileName="functions\fn_getOpforSpawnPoint.sqf">
+            <SubNodes />
+          </ProjectNodeViewModel>
+          <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_getPlayerCount.sqf" FileName="functions\fn_getPlayerCount.sqf">
+            <SubNodes />
+          </ProjectNodeViewModel>
+          <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_getResistanceTier.sqf" FileName="functions\fn_getResistanceTier.sqf">
+            <SubNodes />
+          </ProjectNodeViewModel>
+          <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_getSaveableParam.sqf" FileName="functions\fn_getSaveableParam.sqf">
+            <SubNodes />
+          </ProjectNodeViewModel>
+          <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_getSaveData.sqf" FileName="functions\fn_getSaveData.sqf">
+            <SubNodes />
+          </ProjectNodeViewModel>
+          <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_getSectorOwnership.sqf" FileName="functions\fn_getSectorOwnership.sqf">
+            <SubNodes />
+          </ProjectNodeViewModel>
+          <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_getSectorRange.sqf" FileName="functions\fn_getSectorRange.sqf">
+            <SubNodes />
+          </ProjectNodeViewModel>
+          <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_getSquadComp.sqf" FileName="functions\fn_getSquadComp.sqf">
+            <SubNodes />
+          </ProjectNodeViewModel>
+          <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_getStoragePositions.sqf" FileName="functions\fn_getStoragePositions.sqf">
+            <SubNodes />
+          </ProjectNodeViewModel>
+          <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_getUnitPositionId.sqf" FileName="functions\fn_getUnitPositionId.sqf">
+            <SubNodes />
+          </ProjectNodeViewModel>
+          <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_getUnitsCount.sqf" FileName="functions\fn_getUnitsCount.sqf">
+            <SubNodes />
+          </ProjectNodeViewModel>
+          <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_getWeaponComponents.sqf" FileName="functions\fn_getWeaponComponents.sqf">
+            <SubNodes />
+          </ProjectNodeViewModel>
+          <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_handlePlacedZeusObject.sqf" FileName="functions\fn_handlePlacedZeusObject.sqf">
+            <SubNodes />
+          </ProjectNodeViewModel>
+          <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_hasPermission.sqf" FileName="functions\fn_hasPermission.sqf">
+            <SubNodes />
+          </ProjectNodeViewModel>
+          <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_initSectors.sqf" FileName="functions\fn_initSectors.sqf">
+            <SubNodes />
+          </ProjectNodeViewModel>
+          <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_isCapitalActive.sqf" FileName="functions\fn_isCapitalActive.sqf">
+            <SubNodes />
+          </ProjectNodeViewModel>
+          <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_isClassUAV.sqf" FileName="functions\fn_isClassUAV.sqf">
+            <SubNodes />
+          </ProjectNodeViewModel>
+          <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_isRadio.sqf" FileName="functions\fn_isRadio.sqf">
+            <SubNodes />
+          </ProjectNodeViewModel>
+          <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_log.sqf" FileName="functions\fn_log.sqf">
+            <SubNodes />
+          </ProjectNodeViewModel>
+          <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_potatoScan.sqf" FileName="functions\fn_potatoScan.sqf">
+            <SubNodes />
+          </ProjectNodeViewModel>
+          <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_protectObject.sqf" FileName="functions\fn_protectObject.sqf">
+            <SubNodes />
+          </ProjectNodeViewModel>
+          <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_secondsToTimer.sqf" FileName="functions\fn_secondsToTimer.sqf">
+            <SubNodes />
+          </ProjectNodeViewModel>
+          <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_setDiscordState.sqf" FileName="functions\fn_setDiscordState.sqf">
+            <SubNodes />
+          </ProjectNodeViewModel>
+          <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_setFobMass.sqf" FileName="functions\fn_setFobMass.sqf">
+            <SubNodes />
+          </ProjectNodeViewModel>
+          <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_setLoadableViV.sqf" FileName="functions\fn_setLoadableViV.sqf">
+            <SubNodes />
+          </ProjectNodeViewModel>
+          <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_setLoadout.sqf" FileName="functions\fn_setLoadout.sqf">
+            <SubNodes />
+          </ProjectNodeViewModel>
+          <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_setVehicleCaptured.sqf" FileName="functions\fn_setVehicleCaptured.sqf">
+            <SubNodes />
+          </ProjectNodeViewModel>
+          <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_setVehicleSeized.sqf" FileName="functions\fn_setVehicleSeized.sqf">
+            <SubNodes />
+          </ProjectNodeViewModel>
+          <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_sortStorage.sqf" FileName="functions\fn_sortStorage.sqf">
+            <SubNodes />
+          </ProjectNodeViewModel>
+          <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_spawnBuildingSquad.sqf" FileName="functions\fn_spawnBuildingSquad.sqf">
+            <SubNodes />
+          </ProjectNodeViewModel>
+          <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_spawnCivilians.sqf" FileName="functions\fn_spawnCivilians.sqf">
+            <SubNodes />
+          </ProjectNodeViewModel>
+          <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_spawnGuerillaGroup.sqf" FileName="functions\fn_spawnGuerillaGroup.sqf">
+            <SubNodes />
+          </ProjectNodeViewModel>
+          <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_spawnMilitaryPostSquad.sqf" FileName="functions\fn_spawnMilitaryPostSquad.sqf">
+            <SubNodes />
+          </ProjectNodeViewModel>
+          <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_spawnMilitiaCrew.sqf" FileName="functions\fn_spawnMilitiaCrew.sqf">
+            <SubNodes />
+          </ProjectNodeViewModel>
+          <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_spawnRegularSquad.sqf" FileName="functions\fn_spawnRegularSquad.sqf">
+            <SubNodes />
+          </ProjectNodeViewModel>
+          <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_spawnVehicle.sqf" FileName="functions\fn_spawnVehicle.sqf">
+            <SubNodes />
+          </ProjectNodeViewModel>
+          <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_swapInventory.sqf" FileName="functions\fn_swapInventory.sqf">
+            <SubNodes />
+          </ProjectNodeViewModel>
+        </SubNodes>
+      </ProjectNodeViewModel>
+      <ProjectNodeViewModel xsi:type="ProjectFolderNodeViewModel" Name="GREUH" FileName="GREUH">
+        <SubNodes>
+          <ProjectNodeViewModel xsi:type="ProjectFolderNodeViewModel" Name="Scripts" FileName="GREUH\Scripts">
+            <SubNodes>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="GREUH_actionmanager.sqf" FileName="GREUH\Scripts\GREUH_actionmanager.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="GREUH_activate.sqf" FileName="GREUH\Scripts\GREUH_activate.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="GREUH_cache_units.sqf" FileName="GREUH\Scripts\GREUH_cache_units.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="GREUH_dialog.sqf" FileName="GREUH\Scripts\GREUH_dialog.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="GREUH_dynamic_view_distance.sqf" FileName="GREUH\Scripts\GREUH_dynamic_view_distance.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="GREUH_platoonoverlay.sqf" FileName="GREUH\Scripts\GREUH_platoonoverlay.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="GREUH_playermarkers.sqf" FileName="GREUH\Scripts\GREUH_playermarkers.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="GREUH_squadmanagement.sqf" FileName="GREUH\Scripts\GREUH_squadmanagement.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="GREUH_version.sqf" FileName="GREUH\Scripts\GREUH_version.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="GREUH_view_distance_management.sqf" FileName="GREUH\Scripts\GREUH_view_distance_management.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+            </SubNodes>
+          </ProjectNodeViewModel>
+          <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="GREUH_config.sqf" FileName="GREUH\GREUH_config.sqf">
+            <SubNodes />
+          </ProjectNodeViewModel>
+        </SubNodes>
+      </ProjectNodeViewModel>
+      <ProjectNodeViewModel xsi:type="ProjectFolderNodeViewModel" Name="KP" FileName="KP">
+        <SubNodes>
+          <ProjectNodeViewModel xsi:type="ProjectFolderNodeViewModel" Name="KPPLM" FileName="KP\KPPLM">
+            <SubNodes>
+              <ProjectNodeViewModel xsi:type="ProjectFolderNodeViewModel" Name="fnc" FileName="KP\KPPLM\fnc">
+                <SubNodes>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_apply.sqf" FileName="KP\KPPLM\fnc\fn_apply.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_create.sqf" FileName="KP\KPPLM\fnc\fn_create.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_getInOut.sqf" FileName="KP\KPPLM\fnc\fn_getInOut.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_join.sqf" FileName="KP\KPPLM\fnc\fn_join.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_openDialog.sqf" FileName="KP\KPPLM\fnc\fn_openDialog.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_postInit.sqf" FileName="KP\KPPLM\fnc\fn_postInit.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_preInit.sqf" FileName="KP\KPPLM\fnc\fn_preInit.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_rename.sqf" FileName="KP\KPPLM\fnc\fn_rename.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_save.sqf" FileName="KP\KPPLM\fnc\fn_save.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_showRankData.sqf" FileName="KP\KPPLM\fnc\fn_showRankData.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                </SubNodes>
+              </ProjectNodeViewModel>
+            </SubNodes>
+          </ProjectNodeViewModel>
+        </SubNodes>
+      </ProjectNodeViewModel>
+      <ProjectNodeViewModel xsi:type="ProjectFolderNodeViewModel" Name="presets" FileName="presets">
+        <SubNodes>
+          <ProjectNodeViewModel xsi:type="ProjectFolderNodeViewModel" Name="arsenal" FileName="presets\arsenal">
+            <SubNodes>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="3cbBAF.sqf" FileName="presets\arsenal\3cbBAF.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="allowedExtension.sqf" FileName="presets\arsenal\allowedExtension.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="blacklist.sqf" FileName="presets\arsenal\blacklist.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="bwmod.sqf" FileName="presets\arsenal\bwmod.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="csat.sqf" FileName="presets\arsenal\csat.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="custom.sqf" FileName="presets\arsenal\custom.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="gm_east.sqf" FileName="presets\arsenal\gm_east.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="gm_west.sqf" FileName="presets\arsenal\gm_west.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="rhsusaf.sqf" FileName="presets\arsenal\rhsusaf.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="sfp.sqf" FileName="presets\arsenal\sfp.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="unsung.sqf" FileName="presets\arsenal\unsung.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="vanilla_aaf.sqf" FileName="presets\arsenal\vanilla_aaf.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="vanilla_csat_ghex.sqf" FileName="presets\arsenal\vanilla_csat_ghex.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="vanilla_csat_hex.sqf" FileName="presets\arsenal\vanilla_csat_hex.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="vanilla_ldf.sqf" FileName="presets\arsenal\vanilla_ldf.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="vanilla_nato_mtp.sqf" FileName="presets\arsenal\vanilla_nato_mtp.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="vanilla_nato_tropic.sqf" FileName="presets\arsenal\vanilla_nato_tropic.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="vanilla_nato_wdl.sqf" FileName="presets\arsenal\vanilla_nato_wdl.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+            </SubNodes>
+          </ProjectNodeViewModel>
+          <ProjectNodeViewModel xsi:type="ProjectFolderNodeViewModel" Name="civilians" FileName="presets\civilians">
+            <SubNodes>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="apex.sqf" FileName="presets\civilians\apex.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="cup_cherno.sqf" FileName="presets\civilians\cup_cherno.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="cup_takistan.sqf" FileName="presets\civilians\cup_takistan.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="custom.sqf" FileName="presets\civilians\custom.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="germany.sqf" FileName="presets\civilians\germany.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="middle_eastern.sqf" FileName="presets\civilians\middle_eastern.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="rds_civ.sqf" FileName="presets\civilians\rds_civ.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="unsung.sqf" FileName="presets\civilians\unsung.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+            </SubNodes>
+          </ProjectNodeViewModel>
+          <ProjectNodeViewModel xsi:type="ProjectFolderNodeViewModel" Name="enemies" FileName="presets\enemies">
+            <SubNodes>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="aaf.sqf" FileName="presets\enemies\aaf.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="apex.sqf" FileName="presets\enemies\apex.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="cup_afrf_msv.sqf" FileName="presets\enemies\cup_afrf_msv.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="cup_afrf_msv_modern.sqf" FileName="presets\enemies\cup_afrf_msv_modern.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="cup_baf_desert.sqf" FileName="presets\enemies\cup_baf_desert.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="cup_baf_woodland.sqf" FileName="presets\enemies\cup_baf_woodland.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="cup_cdf.sqf" FileName="presets\enemies\cup_cdf.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="cup_chdkz.sqf" FileName="presets\enemies\cup_chdkz.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="cup_sla.sqf" FileName="presets\enemies\cup_sla.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="cup_takistan.sqf" FileName="presets\enemies\cup_takistan.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="custom.sqf" FileName="presets\enemies\custom.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="gm_aaf_90.sqf" FileName="presets\enemies\gm_aaf_90.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="gm_east.sqf" FileName="presets\enemies\gm_east.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="gm_east_win.sqf" FileName="presets\enemies\gm_east_win.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="gm_west.sqf" FileName="presets\enemies\gm_west.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="gm_west_win.sqf" FileName="presets\enemies\gm_west_win.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="islamic_state.sqf" FileName="presets\enemies\islamic_state.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="nato.sqf" FileName="presets\enemies\nato.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="rhs_afrf.sqf" FileName="presets\enemies\rhs_afrf.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="rhs_tanoan_liberation_army.sqf" FileName="presets\enemies\rhs_tanoan_liberation_army.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="sla.sqf" FileName="presets\enemies\sla.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="spec_chdkz.sqf" FileName="presets\enemies\spec_chdkz.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="takistan.sqf" FileName="presets\enemies\takistan.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="unsung.sqf" FileName="presets\enemies\unsung.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+            </SubNodes>
+          </ProjectNodeViewModel>
+          <ProjectNodeViewModel xsi:type="ProjectFolderNodeViewModel" Name="players" FileName="presets\players">
+            <SubNodes>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="apex.sqf" FileName="presets\players\apex.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="baf_des.sqf" FileName="presets\players\baf_des.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="baf_mtp.sqf" FileName="presets\players\baf_mtp.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="bwmod.sqf" FileName="presets\players\bwmod.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="bwmod_des.sqf" FileName="presets\players\bwmod_des.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="csat.sqf" FileName="presets\players\csat.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="csat_apex.sqf" FileName="presets\players\csat_apex.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="cup_acr_desert.sqf" FileName="presets\players\cup_acr_desert.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="cup_acr_woodland.sqf" FileName="presets\players\cup_acr_woodland.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="cup_baf_desert.sqf" FileName="presets\players\cup_baf_desert.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="cup_baf_woodland.sqf" FileName="presets\players\cup_baf_woodland.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="cup_cdf.sqf" FileName="presets\players\cup_cdf.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="cup_chdkz.sqf" FileName="presets\players\cup_chdkz.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="cup_sla.sqf" FileName="presets\players\cup_sla.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="cup_takistan.sqf" FileName="presets\players\cup_takistan.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="cup_usa_desert.sqf" FileName="presets\players\cup_usa_desert.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="cup_usa_woodland.sqf" FileName="presets\players\cup_usa_woodland.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="cup_usmc_desert.sqf" FileName="presets\players\cup_usmc_desert.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="cup_usmc_woodland.sqf" FileName="presets\players\cup_usmc_woodland.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="custom.sqf" FileName="presets\players\custom.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="enoch.sqf" FileName="presets\players\enoch.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="gm_east.sqf" FileName="presets\players\gm_east.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="gm_east_win.sqf" FileName="presets\players\gm_east_win.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="gm_west.sqf" FileName="presets\players\gm_west.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="gm_west_win.sqf" FileName="presets\players\gm_west_win.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="rhs_afrf.sqf" FileName="presets\players\rhs_afrf.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="rhs_navy_des.sqf" FileName="presets\players\rhs_navy_des.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="rhs_navy_wdl.sqf" FileName="presets\players\rhs_navy_wdl.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="rhs_usaf_des.sqf" FileName="presets\players\rhs_usaf_des.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="rhs_usaf_wdl.sqf" FileName="presets\players\rhs_usaf_wdl.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="sfp_des.sqf" FileName="presets\players\sfp_des.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="sfp_wdl.sqf" FileName="presets\players\sfp_wdl.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="unsung.sqf" FileName="presets\players\unsung.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+            </SubNodes>
+          </ProjectNodeViewModel>
+          <ProjectNodeViewModel xsi:type="ProjectFolderNodeViewModel" Name="resistance" FileName="presets\resistance">
+            <SubNodes>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="apex.sqf" FileName="presets\resistance\apex.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="cup_napa.sqf" FileName="presets\resistance\cup_napa.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="cup_takistan.sqf" FileName="presets\resistance\cup_takistan.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="custom.sqf" FileName="presets\resistance\custom.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="germany.sqf" FileName="presets\resistance\germany.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="gm_operation_xiphos.sqf" FileName="presets\resistance\gm_operation_xiphos.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="middle_eastern.sqf" FileName="presets\resistance\middle_eastern.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="racs.sqf" FileName="presets\resistance\racs.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="rhs_gref.sqf" FileName="presets\resistance\rhs_gref.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="rhs_horizon_islands_defence_force.sqf" FileName="presets\resistance\rhs_horizon_islands_defence_force.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="spec_chdkz_altis.sqf" FileName="presets\resistance\spec_chdkz_altis.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="unsung.sqf" FileName="presets\resistance\unsung.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+            </SubNodes>
+          </ProjectNodeViewModel>
+          <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="init_presets.sqf" FileName="presets\init_presets.sqf">
+            <SubNodes />
+          </ProjectNodeViewModel>
+        </SubNodes>
+      </ProjectNodeViewModel>
+      <ProjectNodeViewModel xsi:type="ProjectFolderNodeViewModel" Name="scripts" FileName="scripts">
+        <SubNodes>
+          <ProjectNodeViewModel xsi:type="ProjectFolderNodeViewModel" Name="client" FileName="scripts\client">
+            <SubNodes>
+              <ProjectNodeViewModel xsi:type="ProjectFolderNodeViewModel" Name="actions" FileName="scripts\client\actions">
+                <SubNodes>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="do_recycle.sqf" FileName="scripts\client\actions\do_recycle.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="do_repackage_fob.sqf" FileName="scripts\client\actions\do_repackage_fob.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="do_unflip.sqf" FileName="scripts\client\actions\do_unflip.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="intel_manager.sqf" FileName="scripts\client\actions\intel_manager.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="open_arsenal.sqf" FileName="scripts\client\actions\open_arsenal.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="recycle_manager.sqf" FileName="scripts\client\actions\recycle_manager.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="unflip_manager.sqf" FileName="scripts\client\actions\unflip_manager.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                </SubNodes>
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFolderNodeViewModel" Name="ammoboxes" FileName="scripts\client\ammoboxes">
+                <SubNodes>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="ammobox_action_manager.sqf" FileName="scripts\client\ammoboxes\ammobox_action_manager.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="do_load_box.sqf" FileName="scripts\client\ammoboxes\do_load_box.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="do_unload_truck.sqf" FileName="scripts\client\ammoboxes\do_unload_truck.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                </SubNodes>
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFolderNodeViewModel" Name="asymmetric" FileName="scripts\client\asymmetric">
+                <SubNodes>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="asymm_notifications.sqf" FileName="scripts\client\asymmetric\asymm_notifications.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                </SubNodes>
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFolderNodeViewModel" Name="build" FileName="scripts\client\build">
+                <SubNodes>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="build_overlay.sqf" FileName="scripts\client\build\build_overlay.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="do_build.sqf" FileName="scripts\client\build\do_build.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="do_build_fob.sqf" FileName="scripts\client\build\do_build_fob.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="do_sector_build.sqf" FileName="scripts\client\build\do_sector_build.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="open_build_menu.sqf" FileName="scripts\client\build\open_build_menu.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                </SubNodes>
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFolderNodeViewModel" Name="civinformant" FileName="scripts\client\civinformant">
+                <SubNodes>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="civinfo_escort.sqf" FileName="scripts\client\civinformant\civinfo_escort.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="civinfo_notifications.sqf" FileName="scripts\client\civinformant\civinfo_notifications.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                </SubNodes>
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFolderNodeViewModel" Name="commander" FileName="scripts\client\commander">
+                <SubNodes>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="enforce_whitelist.sqf" FileName="scripts\client\commander\enforce_whitelist.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="open_logistic.sqf" FileName="scripts\client\commander\open_logistic.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="open_permissions.sqf" FileName="scripts\client\commander\open_permissions.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="open_production.sqf" FileName="scripts\client\commander\open_production.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                </SubNodes>
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFolderNodeViewModel" Name="markers" FileName="scripts\client\markers">
+                <SubNodes>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="empty_vehicles_marker.sqf" FileName="scripts\client\markers\empty_vehicles_marker.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fob_markers.sqf" FileName="scripts\client\markers\fob_markers.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="group_icons.sqf" FileName="scripts\client\markers\group_icons.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="hostile_groups.sqf" FileName="scripts\client\markers\hostile_groups.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="huron_marker.sqf" FileName="scripts\client\markers\huron_marker.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="sector_manager.sqf" FileName="scripts\client\markers\sector_manager.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="spot_timer.sqf" FileName="scripts\client\markers\spot_timer.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="update_production_sites.sqf" FileName="scripts\client\markers\update_production_sites.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                </SubNodes>
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFolderNodeViewModel" Name="misc" FileName="scripts\client\misc">
+                <SubNodes>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="broadcast_squad_colors.sqf" FileName="scripts\client\misc\broadcast_squad_colors.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_initArsenal.sqf" FileName="scripts\client\misc\fn_initArsenal.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="init_markers.sqf" FileName="scripts\client\misc\init_markers.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="kp_fuel_consumption.sqf" FileName="scripts\client\misc\kp_fuel_consumption.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="permissions_warning.sqf" FileName="scripts\client\misc\permissions_warning.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="playerNamespace.sqf" FileName="scripts\client\misc\playerNamespace.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="resupply_manager.sqf" FileName="scripts\client\misc\resupply_manager.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="secondary_jip.sqf" FileName="scripts\client\misc\secondary_jip.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="synchronise_eco.sqf" FileName="scripts\client\misc\synchronise_eco.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="synchronise_vars.sqf" FileName="scripts\client\misc\synchronise_vars.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="vehicle_permissions.sqf" FileName="scripts\client\misc\vehicle_permissions.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                </SubNodes>
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFolderNodeViewModel" Name="remotecall" FileName="scripts\client\remotecall">
+                <SubNodes>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="remote_call_battlegroup.sqf" FileName="scripts\client\remotecall\remote_call_battlegroup.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="remote_call_endgame.sqf" FileName="scripts\client\remotecall\remote_call_endgame.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="remote_call_fob.sqf" FileName="scripts\client\remotecall\remote_call_fob.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="remote_call_incoming.sqf" FileName="scripts\client\remotecall\remote_call_incoming.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="remote_call_intel.sqf" FileName="scripts\client\remotecall\remote_call_intel.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="remote_call_prisonner.sqf" FileName="scripts\client\remotecall\remote_call_prisonner.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="remote_call_sector.sqf" FileName="scripts\client\remotecall\remote_call_sector.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                </SubNodes>
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFolderNodeViewModel" Name="spawn" FileName="scripts\client\spawn">
+                <SubNodes>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="do_halo.sqf" FileName="scripts\client\spawn\do_halo.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="redeploy_manager.sqf" FileName="scripts\client\spawn\redeploy_manager.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="spawn_camera.sqf" FileName="scripts\client\spawn\spawn_camera.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                </SubNodes>
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFolderNodeViewModel" Name="tutorial" FileName="scripts\client\tutorial">
+                <SubNodes>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_handleCrateStorageTask.sqf" FileName="scripts\client\tutorial\fn_handleCrateStorageTask.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_handleHealCivTask.sqf" FileName="scripts\client\tutorial\fn_handleHealCivTask.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_handleTakePowTask.sqf" FileName="scripts\client\tutorial\fn_handleTakePowTask.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                </SubNodes>
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFolderNodeViewModel" Name="ui" FileName="scripts\client\ui">
+                <SubNodes>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="cinematic_camera.sqf" FileName="scripts\client\ui\cinematic_camera.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="end_screen.sqf" FileName="scripts\client\ui\end_screen.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="intro.sqf" FileName="scripts\client\ui\intro.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="secondary_ui.sqf" FileName="scripts\client\ui\secondary_ui.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="squad_management.sqf" FileName="scripts\client\ui\squad_management.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="tutorial_manager.sqf" FileName="scripts\client\ui\tutorial_manager.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="ui_manager.sqf" FileName="scripts\client\ui\ui_manager.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="write_credit_line.sqf" FileName="scripts\client\ui\write_credit_line.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                </SubNodes>
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="init_client.sqf" FileName="scripts\client\init_client.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+            </SubNodes>
+          </ProjectNodeViewModel>
+          <ProjectNodeViewModel xsi:type="ProjectFolderNodeViewModel" Name="server" FileName="scripts\server">
+            <SubNodes>
+              <ProjectNodeViewModel xsi:type="ProjectFolderNodeViewModel" Name="ai" FileName="scripts\server\ai">
+                <SubNodes>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="add_civ_waypoints.sqf" FileName="scripts\server\ai\add_civ_waypoints.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="add_defense_waypoints.sqf" FileName="scripts\server\ai\add_defense_waypoints.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="battlegroup_ai.sqf" FileName="scripts\server\ai\battlegroup_ai.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="building_defence_ai.sqf" FileName="scripts\server\ai\building_defence_ai.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="patrol_ai.sqf" FileName="scripts\server\ai\patrol_ai.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="prisonner_ai.sqf" FileName="scripts\server\ai\prisonner_ai.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="troup_transport.sqf" FileName="scripts\server\ai\troup_transport.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                </SubNodes>
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFolderNodeViewModel" Name="asymmetric" FileName="scripts\server\asymmetric">
+                <SubNodes>
+                  <ProjectNodeViewModel xsi:type="ProjectFolderNodeViewModel" Name="convoy" FileName="scripts\server\asymmetric\convoy">
+                    <SubNodes>
+                      <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="logistic_convoy_ambush.sqf" FileName="scripts\server\asymmetric\convoy\logistic_convoy_ambush.sqf">
+                        <SubNodes />
+                      </ProjectNodeViewModel>
+                    </SubNodes>
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFolderNodeViewModel" Name="ied" FileName="scripts\server\asymmetric\ied">
+                    <SubNodes>
+                      <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="manage_asymIED.sqf" FileName="scripts\server\asymmetric\ied\manage_asymIED.sqf">
+                        <SubNodes />
+                      </ProjectNodeViewModel>
+                    </SubNodes>
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFolderNodeViewModel" Name="random" FileName="scripts\server\asymmetric\random">
+                    <SubNodes>
+                      <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="asym_sector_ambush.sqf" FileName="scripts\server\asymmetric\random\asym_sector_ambush.sqf">
+                        <SubNodes />
+                      </ProjectNodeViewModel>
+                      <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="sector_guerilla.sqf" FileName="scripts\server\asymmetric\random\sector_guerilla.sqf">
+                        <SubNodes />
+                      </ProjectNodeViewModel>
+                    </SubNodes>
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="asymmetric_loop.sqf" FileName="scripts\server\asymmetric\asymmetric_loop.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="init_module.sqf" FileName="scripts\server\asymmetric\init_module.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                </SubNodes>
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFolderNodeViewModel" Name="base" FileName="scripts\server\base">
+                <SubNodes>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="huron_manager.sqf" FileName="scripts\server\base\huron_manager.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="startgame.sqf" FileName="scripts\server\base\startgame.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="startvehicle_spawn.sqf" FileName="scripts\server\base\startvehicle_spawn.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                </SubNodes>
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFolderNodeViewModel" Name="battlegroup" FileName="scripts\server\battlegroup">
+                <SubNodes>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="counter_battlegroup.sqf" FileName="scripts\server\battlegroup\counter_battlegroup.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="random_battlegroups.sqf" FileName="scripts\server\battlegroup\random_battlegroups.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="readiness_increase.sqf" FileName="scripts\server\battlegroup\readiness_increase.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="spawn_air.sqf" FileName="scripts\server\battlegroup\spawn_air.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="spawn_battlegroup.sqf" FileName="scripts\server\battlegroup\spawn_battlegroup.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                </SubNodes>
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFolderNodeViewModel" Name="civinformant" FileName="scripts\server\civinformant">
+                <SubNodes>
+                  <ProjectNodeViewModel xsi:type="ProjectFolderNodeViewModel" Name="tasks" FileName="scripts\server\civinformant\tasks">
+                    <SubNodes>
+                      <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="civinfo_task.sqf" FileName="scripts\server\civinformant\tasks\civinfo_task.sqf">
+                        <SubNodes />
+                      </ProjectNodeViewModel>
+                    </SubNodes>
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="civinfo_delivered.sqf" FileName="scripts\server\civinformant\civinfo_delivered.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="civinfo_loop.sqf" FileName="scripts\server\civinformant\civinfo_loop.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="init_module.sqf" FileName="scripts\server\civinformant\init_module.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                </SubNodes>
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFolderNodeViewModel" Name="civrep" FileName="scripts\server\civrep">
+                <SubNodes>
+                  <ProjectNodeViewModel xsi:type="ProjectFolderNodeViewModel" Name="fnc" FileName="scripts\server\civrep\fnc">
+                    <SubNodes>
+                      <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="f_kp_cr_changeCR.sqf" FileName="scripts\server\civrep\fnc\f_kp_cr_changeCR.sqf">
+                        <SubNodes />
+                      </ProjectNodeViewModel>
+                      <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="f_kp_cr_getBuildings.sqf" FileName="scripts\server\civrep\fnc\f_kp_cr_getBuildings.sqf">
+                        <SubNodes />
+                      </ProjectNodeViewModel>
+                      <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="f_kp_cr_liberatedSector.sqf" FileName="scripts\server\civrep\fnc\f_kp_cr_liberatedSector.sqf">
+                        <SubNodes />
+                      </ProjectNodeViewModel>
+                      <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="f_kp_cr_woundedAnim.sqf" FileName="scripts\server\civrep\fnc\f_kp_cr_woundedAnim.sqf">
+                        <SubNodes />
+                      </ProjectNodeViewModel>
+                    </SubNodes>
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFolderNodeViewModel" Name="ignored" FileName="scripts\server\civrep\ignored">
+                    <SubNodes>
+                      <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="altis.sqf" FileName="scripts\server\civrep\ignored\altis.sqf">
+                        <SubNodes />
+                      </ProjectNodeViewModel>
+                      <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="chernarus.sqf" FileName="scripts\server\civrep\ignored\chernarus.sqf">
+                        <SubNodes />
+                      </ProjectNodeViewModel>
+                      <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="chernarus2020.sqf" FileName="scripts\server\civrep\ignored\chernarus2020.sqf">
+                        <SubNodes />
+                      </ProjectNodeViewModel>
+                      <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="enoch.sqf" FileName="scripts\server\civrep\ignored\enoch.sqf">
+                        <SubNodes />
+                      </ProjectNodeViewModel>
+                      <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="gm_weferlingen_summer.sqf" FileName="scripts\server\civrep\ignored\gm_weferlingen_summer.sqf">
+                        <SubNodes />
+                      </ProjectNodeViewModel>
+                      <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="gm_weferlingen_winter.sqf" FileName="scripts\server\civrep\ignored\gm_weferlingen_winter.sqf">
+                        <SubNodes />
+                      </ProjectNodeViewModel>
+                      <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="lythium.sqf" FileName="scripts\server\civrep\ignored\lythium.sqf">
+                        <SubNodes />
+                      </ProjectNodeViewModel>
+                      <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="malden.sqf" FileName="scripts\server\civrep\ignored\malden.sqf">
+                        <SubNodes />
+                      </ProjectNodeViewModel>
+                      <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="panthera3.sqf" FileName="scripts\server\civrep\ignored\panthera3.sqf">
+                        <SubNodes />
+                      </ProjectNodeViewModel>
+                      <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="pja310.sqf" FileName="scripts\server\civrep\ignored\pja310.sqf">
+                        <SubNodes />
+                      </ProjectNodeViewModel>
+                      <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="sara.sqf" FileName="scripts\server\civrep\ignored\sara.sqf">
+                        <SubNodes />
+                      </ProjectNodeViewModel>
+                      <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="song_bin_tanh.sqf" FileName="scripts\server\civrep\ignored\song_bin_tanh.sqf">
+                        <SubNodes />
+                      </ProjectNodeViewModel>
+                      <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="takistan.sqf" FileName="scripts\server\civrep\ignored\takistan.sqf">
+                        <SubNodes />
+                      </ProjectNodeViewModel>
+                      <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="tanoa.sqf" FileName="scripts\server\civrep\ignored\tanoa.sqf">
+                        <SubNodes />
+                      </ProjectNodeViewModel>
+                      <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="wl_rosche.sqf" FileName="scripts\server\civrep\ignored\wl_rosche.sqf">
+                        <SubNodes />
+                      </ProjectNodeViewModel>
+                      <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="xcam_taunus.sqf" FileName="scripts\server\civrep\ignored\xcam_taunus.sqf">
+                        <SubNodes />
+                      </ProjectNodeViewModel>
+                    </SubNodes>
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFolderNodeViewModel" Name="wounded" FileName="scripts\server\civrep\wounded">
+                    <SubNodes>
+                      <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="civrep_wounded_civs.sqf" FileName="scripts\server\civrep\wounded\civrep_wounded_civs.sqf">
+                        <SubNodes />
+                      </ProjectNodeViewModel>
+                    </SubNodes>
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="init_buildings.sqf" FileName="scripts\server\civrep\init_buildings.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="init_module.sqf" FileName="scripts\server\civrep\init_module.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                </SubNodes>
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFolderNodeViewModel" Name="game" FileName="scripts\server\game">
+                <SubNodes>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="apply_default_permissions.sqf" FileName="scripts\server\game\apply_default_permissions.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="check_victory_conditions.sqf" FileName="scripts\server\game\check_victory_conditions.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="cleanup_vehicles.sqf" FileName="scripts\server\game\cleanup_vehicles.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fucking_set_fog.sqf" FileName="scripts\server\game\fucking_set_fog.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="manage_time.sqf" FileName="scripts\server\game\manage_time.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="manage_weather.sqf" FileName="scripts\server\game\manage_weather.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="playtime.sqf" FileName="scripts\server\game\playtime.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="save_manager.sqf" FileName="scripts\server\game\save_manager.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="server_restart.sqf" FileName="scripts\server\game\server_restart.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="spawn_radio_towers.sqf" FileName="scripts\server\game\spawn_radio_towers.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="synchronise_eco.sqf" FileName="scripts\server\game\synchronise_eco.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="synchronise_vars.sqf" FileName="scripts\server\game\synchronise_vars.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="zeus_synchro.sqf" FileName="scripts\server\game\zeus_synchro.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                </SubNodes>
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFolderNodeViewModel" Name="offloading" FileName="scripts\server\offloading">
+                <SubNodes>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="group_diag.sqf" FileName="scripts\server\offloading\group_diag.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="hc_manager.sqf" FileName="scripts\server\offloading\hc_manager.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="show_fps.sqf" FileName="scripts\server\offloading\show_fps.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                </SubNodes>
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFolderNodeViewModel" Name="patrols" FileName="scripts\server\patrols">
+                <SubNodes>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="civilian_patrols.sqf" FileName="scripts\server\patrols\civilian_patrols.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="manage_one_civilian_patrol.sqf" FileName="scripts\server\patrols\manage_one_civilian_patrol.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="manage_one_patrol.sqf" FileName="scripts\server\patrols\manage_one_patrol.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="manage_patrols.sqf" FileName="scripts\server\patrols\manage_patrols.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="reinforcements_manager.sqf" FileName="scripts\server\patrols\reinforcements_manager.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="reinforcements_resetter.sqf" FileName="scripts\server\patrols\reinforcements_resetter.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="send_paratroopers.sqf" FileName="scripts\server\patrols\send_paratroopers.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                </SubNodes>
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFolderNodeViewModel" Name="remotecall" FileName="scripts\server\remotecall">
+                <SubNodes>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="abort_logi_remote_call.sqf" FileName="scripts\server\remotecall\abort_logi_remote_call.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="add_logiGroup_remote_call.sqf" FileName="scripts\server\remotecall\add_logiGroup_remote_call.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="add_logiTruck_remote_call.sqf" FileName="scripts\server\remotecall\add_logiTruck_remote_call.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="build_fac_remote_call.sqf" FileName="scripts\server\remotecall\build_fac_remote_call.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="build_fob_remote_call.sqf" FileName="scripts\server\remotecall\build_fob_remote_call.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="build_remote_call.sqf" FileName="scripts\server\remotecall\build_remote_call.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="cancel_build_remote_call.sqf" FileName="scripts\server\remotecall\cancel_build_remote_call.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="change_prod_remote_call.sqf" FileName="scripts\server\remotecall\change_prod_remote_call.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="del_logiGroup_remote_call.sqf" FileName="scripts\server\remotecall\del_logiGroup_remote_call.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="del_logiTruck_remote_call.sqf" FileName="scripts\server\remotecall\del_logiTruck_remote_call.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="intel_remote_call.sqf" FileName="scripts\server\remotecall\intel_remote_call.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="prisonner_remote_call.sqf" FileName="scripts\server\remotecall\prisonner_remote_call.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="recycle_remote_call.sqf" FileName="scripts\server\remotecall\recycle_remote_call.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="reinforcements_remote_call.sqf" FileName="scripts\server\remotecall\reinforcements_remote_call.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="save_logi_remote_call.sqf" FileName="scripts\server\remotecall\save_logi_remote_call.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="sector_liberated_remote_call.sqf" FileName="scripts\server\remotecall\sector_liberated_remote_call.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="start_secondary_remote_call.sqf" FileName="scripts\server\remotecall\start_secondary_remote_call.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                </SubNodes>
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFolderNodeViewModel" Name="resources" FileName="scripts\server\resources">
+                <SubNodes>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="manage_logistics.sqf" FileName="scripts\server\resources\manage_logistics.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="manage_resources.sqf" FileName="scripts\server\resources\manage_resources.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="recalculate_resources.sqf" FileName="scripts\server\resources\recalculate_resources.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="recalculate_timer.sqf" FileName="scripts\server\resources\recalculate_timer.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="recalculate_timer_sector.sqf" FileName="scripts\server\resources\recalculate_timer_sector.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="unit_cap.sqf" FileName="scripts\server\resources\unit_cap.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                </SubNodes>
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFolderNodeViewModel" Name="secondary" FileName="scripts\server\secondary">
+                <SubNodes>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="convoy_hijack.sqf" FileName="scripts\server\secondary\convoy_hijack.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fob_hunting.sqf" FileName="scripts\server\secondary\fob_hunting.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="search_and_rescue.sqf" FileName="scripts\server\secondary\search_and_rescue.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                </SubNodes>
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFolderNodeViewModel" Name="sector" FileName="scripts\server\sector">
+                <SubNodes>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="attack_in_progress_fob.sqf" FileName="scripts\server\sector\attack_in_progress_fob.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="attack_in_progress_sector.sqf" FileName="scripts\server\sector\attack_in_progress_sector.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_destroyFob.sqf" FileName="scripts\server\sector\fn_destroyFob.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_spawnSectorCrates.sqf" FileName="scripts\server\sector\fn_spawnSectorCrates.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_spawnSectorIntel.sqf" FileName="scripts\server\sector\fn_spawnSectorIntel.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="ied_manager.sqf" FileName="scripts\server\sector\ied_manager.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="lose_sectors.sqf" FileName="scripts\server\sector\lose_sectors.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="manage_one_sector.sqf" FileName="scripts\server\sector\manage_one_sector.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="wait_to_spawn_sector.sqf" FileName="scripts\server\sector\wait_to_spawn_sector.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                </SubNodes>
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFolderNodeViewModel" Name="support" FileName="scripts\server\support">
+                <SubNodes>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_createSuppModules.sqf" FileName="scripts\server\support\fn_createSuppModules.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                </SubNodes>
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="init_server.sqf" FileName="scripts\server\init_server.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+            </SubNodes>
+          </ProjectNodeViewModel>
+          <ProjectNodeViewModel xsi:type="ProjectFolderNodeViewModel" Name="shared" FileName="scripts\shared">
+            <SubNodes>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="diagnostics.sqf" FileName="scripts\shared\diagnostics.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fetch_params.sqf" FileName="scripts\shared\fetch_params.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="init_shared.sqf" FileName="scripts\shared\init_shared.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="kill_manager.sqf" FileName="scripts\shared\kill_manager.sqf">
+                <SubNodes />
+              </ProjectNodeViewModel>
+            </SubNodes>
+          </ProjectNodeViewModel>
+        </SubNodes>
+      </ProjectNodeViewModel>
+      <ProjectNodeViewModel xsi:type="ProjectFolderNodeViewModel" Name="SPEC" FileName="SPEC">
+        <SubNodes>
+          <ProjectNodeViewModel xsi:type="ProjectFolderNodeViewModel" Name="ambient_music" FileName="SPEC\ambient_music">
+            <SubNodes>
+              <ProjectNodeViewModel xsi:type="ProjectFolderNodeViewModel" Name="fnc" FileName="SPEC\ambient_music\fnc">
+                <SubNodes>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_ambient_music_play.sqf" FileName="SPEC\ambient_music\fnc\fn_ambient_music_play.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_ambient_music_pool.sqf" FileName="SPEC\ambient_music\fnc\fn_ambient_music_pool.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_ambient_music_poolOST.sqf" FileName="SPEC\ambient_music\fnc\fn_ambient_music_poolOST.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                </SubNodes>
+              </ProjectNodeViewModel>
+            </SubNodes>
+          </ProjectNodeViewModel>
+          <ProjectNodeViewModel xsi:type="ProjectFolderNodeViewModel" Name="arsenal_02" FileName="SPEC\arsenal_02">
+            <SubNodes>
+              <ProjectNodeViewModel xsi:type="ProjectFolderNodeViewModel" Name="fnc" FileName="SPEC\arsenal_02\fnc">
+                <SubNodes>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_arsenal_02_aceVirtualItems.sqf" FileName="SPEC\arsenal_02\fnc\fn_arsenal_02_aceVirtualItems.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_arsenal_02_addAllVirtualCargo.sqf" FileName="SPEC\arsenal_02\fnc\fn_arsenal_02_addAllVirtualCargo.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_arsenal_02_compileBlacklistPreset.sqf" FileName="SPEC\arsenal_02\fnc\fn_arsenal_02_compileBlacklistPreset.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_arsenal_02_displayText.sqf" FileName="SPEC\arsenal_02\fnc\fn_arsenal_02_displayText.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_arsenal_02_filter.sqf" FileName="SPEC\arsenal_02\fnc\fn_arsenal_02_filter.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_arsenal_02_initBlacklistPresets.sqf" FileName="SPEC\arsenal_02\fnc\fn_arsenal_02_initBlacklistPresets.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_arsenal_02_onCompile.sqf" FileName="SPEC\arsenal_02\fnc\fn_arsenal_02_onCompile.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_arsenal_02_onPresetsCompiled.sqf" FileName="SPEC\arsenal_02\fnc\fn_arsenal_02_onPresetsCompiled.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_arsenal_02_postInit.sqf" FileName="SPEC\arsenal_02\fnc\fn_arsenal_02_postInit.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_arsenal_02_preInit.sqf" FileName="SPEC\arsenal_02\fnc\fn_arsenal_02_preInit.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                </SubNodes>
+              </ProjectNodeViewModel>
+            </SubNodes>
+          </ProjectNodeViewModel>
+          <ProjectNodeViewModel xsi:type="ProjectFolderNodeViewModel" Name="halo_restrict" FileName="SPEC\halo_restrict">
+            <SubNodes>
+              <ProjectNodeViewModel xsi:type="ProjectFolderNodeViewModel" Name="fnc" FileName="SPEC\halo_restrict\fnc">
+                <SubNodes>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_halo_restrict_findAvailableSector.sqf" FileName="SPEC\halo_restrict\fnc\fn_halo_restrict_findAvailableSector.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_halo_restrict_isAllowed.sqf" FileName="SPEC\halo_restrict\fnc\fn_halo_restrict_isAllowed.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                </SubNodes>
+              </ProjectNodeViewModel>
+            </SubNodes>
+          </ProjectNodeViewModel>
+          <ProjectNodeViewModel xsi:type="ProjectFolderNodeViewModel" Name="jammer" FileName="SPEC\jammer">
+            <SubNodes>
+              <ProjectNodeViewModel xsi:type="ProjectFolderNodeViewModel" Name="fnc" FileName="SPEC\jammer\fnc">
+                <SubNodes>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_jammer_postInit.sqf" FileName="SPEC\jammer\fnc\fn_jammer_postInit.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_jammer_tfarJamRadios.sqf" FileName="SPEC\jammer\fnc\fn_jammer_tfarJamRadios.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                </SubNodes>
+              </ProjectNodeViewModel>
+            </SubNodes>
+          </ProjectNodeViewModel>
+          <ProjectNodeViewModel xsi:type="ProjectFolderNodeViewModel" Name="other_missions" FileName="SPEC\other_missions">
+            <SubNodes>
+              <ProjectNodeViewModel xsi:type="ProjectFolderNodeViewModel" Name="fnc" FileName="SPEC\other_missions\fnc">
+                <SubNodes>
+                  <ProjectNodeViewModel xsi:type="ProjectFolderNodeViewModel" Name="init" FileName="SPEC\other_missions\fnc\init">
+                    <SubNodes>
+                      <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_other_missions_postInit.sqf" FileName="SPEC\other_missions\fnc\init\fn_other_missions_postInit.sqf">
+                        <SubNodes />
+                      </ProjectNodeViewModel>
+                    </SubNodes>
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFolderNodeViewModel" Name="liberation" FileName="SPEC\other_missions\fnc\liberation">
+                    <SubNodes>
+                      <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_other_missions_liberation_createMissions.sqf" FileName="SPEC\other_missions\fnc\liberation\fn_other_missions_liberation_createMissions.sqf">
+                        <SubNodes />
+                      </ProjectNodeViewModel>
+                      <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_other_missions_liberation_eventsInit.sqf" FileName="SPEC\other_missions\fnc\liberation\fn_other_missions_liberation_eventsInit.sqf">
+                        <SubNodes />
+                      </ProjectNodeViewModel>
+                      <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_other_missions_liberation_onMissionEnd.sqf" FileName="SPEC\other_missions\fnc\liberation\fn_other_missions_liberation_onMissionEnd.sqf">
+                        <SubNodes />
+                      </ProjectNodeViewModel>
+                    </SubNodes>
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFolderNodeViewModel" Name="rescue_intel" FileName="SPEC\other_missions\fnc\rescue_intel">
+                    <SubNodes>
+                      <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_other_missions_rescue_intel_botAttack.sqf" FileName="SPEC\other_missions\fnc\rescue_intel\fn_other_missions_rescue_intel_botAttack.sqf">
+                        <SubNodes />
+                      </ProjectNodeViewModel>
+                      <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_other_missions_rescue_intel_downloadData.sqf" FileName="SPEC\other_missions\fnc\rescue_intel\fn_other_missions_rescue_intel_downloadData.sqf">
+                        <SubNodes />
+                      </ProjectNodeViewModel>
+                      <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_other_missions_rescue_intel_fromUAV.sqf" FileName="SPEC\other_missions\fnc\rescue_intel\fn_other_missions_rescue_intel_fromUAV.sqf">
+                        <SubNodes />
+                      </ProjectNodeViewModel>
+                    </SubNodes>
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFolderNodeViewModel" Name="utils" FileName="SPEC\other_missions\fnc\utils">
+                    <SubNodes>
+                      <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_other_missions_findPosFromMision.sqf" FileName="SPEC\other_missions\fnc\utils\fn_other_missions_findPosFromMision.sqf">
+                        <SubNodes />
+                      </ProjectNodeViewModel>
+                      <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_other_missions_spawnEnemyBot.sqf" FileName="SPEC\other_missions\fnc\utils\fn_other_missions_spawnEnemyBot.sqf">
+                        <SubNodes />
+                      </ProjectNodeViewModel>
+                    </SubNodes>
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_other_missions_captureCity.sqf" FileName="SPEC\other_missions\fnc\fn_other_missions_captureCity.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_other_missions_damageTransport.sqf" FileName="SPEC\other_missions\fnc\fn_other_missions_damageTransport.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_other_missions_destroyArty.sqf" FileName="SPEC\other_missions\fnc\fn_other_missions_destroyArty.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_other_missions_destroyBCW.sqf" FileName="SPEC\other_missions\fnc\fn_other_missions_destroyBCW.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_other_missions_destroyHeli.sqf" FileName="SPEC\other_missions\fnc\fn_other_missions_destroyHeli.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_other_missions_destroyRadar.sqf" FileName="SPEC\other_missions\fnc\fn_other_missions_destroyRadar.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_other_missions_destroyTank.sqf" FileName="SPEC\other_missions\fnc\fn_other_missions_destroyTank.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_other_missions_destroyVehicle.sqf" FileName="SPEC\other_missions\fnc\fn_other_missions_destroyVehicle.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_other_missions_killGeneral.sqf" FileName="SPEC\other_missions\fnc\fn_other_missions_killGeneral.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_other_missions_rescueHostage.sqf" FileName="SPEC\other_missions\fnc\fn_other_missions_rescueHostage.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_other_missions_rescueMHQ.sqf" FileName="SPEC\other_missions\fnc\fn_other_missions_rescueMHQ.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_other_missions_rescuePilots.sqf" FileName="SPEC\other_missions\fnc\fn_other_missions_rescuePilots.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                </SubNodes>
+              </ProjectNodeViewModel>
+            </SubNodes>
+          </ProjectNodeViewModel>
+          <ProjectNodeViewModel xsi:type="ProjectFolderNodeViewModel" Name="rabbit_support" FileName="SPEC\rabbit_support">
+            <SubNodes>
+              <ProjectNodeViewModel xsi:type="ProjectFolderNodeViewModel" Name="fnc" FileName="SPEC\rabbit_support\fnc">
+                <SubNodes>
+                  <ProjectNodeViewModel xsi:type="ProjectFolderNodeViewModel" Name="vehicle_on_fire" FileName="SPEC\rabbit_support\fnc\vehicle_on_fire">
+                    <SubNodes>
+                      <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_rabbit_support_vof_condition.sqf" FileName="SPEC\rabbit_support\fnc\vehicle_on_fire\fn_rabbit_support_vof_condition.sqf">
+                        <SubNodes />
+                      </ProjectNodeViewModel>
+                      <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_rabbit_support_vof_onDestroy.sqf" FileName="SPEC\rabbit_support\fnc\vehicle_on_fire\fn_rabbit_support_vof_onDestroy.sqf">
+                        <SubNodes />
+                      </ProjectNodeViewModel>
+                      <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_rabbit_support_vof_playFire.sqf" FileName="SPEC\rabbit_support\fnc\vehicle_on_fire\fn_rabbit_support_vof_playFire.sqf">
+                        <SubNodes />
+                      </ProjectNodeViewModel>
+                      <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_rabbit_support_vof_sendMsg.sqf" FileName="SPEC\rabbit_support\fnc\vehicle_on_fire\fn_rabbit_support_vof_sendMsg.sqf">
+                        <SubNodes />
+                      </ProjectNodeViewModel>
+                    </SubNodes>
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_rabbit_support_callDropTransport.sqf" FileName="SPEC\rabbit_support\fnc\fn_rabbit_support_callDropTransport.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_rabbit_support_callDropTransport_V2.sqf" FileName="SPEC\rabbit_support\fnc\fn_rabbit_support_callDropTransport_V2.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_rabbit_support_callHelpParadrop.sqf" FileName="SPEC\rabbit_support\fnc\fn_rabbit_support_callHelpParadrop.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_rabbit_support_callHelpVdv.sqf" FileName="SPEC\rabbit_support\fnc\fn_rabbit_support_callHelpVdv.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_rabbit_support_compileSimpleActions.sqf" FileName="SPEC\rabbit_support\fnc\fn_rabbit_support_compileSimpleActions.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_rabbit_support_onMapClick.sqf" FileName="SPEC\rabbit_support\fnc\fn_rabbit_support_onMapClick.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_rabbit_support_postInit.sqf" FileName="SPEC\rabbit_support\fnc\fn_rabbit_support_postInit.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_rabbit_support_selectPosition.sqf" FileName="SPEC\rabbit_support\fnc\fn_rabbit_support_selectPosition.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                </SubNodes>
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFolderNodeViewModel" Name="scripts" FileName="SPEC\rabbit_support\scripts">
+                <SubNodes>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="vehicleOnFire.sqf" FileName="SPEC\rabbit_support\scripts\vehicleOnFire.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                </SubNodes>
+              </ProjectNodeViewModel>
+            </SubNodes>
+          </ProjectNodeViewModel>
+          <ProjectNodeViewModel xsi:type="ProjectFolderNodeViewModel" Name="radio_chatter" FileName="SPEC\radio_chatter">
+            <SubNodes>
+              <ProjectNodeViewModel xsi:type="ProjectFolderNodeViewModel" Name="fnc" FileName="SPEC\radio_chatter\fnc">
+                <SubNodes>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_radio_chatter_play.sqf" FileName="SPEC\radio_chatter\fnc\fn_radio_chatter_play.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="fn_radio_chatter_postInit.sqf" FileName="SPEC\radio_chatter\fnc\fn_radio_chatter_postInit.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                </SubNodes>
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFolderNodeViewModel" Name="scripts" FileName="SPEC\radio_chatter\scripts">
+                <SubNodes>
+                  <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="radioLoop.sqf" FileName="SPEC\radio_chatter\scripts\radioLoop.sqf">
+                    <SubNodes />
+                  </ProjectNodeViewModel>
+                </SubNodes>
+              </ProjectNodeViewModel>
+            </SubNodes>
+          </ProjectNodeViewModel>
+        </SubNodes>
+      </ProjectNodeViewModel>
+      <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="description.ext" FileName="description.ext">
+        <SubNodes />
+      </ProjectNodeViewModel>
+      <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="init.sqf" FileName="init.sqf">
+        <SubNodes />
+      </ProjectNodeViewModel>
+      <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="KPLIB_classnameLists.sqf" FileName="KPLIB_classnameLists.sqf">
+        <SubNodes />
+      </ProjectNodeViewModel>
+      <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="KPLIB_config.sqf" FileName="KPLIB_config.sqf">
+        <SubNodes />
+      </ProjectNodeViewModel>
+      <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="KPLIB_objectInits.sqf" FileName="KPLIB_objectInits.sqf">
+        <SubNodes />
+      </ProjectNodeViewModel>
+      <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="KPLIB_transportConfigs.sqf" FileName="KPLIB_transportConfigs.sqf">
+        <SubNodes />
+      </ProjectNodeViewModel>
+      <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="KPLIB_whitelists.sqf" FileName="KPLIB_whitelists.sqf">
+        <SubNodes />
+      </ProjectNodeViewModel>
+      <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="onPlayerRespawn.sqf" FileName="onPlayerRespawn.sqf">
+        <SubNodes />
+      </ProjectNodeViewModel>
+    </SubNodes>
+  </ProjectRootNode>
+  <FilteredAnalyzerResultItems />
+</Project>
