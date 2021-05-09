@@ -2713,8 +2713,14 @@
             <Original>Default</Original>
             <Russian>Стандартный</Russian>
         </Key>
-        <Key ID="STR_PARAMS_HALO_MODE_SPEC">
-            <Original>SPEC</Original>
+        <Key ID="STR_PARAMS_HALO_MODE_SPEC1">
+            <Original>SPEC - 500m</Original>
+        </Key>
+        <Key ID="STR_PARAMS_HALO_MODE_SPEC2">
+            <Original>SPEC - 1000m</Original>
+        </Key>
+        <Key ID="STR_PARAMS_HALO_MODE_SPEC3">
+            <Original>SPEC - 2000m</Original>
         </Key>
         <Key ID="STR_HALO_YOUCANNOTJUMPHERE">
             <Original>Where are you going, fighter?</Original>

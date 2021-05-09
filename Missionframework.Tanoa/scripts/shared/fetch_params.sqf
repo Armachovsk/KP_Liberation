@@ -410,7 +410,9 @@ if (!isDedicated && hasInterface) then {
     _param = localize "STR_PARAMS_HALO_MODE";
     switch (KPLIB_param_haloMode) do {
         case 0: {_value = localize "STR_PARAMS_HALO_MODE_DEFAULT";};
-        case 1: {_value = localize "STR_PARAMS_HALO_MODE_SPEC";};
+        case 1: {_value = localize "STR_PARAMS_HALO_MODE_SPEC1";};
+        case 2: {_value = localize "STR_PARAMS_HALO_MODE_SPEC2";};
+        case 3: {_value = localize "STR_PARAMS_HALO_MODE_SPEC3";};
     };
     _text = _text + format ["<font color='#ff8000'>%1</font><br />%2<br /><br />", _param, _value];
 

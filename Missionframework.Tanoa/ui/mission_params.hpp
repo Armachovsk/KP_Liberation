@@ -271,9 +271,9 @@ class Params {
     };
     class HaloMode {
         title = $STR_PARAMS_HALO_MODE;
-        values[] = {0, 1};
-        texts[] = {$STR_PARAMS_HALO_MODE_DEFAULT, $STR_PARAMS_HALO_MODE_SPEC};
-        default = 1;
+        values[] = {0, 1, 2, 3};
+        texts[] = {$STR_PARAMS_HALO_MODE_DEFAULT, $STR_PARAMS_HALO_MODE_SPEC1, $STR_PARAMS_HALO_MODE_SPEC2, $STR_PARAMS_HALO_MODE_SPEC3};
+        default = 2;
     };
     class HaloJump {
         title = $STR_HALO_PARAM;
