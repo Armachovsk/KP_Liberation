@@ -3,7 +3,7 @@
     "sqf.enableACE3": true,
     "files.associations": {
         "*.hpp": "ext",
-        "*.h":   "ext",
+        "*.h": "ext",
         "*.inc": "ext",
         "*.cpp": "ext",
         "*.ext": "ext",
@@ -15,6 +15,12 @@
         "_thisId",
         "_thisType"
     ],
+    "sqflint.indexWorkspace": false,
+    "sqflint.indexWorkspaceTwice": false,
+    "sqflint.discoverDescriptionFiles": false,
+    "sqflint.checkPaths": false,
+    "sqflint.warnings": false,
+    "sqflint.descriptionFiles": ["./Missionframework.Altis"],
     "psi-header.lang-config": [
         {
             "license": "Custom",
