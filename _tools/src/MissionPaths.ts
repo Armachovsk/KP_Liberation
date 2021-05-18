@@ -61,6 +61,13 @@ export class MissionPaths {
     }
 
     /**
+     * Get path to folder containing mission files [DEV]
+     */
+    public getOutputDirDev(): string {
+        return path.resolve(this.folderStructure.devDir, this.getFullName());
+    }
+
+    /**
      * Get path to file with mission configuration.
      * As defined in preset.
      */

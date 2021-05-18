@@ -5,7 +5,7 @@ import * as gulpModify from "gulp-modify-file";
 import * as gulpZip from "gulp-zip";
 import * as vinylPaths from "vinyl-paths";
 import * as del from "del";
-
+import * as vfs from "vinyl-fs";
 import { resolve } from "path";
 
 import { MissionPaths, uploadLegacy } from "./src";
@@ -17,10 +17,35 @@ const presets: Preset[] = require("./_presets.json");
  * Mission folders configuration
  */
 const paths: FolderStructureInfo = {
-    frameworkFolder: resolve("..", "Missionframework.Altis"),
+    frameworkFolder: resolve("..", "Missionframework"),
     missionsFolder: resolve("..", "Missionbasefiles"),
     workDir: resolve("../build"),
+    devDir: resolve("../Missiondevfiles"),
 };
+
+const arg: { mission?: string; m?: string } = ((argList) => {
+    let arg = {},
+        a,
+        opt,
+        thisOpt,
+        curOpt;
+    for (a = 0; a < argList.length; a++) {
+        thisOpt = argList[a].trim();
+        opt = thisOpt.replace(/^\-+/, "");
+
+        if (opt === thisOpt) {
+            // argument value
+            if (curOpt) arg[curOpt] = opt;
+            curOpt = null;
+        } else {
+            // argument name
+            curOpt = opt;
+            arg[curOpt] = true;
+        }
+    }
+
+    return arg;
+})(process.argv);
 
 /**
  * Create gulp tasks
@@ -30,8 +55,16 @@ let taskNamesPbo: string[] = [];
 let taskNamesZip: string[] = [];
 let taskNamesWorkshop: string[] = [];
 let taskNamesCleanTemp: string[] = [];
+let taskNamesDev: string[] = [];
 
-for (let preset of presets) {
+const missionArg = (arg && arg.mission) || (arg && arg.m);
+
+let filteredPresets = [...presets];
+if (missionArg) {
+    filteredPresets = presets.filter((p) => p.missionName === missionArg);
+}
+
+for (let preset of filteredPresets) {
     const mission = new MissionPaths(preset, paths);
     const taskName = [preset.missionName, preset.map].join(".");
 
@@ -102,16 +135,19 @@ for (let preset of presets) {
             function stringTableReplace() {
                 // I know, replacing XML with regex... :|
                 // https://regex101.com/r/TSfish/2
-                const versionRegex = /(<Key ID="STR_MISSION_VERSION">\s*<Original>)(?<version>.+)(<\/Original>)/;
-                const nameRegex = /(<Key ID="STR_MISSION_TITLE">\s*<Original>)(?<name>.+)(<\/Original>)/;
+                const versionRegex =
+                    /(<Key ID="STR_MISSION_VERSION">\s*<Original>)(?<version>.+)(<\/Original>)/;
+                const nameRegex =
+                    /(<Key ID="STR_MISSION_TITLE">\s*<Original>)(?<name>.+)(<\/Original>)/;
 
                 return gulp
                     .src(mission.getFrameworkPath().concat("/stringtable.xml"))
                     .pipe(
                         gulpModify((content: string) => {
-                            let version: string = content.match(versionRegex)[
-                                "groups"
-                            ]["version"];
+                            let version: string =
+                                content.match(versionRegex)["groups"][
+                                    "version"
+                                ];
 
                             // append commit hash and mark as dev version in PRs
                             if (
@@ -217,6 +253,32 @@ for (let preset of presets) {
             .src(mission.getOutputDir())
             .pipe(vinylPaths((path) => del(path, { force: true })));
     });
+
+    taskNamesDev.push("mission_dev_" + taskName);
+    gulp.task(
+        "mission_dev_" + taskName,
+        gulp.series(
+            /** Copy mission framework to output dir */
+            function frameworkCopy() {
+                return vfs
+                    .src(mission.getFrameworkPath().concat("/**/*"), {
+                        followSymlinks: false,
+                        nodir: true,
+                    })
+                    .pipe(vfs.symlink(mission.getOutputDirDev()));
+            },
+
+            /** Copy mission.sqm to output dir */
+            function missionSqmCopy() {
+                return vfs
+                    .src(mission.getMissionSqmPath(), {
+                        followSymlinks: false,
+                        nodir: true,
+                    })
+                    .pipe(vfs.symlink(mission.getOutputDirDev()));
+            }
+        )
+    );
 }
 
 // Main tasks
@@ -226,15 +288,23 @@ gulp.task("clean", () => {
         .pipe(vinylPaths((path) => del(path, { force: true })));
 });
 
-gulp.task("build", gulp.series(taskNames));
+const onlyOne = (taskNames) => {
+    return taskNames.length > 1
+        ? gulp.series(taskNames)
+        : gulp.task(taskNames[0]);
+};
 
-gulp.task("pbo", gulp.series(taskNamesPbo));
+gulp.task("build", onlyOne(taskNames));
 
-gulp.task("zip", gulp.series(taskNamesZip));
+gulp.task("pbo", onlyOne(taskNamesPbo));
 
-gulp.task("workshop", gulp.series(taskNamesWorkshop));
+gulp.task("zip", onlyOne(taskNamesZip));
 
-gulp.task("clean-temp", gulp.series(taskNamesCleanTemp));
+gulp.task("workshop", onlyOne(taskNamesWorkshop));
+
+gulp.task("clean-temp", onlyOne(taskNamesCleanTemp));
+
+gulp.task("dev", onlyOne(taskNamesDev));
 
 gulp.task(
     "default",
