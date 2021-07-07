@@ -22,6 +22,8 @@ if (isServer) then {["Module initializing...", "PRE] [CORE", true] call KPLIB_fn
 
 [] call SPEC_fnc_core_settings;
 
+SPEC_preset_playerF = ["SoldierWB", "SoldierEB", "SoldierGB"] select ([west, east, independent] find KPLIB_preset_sideF);
+
 if (isServer) then {
     ["KPLIB_vehicle_spawned", {[_this select 0] call SPEC_fnc_core_handleVehicleSpawn}] call CBA_fnc_addEventHandler;
 
